@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "historyId": "3ce617dc-0374-4891-83bb-8292de7137d4",
+  "currentRevision": "f5b5a90f-cbac-40ac-912c-2d3adcfea778",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "3bb22af1d0093dfb5a59d3cc884ee63d4e3b8b535d413a0e22139358339c01a6",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/3b/3bb22af1d0093dfb5a59d3cc884ee63d4e3b8b535d413a0e22139358339c01a6"
+    },
+    "CLAUDE.md": {
+      "hash": "3bb22af1d0093dfb5a59d3cc884ee63d4e3b8b535d413a0e22139358339c01a6",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/3b/3bb22af1d0093dfb5a59d3cc884ee63d4e3b8b535d413a0e22139358339c01a6"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "052cb5e42a18250ab3d4cee001a054aaa5c27c64b2be4696720a2c4a9051ca72",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/05/052cb5e42a18250ab3d4cee001a054aaa5c27c64b2be4696720a2c4a9051ca72"
+    },
+    "meta.json": {
+      "hash": "9e61ab736c58a1caa671c3c7d39cddcf2ab8c1e904a6ca27f0ebca49a90e5f70",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/9e/9e61ab736c58a1caa671c3c7d39cddcf2ab8c1e904a6ca27f0ebca49a90e5f70"
+    },
+    "package.json": {
+      "hash": "1a3185955dce7da8d8233d5aaff451974d18f618f924f2e37172209735ff8096",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/1a/1a3185955dce7da8d8233d5aaff451974d18f618f924f2e37172209735ff8096"
+    },
+    "package-lock.json": {
+      "hash": "3c59e3a559d0d14b1982e21f10d57492abffcb71c4a198c4912f72152ad406c6",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/3c/3c59e3a559d0d14b1982e21f10d57492abffcb71c4a198c4912f72152ad406c6"
+    },
+    "vendor/gsap.min.js": {
+      "hash": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "content": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/92/92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    }
+  },
+  "revisions": {
+    "f5b5a90f-cbac-40ac-912c-2d3adcfea778": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793814880940,
+      "endedAt": 1793814880964,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/2a/2a6b0a00399e2f08ea17ee9004f338251d1eb4e431d88ec168e24aadcc724597",
+          "after": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/05/052cb5e42a18250ab3d4cee001a054aaa5c27c64b2be4696720a2c4a9051ca72"
+        },
+        "package-lock.json": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/3c/3c59e3a559d0d14b1982e21f10d57492abffcb71c4a198c4912f72152ad406c6"
+        },
+        "package.json": {
+          "before": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/1d/1d89c21ed25c9de68a369420e1b5131856e1693ae768cc899498a19d12d31557",
+          "after": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/1a/1a3185955dce7da8d8233d5aaff451974d18f618f924f2e37172209735ff8096"
+        },
+        "vendor/gsap.min.js": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/3ce617dc-0374-4891-83bb-8292de7137d4/blobs/92/92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "846e11d4-fa9d-4b01-acff-8134bba0a894",
+      "completedAt": 1793814886899,
+      "output": "/home/user/video-kurgu/test-hikaye/renders/test.mp4",
+      "status": "completed",
+      "revision": "f5b5a90f-cbac-40ac-912c-2d3adcfea778"
+    },
+    "retainedRevisions": [
+      "f5b5a90f-cbac-40ac-912c-2d3adcfea778"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}
