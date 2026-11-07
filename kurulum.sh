@@ -6,7 +6,9 @@ if ! command -v ffmpeg >/dev/null; then
   elif command -v brew >/dev/null; then brew install ffmpeg
   else echo "FFmpeg'i elle kurun: https://ffmpeg.org/download.html"; exit 1; fi
 fi
-python3 -m pip install -U yt-dlp openai-whisper
+python3 -m pip install -U "yt-dlp[default]" openai-whisper
+# yt-dlp YouTube için Node.js kullansın
+mkdir -p ~/.config/yt-dlp && echo "--js-runtimes node" > ~/.config/yt-dlp/config
 # HyperFrames için Node.js 22+ gerekir
 npm install -g hyperframes
 echo "Kurulum bitti. Kontrol için: ./kontrol.sh"
