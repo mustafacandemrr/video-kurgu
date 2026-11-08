@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+      :root { --ground: #120a1f; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { width: 100%; height: 100%; }
+      #slime { width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15"
+         data-width="1080" data-height="1920">
+      <canvas id="slime" width="1080" height="1920"></canvas>
+    </div>
+    <script>
+      // Yapışkan (slime) arka plan: metaball alanı, 15 sn'de kusursuz döngü.
+      const LOOP = 15, W = 270, H = 480;              // düşük çözünürlükte hesapla, büyüt
+      const COLORS = [[255,92,168],[160,96,255],[64,224,190],[90,170,255],[255,190,80],[255,120,120]];
+      // Tohumlu rastgele (her render aynı)
+      let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+      const blobs = Array.from({ length: 11 }, (_, i) => ({
+        cx: 40 + rnd() * 190, cy: 40 + rnd() * 400,
+        ax: 30 + rnd() * 70, ay: 50 + rnd() * 120,
+        kx: 1 + Math.floor(rnd() * 2), ky: 1 + Math.floor(rnd() * 2),
+        px: rnd() * 6.283, py: rnd() * 6.283,
+        r: 26 + rnd() * 26, c: COLORS[i % COLORS.length],
+      }));
+      const out = document.getElementById("slime"), octx = out.getContext("2d");
+      const small = document.createElement("canvas"); small.width = W; small.height = H;
+      const sctx = small.getContext("2d"), img = sctx.createImageData(W, H), d = img.data;
+      const BG = [18, 10, 31];
+      function renderAt(t) {
+        const a = (t % LOOP) / LOOP * 6.283;
+        const P = blobs.map(b => [b.cx + b.ax * Math.sin(b.kx * a + b.px), b.cy + b.ay * Math.sin(b.ky * a + b.py), b.r * b.r, b.c]);
+        for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+          let f = 0, gx = 0, gy = 0, r = 0, g = 0, bl = 0, wt = 0;
+          for (const [bx, by, rr, c] of P) {
+            const dx = x - bx, dy = y - by, q = dx * dx + dy * dy + 1, v = rr / q;
+            f += v; gx += -2 * v * dx / q; gy += -2 * v * dy / q;
+            const w = v * v * v; wt += w; r += c[0] * w; g += c[1] * w; bl += c[2] * w;
+          }
+          const i = (y * W + x) * 4;
+          const edge = Math.min(1, Math.max(0, (f - 0.9) * 14));      // net kenar
+          r /= wt; g /= wt; bl /= wt;
+          // parlaklık: yüzey eğimi ışığa (sol üst) bakıyorsa parlat
+          const n = Math.hypot(gx, gy) + 1e-6, lit = Math.max(0, (-gx * -0.6 + -gy * -0.8) / n);
+          const depth = Math.min(1, (f - 0.9) * 0.6);
+          const shade = 0.55 + 0.45 * depth, spec = Math.pow(lit, 6) * Math.max(0, 1 - depth * 1.6) * 0.55;
+          d[i]   = BG[0] + (Math.min(255, r * shade + 255 * spec) - BG[0]) * edge;
+          d[i+1] = BG[1] + (Math.min(255, g * shade + 255 * spec) - BG[1]) * edge;
+          d[i+2] = BG[2] + (Math.min(255, bl * shade + 255 * spec) - BG[2]) * edge;
+          d[i+3] = 255;
+        }
+        sctx.putImageData(img, 0, 0);
+        octx.imageSmoothingEnabled = true; octx.imageSmoothingQuality = "high";
+        octx.drawImage(small, 0, 0, 1080, 1920);
+      }
+      window.addEventListener("hf-seek", (e) => renderAt(e.detail.time));
+      renderAt(0);
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: LOOP });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
