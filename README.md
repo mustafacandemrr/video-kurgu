@@ -36,6 +36,10 @@ cd arka-plan-slime && npx hyperframes render -o renders/slime.mp4
 ffmpeg -stream_loop 3 -i renders/slime.mp4 -c copy slime-60sn.mp4   # 60 sn yap
 ```
 
+## Telifsiz arka plan: `arka-plan-sabun/`
+
+Renkli katmanlı sabunun bıçakla dilimlendiği animasyon (1080×1920, 15 sn döngü).
+
 ## Sık kullanılan komutlar
 
 ```bash

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #f6dfe6; }
+      #root { width: 100%; height: 100%; }
+      #sabun { width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15"
+         data-width="1080" data-height="1920">
+      <canvas id="sabun" width="1080" height="1920"></canvas>
+    </div>
+    <script>
+      // Sabun kesme: bıçak her 1,5 sn'de bir dilim keser, dilim devrilip kayar. 15 sn kusursuz döngü.
+      const T = 1.5, LOOP = 15;
+      const H = 300, YB = 1180, YT = YB - H;           // kalıbın yüksekliği, alt ve üst kenarı
+      const DX = 90, DY = -110;                          // derinlik (eğik görünüm)
+      const CUT = 470, W = 78;                           // kesim çizgisi, dilim kalınlığı
+      const LAYERS = [["#ff8fb3", .22], ["#fff3dc", .12], ["#c3a2ff", .24], ["#fff3dc", .1], ["#7fe3c6", .32]];
+      const cv = document.getElementById("sabun"), c = cv.getContext("2d");
+      const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+      const ease = (p) => p * p * (3 - 2 * p);
+      const shade = (hex, k) => { const n = parseInt(hex.slice(1), 16);
+        const f = (v) => Math.round(clamp(v * k, 0, 255));
+        return `rgb(${f(n >> 16)},${f((n >> 8) & 255)},${f(n & 255)})`; };
+
+      // Ön yüz: yatay katmanlar
+      function front(x, y, w, h) {
+        let yy = y;
+        for (const [col, fr] of LAYERS) { c.fillStyle = col; c.fillRect(x, yy, w, h * fr + 0.6); yy += h * fr; }
+      }
+      // Kesit yüzü (sağ yan): katmanlar eğik paralelkenar
+      function side(x, y, h, k) {
+        let yy = y;
+        for (const [col, fr] of LAYERS) {
+          const hh = h * fr; c.fillStyle = shade(col, k);
+          c.beginPath(); c.moveTo(x, yy); c.lineTo(x + DX, yy + DY); c.lineTo(x + DX, yy + DY + hh + .6);
+          c.lineTo(x, yy + hh + .6); c.closePath(); c.fill(); yy += hh;
+        }
+      }
+      // Üst yüz: simli pembe
+      function ustYuz(x, y, w, seedBase) {
+        c.fillStyle = "#ffb3cb";
+        c.beginPath(); c.moveTo(x, y); c.lineTo(x + w, y); c.lineTo(x + w + DX, y + DY); c.lineTo(x + DX, y + DY); c.closePath(); c.fill();
+        let s = seedBase * 9301 + 49297;
+        for (let i = 0; i < w / 6; i++) {
+          s = (s * 9301 + 49297) % 233280; const u = s / 233280;
+          s = (s * 9301 + 49297) % 233280; const v = s / 233280;
+          c.fillStyle = i % 3 ? "rgba(255,255,255,.85)" : "rgba(255,215,120,.9)";
+          c.fillRect(x + u * w + v * DX, y + v * DY, 4, 4);
+        }
+      }
+      function block(x, y, w, h, seed, k = 0.86) { front(x, y, w, h); side(x + w, y, h, k); ustYuz(x, y, w, seed); }
+
+      // Yatan dilim: kesit yüzü üstte görünür
+      function lying(x, y, len, thick) {
+        // üst yüz = kesit (katmanlar uzunluk boyunca)
+        let xx = x;
+        for (const [col, fr] of LAYERS) {
+          const ww = len * fr; c.fillStyle = shade(col, 1.04);
+          c.beginPath(); c.moveTo(xx, y); c.lineTo(xx + ww + .6, y); c.lineTo(xx + ww + .6 + DX, y + DY);
+          c.lineTo(xx + DX, y + DY); c.closePath(); c.fill(); xx += ww;
+        }
+        // ön yüz = dilim kalınlığı
+        xx = x;
+        for (const [col, fr] of LAYERS) { c.fillStyle = shade(col, 0.9); c.fillRect(xx, y, len * fr + .6, thick); xx += len * fr; }
+        // sağ yan
+        c.fillStyle = shade(LAYERS[4][0], 0.75);
+        c.beginPath(); c.moveTo(x + len, y); c.lineTo(x + len + DX, y + DY); c.lineTo(x + len + DX, y + DY + thick); c.lineTo(x + len, y + thick); c.closePath(); c.fill();
+      }
+
+      function knife(xk, depth) {               // depth: bıçak ucunun kalıp üstüne göre derinliği (px)
+        const tip = YT - 40 + depth;
+        c.save();
+        // bıçak (yandan ince görünür, derinlik boyunca geniş)
+        const g = c.createLinearGradient(xk, 0, xk + DX, 0);
+        g.addColorStop(0, "#e9edf2"); g.addColorStop(0.5, "#ffffff"); g.addColorStop(1, "#aeb6c0");
+        c.fillStyle = g;
+        c.beginPath(); c.moveTo(xk - 6, tip - 520); c.lineTo(xk + 6, tip - 520); c.lineTo(xk + 6 + DX, tip - 520 + DY);
+        c.lineTo(xk + 6 + DX, tip + DY); c.lineTo(xk - 6, tip); c.closePath(); c.fill();
+        c.strokeStyle = "rgba(90,100,115,.35)"; c.lineWidth = 2; c.stroke();
+        // sap
+        c.fillStyle = "#3b2a2a";
+        c.beginPath(); c.moveTo(xk - 14, tip - 760); c.lineTo(xk + 14, tip - 760); c.lineTo(xk + 14 + DX, tip - 760 + DY);
+        c.lineTo(xk + 14 + DX, tip - 520 + DY); c.lineTo(xk - 14, tip - 520); c.closePath(); c.fill();
+        c.restore();
+      }
+
+      function renderAt(t) {
+        t = ((t % LOOP) + LOOP) % LOOP;
+        const k = Math.floor(t / T), p = (t - k * T) / T;
+        // arka plan
+        const bg = c.createLinearGradient(0, 0, 0, 1920); bg.addColorStop(0, "#fde7ee"); bg.addColorStop(1, "#e9d6f5");
+        c.fillStyle = bg; c.fillRect(0, 0, 1080, 1920);
+        c.save(); c.translate(540, 1060); c.scale(1.3, 1.3); c.translate(-540, -960);
+        // kesme tahtası
+        c.fillStyle = "#e7c49a"; c.beginPath(); c.moveTo(-50, YB); c.lineTo(1130, YB); c.lineTo(1130 + DX, YB + DY - 40);
+        c.lineTo(-50, YB + DY - 40); c.closePath(); c.fill();
+        c.fillStyle = "#d4a877"; c.fillRect(-50, YB, 1180, 60);
+        c.fillStyle = "#c79a68"; c.fillRect(-50, YB + 60, 1180, 10);
+
+        // önceki dilimler tahtada sağa kayıyor
+        for (let j = k - 8; j <= k; j++) {
+          const age = t - j * T - 0.7 * T;               // devrilme bitti
+          if (j === k && p < 0.7) continue;
+          if (age < 0) continue;
+          const x0 = CUT + W + age * 150;
+          if (x0 > 1150) continue;
+          lying(x0, YB - W, H, W);
+        }
+
+        // kalıp: kesimden sonra boşluk, ilerleme ile kapanır
+        const adv = ease(clamp((p - 0.75) / 0.25));
+        const endX = CUT + (p < 0.45 ? W : W * adv);       // kalıbın sağ ucu
+        block(-200, YT, endX + 200, H, 3, 0.86);
+
+        // kesilen dilim
+        if (p < 0.7) {
+          c.save(); c.beginPath(); c.rect(-300, -300, 1700, YB + 300); c.clip();
+          const tip = ease(clamp((p - 0.45) / 0.25)) * Math.PI / 2;
+          c.save(); c.translate(CUT + W, YB); c.rotate(tip); c.translate(-(CUT + W), -YB);
+          const sx = p < 0.45 ? CUT : CUT + 4;
+          block(sx, YT, W, H, 7 + (k % 10), 0.95);
+          c.restore(); c.restore();
+        }
+        // kesim çizgisi
+        const cutDepth = clamp((p - 0.1) / 0.35) * (H + 40);
+        if (p < 0.45 && cutDepth > 40) { c.fillStyle = "rgba(90,40,70,.35)"; c.fillRect(CUT - 1, YT, 3, cutDepth - 40); }
+
+        // kırıntılar
+        if (p > 0.15 && p < 0.9) {
+          for (let i = 0; i < 7; i++) {
+            const q = p - 0.15, a = (i * 2.399) % 6.283;
+            const x = CUT + Math.cos(a) * 40 * q * 3 + (i - 3) * 6, y = YT - 4 + 900 * q * q * (0.6 + (i % 3) * .2) - 60 * q;
+            if (y > YB - 6) continue;
+            c.fillStyle = LAYERS[i % LAYERS.length][0]; c.fillRect(x, Math.min(y, YB - 8), 7, 7);
+          }
+        }
+
+        // bıçak: in (0.1–0.45), bekle, çık (0.5–0.8)
+        let depth;
+        if (p < 0.1) depth = -260 * (1 - ease(p / 0.1));
+        else if (p < 0.45) depth = ease((p - 0.1) / 0.35) * (H + 38);
+        else if (p < 0.5) depth = H + 38;
+        else depth = (H + 38) - ease(clamp((p - 0.5) / 0.3)) * (H + 300);
+        knife(CUT, depth);
+        c.restore();
+      }
+      window.addEventListener("hf-seek", (e) => renderAt(e.detail.time));
+      renderAt(0);
+      const tl = gsap.timeline({ paused: true }); tl.to({}, { duration: LOOP });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
