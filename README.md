@@ -40,6 +40,15 @@ ffmpeg -stream_loop 3 -i renders/slime.mp4 -c copy slime-60sn.mp4   # 60 sn yap
 
 Renkli katmanlı sabunun bıçakla dilimlendiği animasyon (1080×1920, 15 sn döngü).
 
+## Hikayeden tek komutla video: `hikaye-video.py`
+
+Hikaye dosyasının ilk satırı anlatıcıyı seçer: `anlatici: kadin` (Emel sesi) veya `anlatici: erkek` (Ahmet sesi).
+Script seslendirir, TikTok tarzı tek kelimelik altyazı ekler ve arka planı döngüye alır.
+
+```bash
+python3 hikaye-video.py hikayeler/001-evlenme-abla.txt arka-plan.mp4 cikti.mp4 --hiz +10%
+```
+
 ## Sık kullanılan komutlar
 
 ```bash
