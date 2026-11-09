@@ -52,8 +52,8 @@ def sure_olc(yol):
 
 
 # ---------------------------------------------------------------- SES ----
-def parcala(metin, sinir=2500):
-    """Uzun metni paragraf sınırlarından ~2500 karakterlik parçalara böler."""
+def parcala(metin, sinir=1500):
+    """Uzun metni paragraf sınırlarından ~1500 karakterlik parçalara böler."""
     parcalar, simdiki = [], ""
     for p in [x.strip() for x in metin.split("\n") if x.strip()]:
         if simdiki and len(simdiki) + len(p) > sinir:
@@ -99,7 +99,17 @@ def seslendir(metin, hedef):
     for i, p in enumerate(parcalar):
         pm = os.path.join(hedef + "_parca", f"{i:03d}.mp3")
         print(f"  seslendirme {i + 1}/{len(parcalar)}", flush=True)
-        k = asyncio.run(_tts_parca(p, pm))
+        beklenen = len(p.split())
+        son_kelime = re.sub(r"\W", "", p.split()[-1]).lower()
+        for deneme in range(4):
+            k = asyncio.run(_tts_parca(p, pm))
+            # edge-tts bazen akışı erken keser: son kelime metnin sonuna ulaşmadıysa tekrar dene
+            son_ok = bool(k) and re.sub(r"\W", "", k[-1][2]).lower() == son_kelime
+            if son_ok and len(k) >= 0.9 * beklenen:
+                break
+            print(f"    eksik seslendirme ({len(k)}/{beklenen} kelime), tekrar deneniyor", flush=True)
+        else:
+            sys.exit(f"Parça {i + 1} seslendirilemedi.")
         if not k:
             k = whisper_zamanlari(pm)
         tum += [[b + ofset, s + ofset, t] for b, s, t in k]

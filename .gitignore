@@ -5,3 +5,6 @@ renders/
 *.mp3
 __pycache__/
 .hyperframes/
+reddit-gunlugu/girdi/_*
+reddit-gunlugu/girdi/*.mp4
+reddit-gunlugu/girdi/klipler/
