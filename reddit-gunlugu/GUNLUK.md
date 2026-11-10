@@ -2,7 +2,8 @@
 
 Bu dosya, her gün çalışan zamanlanmış görevin adım adım talimatıdır. Kanal: **Reddit Günlüğü**.
 Kullanıcı Türkçe konuşur; ona yazdığın her mesaj Türkçe, sade ve telefonda okunacak kadar kısa olsun.
-Yayın saatleri (kullanıcı kendisi planlar): **YouTube 19:30, TikTok 21:00** (Türkiye saati).
+Görev her gece/sabaha karşı çalışır; kullanıcı sabah bildirimi görüp videoları gün içinde kendisi yükler.
+Tercih ettiği yayın saatleri: **YouTube 19:30, TikTok 21:00** (Türkiye saati); yükleme saatini kendisi seçebilir.
 
 ## 0. Kurulum (her çalıştırmada)
 ```bash
@@ -12,8 +13,28 @@ which ffmpeg ffprobe   # yoksa: apt-get install -y ffmpeg
 ```
 Font repoda: `fonts/Montserrat-ExtraBold.otf`. Logo ve Minecraft görseli: `girdi/logo.png`, `girdi/minecraft.png`.
 
-## 1. Yeni hikaye yaz
+## 1. Araştır: ne izleniyor?
+Amaç: bugünün hikayesini, şu an en çok izlenen tema ve kanca kalıplarına göre seçmek. 10-15 dakikayı geçirme.
+
+```bash
+# Türkçe Reddit hikaye kanallarının son videoları ve izlenmeleri (YouTube)
+yt-dlp --flat-playlist --playlist-end 30 --print "%(view_count)s	%(title)s" "https://www.youtube.com/@sultanreddit/videos"
+# YouTube araması: güncel Türkçe Reddit hikayeleri
+yt-dlp --flat-playlist --print "%(view_count)s	%(channel)s	%(title)s" "ytsearch30:reddit hikayeleri türkçe"
+yt-dlp --flat-playlist --print "%(view_count)s	%(channel)s	%(title)s" "ytsearch20:reddit hikaye aile intikam"
+```
+- YouTube tek tek video sayfalarını bot engeline takabilir; liste ve arama çalışır. Bir komut başarısız olursa
+  diğerleriyle devam et.
+- Varsa web aramasıyla (WebSearch) son haftalarda Türkiye'de TikTok/YouTube'da konuşulan Reddit hikaye
+  temalarına bak (ör. "reddit hikayeleri tiktok trend", "AITA en çok konuşulan").
+- **Videoları indirme, başkasının hikayesini kopyalama.** Sadece hangi temaların, başlık kalıplarının ve
+  kancaların izlendiğine bak; hikayeyi kendin özgün yaz.
+- Bulduklarını bugünün klasöründe `arastirma.md`'ye kısaca yaz: en çok izlenen 5 başlık (izlenme sayısıyla),
+  öne çıkan temalar, seçtiğin tema ve neden, kullandığın kanca kalıbı.
+
+## 2. Yeni hikaye yaz
 - Önce `bolumler/ARSIV.md`'yi oku. **Konu, olay örgüsü, final ve karakter isimleri önceki bölümlerle aynı olmasın.**
+- Araştırmada en çok izlenen temalardan birini, arşivde olmayan bir açıyla kullan.
 - Bugünün tarihiyle klasör aç: `bolumler/YYYY-AA-GG-kisa-konu/`.
 - Tamamen **özgün** bir hikaye yaz; gerçek kişi, marka veya başka bir yazarın hikayesi olmasın.
 - Tarz: Türkçe, birinci tekil şahıs, Reddit gönderisi gibi ("Bu hesabı sadece bunu anlatmak için açtım…"),
@@ -40,7 +61,7 @@ Font repoda: `fonts/Montserrat-ExtraBold.otf`. Logo ve Minecraft görseli: `gird
 - TikTok açıklaması (en fazla 150 karakter, emoji + `#redditturkiye #hikaye #reddit #keşfet`)
 - Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
 
-## 2. Videoları üret
+## 3. Videoları üret
 ```bash
 cd reddit-gunlugu
 K=bolumler/<bugünün klasörü>
@@ -50,23 +71,24 @@ python3 uret.py teslim  --klasor $K     # tiktok-gonder.mp4, youtube-gonder.mp4 
 ```
 Uzun süren komutları arka planda çalıştır (YouTube render ~12 dk). Seslendirme kesilirse script kendisi tekrar dener.
 
-## 3. Kontrol et
+## 4. Kontrol et
 - `ffprobe` ile süreler: YouTube **≥ 30 dk**, TikTok **9-11 dk**. Dışındaysa metni uzat/kısalt,
   `$K/_*ses*` dosyalarını sil ve tekrar üret.
 - Her videonun başından, ortasından ve sonundan birer kare al ve bak: altyazı okunuyor mu, logo yerinde mi,
   Türkçe harfler (İ, Ş, Ğ) doğru mu, TikTok'un son karesinde kapanış cümlesi var mı.
 
-## 4. Teslim et
-1. `SendUserFile` ile `tiktok-gonder.mp4`, `youtube-gonder.mp4` ve `metadata.md`'yi gönder
+## 5. Teslim et
+1. `SendUserFile` ile `tiktok-gonder.mp4`, `youtube-gonder.mp4`, `metadata.md` ve `hikaye.txt`'yi gönder
    (`status: "proactive"`, `display: "attach"`). Bir dosya sınırı aşarsa `teslim`'i daha düşük `sinir_mb` ile çalıştır.
 2. Google Drive'daki **"Reddit Günlüğü"** klasörüne (id `1sI2YL12nqI-Wj9PToB66bBJUsZYAwqJf`) o günün adıyla
    `metadata.md`'yi metin dosyası olarak yükle. Drive 10 MB üstünü kabul etmez; videoları Drive'a yükleme.
    Drive bağlantısı yoksa veya izin hatası verirse bu adımı atla ve son mesajda söyle.
-3. `bolumler/ARSIV.md`'ye yeni satır ekle. Metin dosyalarını (`hikaye.txt`, `tiktok.txt`, `metadata.md`) ve
+3. `bolumler/ARSIV.md`'ye yeni satır ekle. Metin dosyalarını (`hikaye.txt`, `tiktok.txt`, `metadata.md`, `arastirma.md`) ve
    arşivi commit edip `main`'e push et. Video ve ara dosyalar `.gitignore`'da; onları ekleme.
 
-## 5. Son mesaj (kullanıcıya, Türkçe, kısa)
-- Bugünün hikayesinin adı ve tek cümlelik özeti
+## 6. Son mesaj (kullanıcıya, Türkçe, kısa)
+- "Günaydın" ile başla; bugünün hikayesinin adı ve tek cümlelik özeti
+- Araştırmadan tek cümle: bu temayı neden seçtin (ör. hangi başlık kaç izlenme almış)
 - Video süreleri
-- "YouTube'u 19:30'a, TikTok'u 21:00'e planla" hatırlatması, başlık ve açıklamaların metadata.md'de olduğu
+- Yükleme hatırlatması (tercih: YouTube 19:30, TikTok 21:00), başlık ve açıklamaların metadata.md'de olduğu
 - Bir adım başarısız olduysa ne olduğu, dürüstçe
