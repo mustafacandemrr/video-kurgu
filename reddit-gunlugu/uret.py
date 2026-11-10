@@ -12,6 +12,9 @@ Komutlar:
     python3 uret.py tiktok             -> tiktok.mp4   (1080x1920)
     python3 uret.py test               -> test-youtube.mp4 + test-tiktok.mp4 (30 sn)
     python3 uret.py klipler            -> Pexels'ten dikey klipleri indirir
+    python3 uret.py teslim             -> youtube-gonder.mp4 / tiktok-gonder.mp4 (<380 MiB)
+
+logo.png ve minecraft.png bölüm klasöründe yoksa girdi/ klasöründekiler kullanılır.
 
 Seçenekler: --klasor DIR (girdi/çıktı klasörü), --sure SN (sadece ilk N saniye)
 
@@ -310,6 +313,35 @@ def video_yap(arka, mp3, ass, logo, cikti, W, H, logo_y, sure=None):
     print(f"Hazır: {cikti}")
 
 
+ORTAK = os.path.join(BURA, "girdi")   # paylaşılan logo.png ve minecraft.png
+
+
+def varlik(klasor, ad):
+    """Bölüm klasöründe yoksa ortak girdi/ klasöründekini kullanır."""
+    yol = os.path.join(klasor, ad)
+    return yol if os.path.exists(yol) else os.path.join(ORTAK, ad)
+
+
+def teslim(klasor, sinir_mb=380):
+    """Gönderilebilir küçük kopyalar: *-gonder.mp4 (her biri sinir_mb altında)."""
+    for tur in ("tiktok", "youtube"):
+        kaynak = os.path.join(klasor, f"{tur}.mp4")
+        if not os.path.exists(kaynak):
+            continue
+        hedef = os.path.join(klasor, f"{tur}-gonder.mp4")
+        sure = sure_olc(kaynak)
+        kbps = int(sinir_mb * 8 * 1024 * 1024 / sure / 1000) - 140   # ses + kap payı
+        kbps = max(400, min(kbps, 4000 if tur == "tiktok" else 2500))
+        ek = ["-tune", "stillimage"] if tur == "youtube" else []
+        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", kaynak, "-c:v", "libx264", "-preset", "medium",
+                  *ek, "-b:v", f"{kbps}k", "-maxrate", f"{kbps * 2}k", "-bufsize", f"{kbps * 4}k",
+                  "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", hedef])
+        mb = os.path.getsize(hedef) / 1024 / 1024
+        print(f"Teslim: {hedef} ({mb:.0f} MiB, {sure / 60:.1f} dk)")
+        if mb > 395:
+            sys.exit(f"{hedef} 395 MiB üstünde, daha düşük sinir_mb ile tekrar çalıştırın.")
+
+
 def uret(tur, klasor, sure=None, onek=""):
     if tur == "youtube":
         W, H, metin = 1920, 1080, open(os.path.join(klasor, "hikaye.txt"), encoding="utf-8").read()
@@ -334,22 +366,24 @@ def uret(tur, klasor, sure=None, onek=""):
     ass = os.path.join(klasor, f"_{onek}{tur}.ass")
     ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure)
     if tur == "youtube":
-        arka = youtube_arka_plan(os.path.join(klasor, "minecraft.png"), os.path.join(klasor, "_youtube_bg.mp4"))
+        arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
     else:
-        arka = tiktok_arka_plan(klasor, os.path.join(klasor, "_tiktok_bg.mp4"))
-    video_yap(arka, mp3, ass, os.path.join(klasor, "logo.png"),
+        arka = tiktok_arka_plan(ORTAK, os.path.join(ORTAK, "_tiktok_bg.mp4"))
+    video_yap(arka, mp3, ass, varlik(klasor, "logo.png"),
               os.path.join(klasor, f"{onek}{tur}.mp4"), W, H, round(logo_y), sure)
 
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("komut", choices=["youtube", "tiktok", "test", "klipler"])
+    p.add_argument("komut", choices=["youtube", "tiktok", "test", "klipler", "teslim"])
     p.add_argument("--klasor", default=".")
     p.add_argument("--sure", type=float)
     a = p.parse_args()
     k = os.path.abspath(a.klasor)
     if a.komut == "klipler":
         print(pexels_indir(os.path.join(k, "klipler")))
+    elif a.komut == "teslim":
+        teslim(k)
     elif a.komut == "test":
         for t in ("youtube", "tiktok"):
             uret(t, k, sure=a.sure or 30, onek="test-")
