@@ -331,7 +331,7 @@ def teslim(klasor, sinir_mb=380):
         hedef = os.path.join(klasor, f"{tur}-gonder.mp4")
         sure = sure_olc(kaynak)
         kbps = int(sinir_mb * 8 * 1024 * 1024 / sure / 1000) - 140   # ses + kap payı
-        kbps = max(400, min(kbps, 4000 if tur == "tiktok" else 2500))
+        kbps = max(400, min(kbps, 1500 if tur == "tiktok" else 2500))
         ek = ["-tune", "stillimage"] if tur == "youtube" else []
         calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", kaynak, "-c:v", "libx264", "-preset", "medium",
                   *ek, "-b:v", f"{kbps}k", "-maxrate", f"{kbps * 2}k", "-bufsize", f"{kbps * 4}k",
