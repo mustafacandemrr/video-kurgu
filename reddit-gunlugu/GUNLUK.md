@@ -44,21 +44,33 @@ yt-dlp --flat-playlist --print "%(view_count)s	%(channel)s	%(title)s" "ytsearch2
 - Sahne sahne, diyaloglu yaz. Kötü karakterlerin bile anlaşılır sebepleri olsun. Şiddet, cinsellik, nefret
   söylemi yok; TikTok ve YouTube topluluk kurallarına uygun olsun.
 
+### Kanalın stratejisi (önemli)
+TikTok'un amacı **kitle toplayıp izleyiciyi YouTube'a göndermek**. Bu yüzden TikTok videosu hikayenin
+**özeti değildir** ve **finali asla vermez**: hikayenin **ilk ~10 dakikasıdır** ve en heyecanlı yerde,
+bir uçurum anında (cliffhanger) kesilir. Hikayenin devamı ve finali sadece YouTube'dadır.
+
 ### `hikaye.txt` (YouTube, tamamı)
 - **4.300-4.800 kelime** (Ahmet sesi +%10 hızda dakikada ~110 kelime okur → 39-44 dk; en az 30 dk şart).
 - İlk iki cümle güçlü bir merak kancası olsun.
+- Hikayeyi öyle kur ki **yaklaşık 1.000-1.100. kelime civarında büyük bir dönüm noktası / sır / şok** olsun
+  (TikTok tam orada kesilecek). Kancayı ve ilk 10 dakikayı en güçlü şekilde yaz; ilk 10 dakikada izleyici
+  kötü karakteri tanısın, haksızlığı hissetsin ve "şimdi ne olacak?" diye sorsun.
 
-### `tiktok.txt` (TikTok, ~10 dk)
-- `hikaye.txt`'nin kısaltması: **1.050-1.100 kelime** (~10 dk).
-- Tekrarları, gereksiz detayları, uzun girişleri çıkar; olay örgüsü ve final bozulmasın.
-- **Başa 1-2 cümlelik etkileyici hook** yaz: en çarpıcı anı ya da soruyu öne çek.
-- Kapanış cümlesini **yazma**; script otomatik ekler.
+### `tiktok.txt` (TikTok, ~10 dk, hikayenin başı)
+- Başa **1-2 cümlelik etkileyici hook** yaz: hikayenin en çarpıcı anını veya sorusunu öne çek
+  (ör. ilerideki şok sahneyi ima et), ama finali/çözümü söyleme.
+- Hook'tan sonra `hikaye.txt`'nin **başını aynen** kullan (Reddit başlık cümlesi yerine hook gelir),
+  **özetleme, kısaltma yapma**. Toplam **1.050-1.100 kelime** olacak şekilde bir paragraf sonunda kes.
+- Kestiğin yerden sonra **1-2 cümlelik uçurum cümlesi** ekle: bir sonraki büyük olayı ima et, merakta bırak
+  (ör. "Ve telefonun öbür ucunda duyduğum ilk cümle her şeyi değiştirecekti.").
+- Kapanış cümlesini **yazma**; script otomatik ekler ("Hikayenin devamı ve finali YouTube'da…").
+- Örnek: `bolumler/2026-11-09-fabrika/tiktok.txt`.
 
 ### `metadata.md`
 - YouTube başlığı (en fazla 100 karakter, merak uyandıran, sonunda `| Reddit Hikayeleri`)
 - YouTube açıklaması (3-4 cümle özet, spoiler vermeden; sonunda `#reddit #reddithikayeleri #redditgunlugu`)
 - YouTube etiketleri (10-15 tane, virgülle)
-- TikTok açıklaması (en fazla 150 karakter, emoji + `#redditturkiye #hikaye #reddit #keşfet`)
+- TikTok açıklaması (en fazla 150 karakter, merakta bırakan, "Devamı YouTube'da 👆" ile biten, emoji + `#redditturkiye #hikaye #reddit #keşfet`)
 - Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
 
 ## 3. Videoları üret

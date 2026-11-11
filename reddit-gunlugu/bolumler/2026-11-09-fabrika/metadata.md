@@ -16,9 +16,9 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, aile dramı, intikam hik
 
 ## TikTok
 **Açıklama:**
-Kendi evimde beni garson yaptılar… 2 hafta sonra her şey değişti 😳 #redditturkiye #hikaye #reddit #keşfet
+Anneannemin mektubu her şeyi değiştirdi… Babam 12 yıldır ne saklıyordu? 😳 Devamı YouTube'da 👆 #redditturkiye #hikaye #reddit #keşfet
 
 ## Yüklerken
 - İki platformda da **"yapay zekâ ile oluşturulan içerik"** seçeneğini aç (seslendirme yapay zekâ sesi).
 - YouTube: Ses ve görüntü 1920×1080, 38:49. Kapak için videonun ilk karesi veya Minecraft görseli + başlık.
-- TikTok: 1080×1920, 9:57.
+- TikTok: 1080×1920, 9:41. Hikayenin ilk ~10 dakikası, finali YouTube'da.
