@@ -56,21 +56,44 @@ bir uçurum anında (cliffhanger) kesilir. Hikayenin devamı ve finali sadece Yo
   (TikTok tam orada kesilecek). Kancayı ve ilk 10 dakikayı en güçlü şekilde yaz; ilk 10 dakikada izleyici
   kötü karakteri tanısın, haksızlığı hissetsin ve "şimdi ne olacak?" diye sorsun.
 
-### `tiktok.txt` (TikTok, ~10 dk, hikayenin başı)
-- Başa **1-2 cümlelik etkileyici hook** yaz: hikayenin en çarpıcı anını veya sorusunu öne çek
-  (ör. ilerideki şok sahneyi ima et), ama finali/çözümü söyleme.
+### Rakip analizi (11 Kasım 2026): @sultan.reddit ve @emirreddit
+En çok izlenen Türkçe Reddit TikTok hesapları (video başına ort. 366 bin ve 436 bin izlenme, zirve 2,5 milyon
+ve 1,7 milyon). Analiz edilen en iyi videoların ortak kalıpları; bunları uygula:
+- **Hook = hikayenin tek paragraflık "özeti + intikam hamlesi"** (ilk 10-20 sn, 2-4 cümle). Kahramanın
+  uğradığı haksızlığı ve **kendi yaptığı karşı hamleyi** söyler, ama sonucun nasıl biteceğini söylemez. Sonra
+  hikaye o sahneden detaylıca baştan anlatılmaya başlar. Örnekler:
+  - "Babam 'bu yıl hediye yok' dedi. Kız kardeşim ise bir iPhone ve elmas takılar açıyordu. 'Peki ya ben?'
+    diye sorduğumda annem bana tokat attı. Ben de onların yaşam tarzını finanse eden bütün hesapları iptal ettim."
+  - "Düğünden dakikalar önce nişanlımdan bir mesaj geldi: 'Bunu yapamam.' Nikâh memuruna dönüp 'planlarda
+    ufak bir değişiklik var' dedim. Sonra onun en yakın arkadaşıyla evlendim. 72 saat sonra eski nişanlım
+    bir şans daha için yalvarıyordu."
+  - "Babamın vasiyetinde bana maddi değeri olan hiçbir şey bırakılmadığı söylendiğinde herkes güldü. Ta ki bana
+    kalan şeye ihtiyaçları olana kadar."
+- **Kesim yeri:** Olaylar hızlanırken, bir sahnenin ortasında, hatta bir cümlenin ortasında aniden keserler
+  (ör. "Akşam altıda kapıya tebligatçı geldi." / "Açıldığında beş profili gördüm. Benimki, anneminki…").
+  Ayrı bir "her şey değişecekti" cümlesine gerek yok; kesinti kendisi merak yaratır.
+- **Kapanış (sabit, script ekler):** "İkinci bölümü beklemek istemiyorsan…" kalıbıyla YouTube'a yönlendirirler.
+- **TikTok açıklaması:** Hikayenin ilk cümlesi **BÜYÜK HARFLE** ve "..." ile kesik + 🛑 + "Hikâyenin 2. bölümü
+  profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın" + 2-3 hashtag.
+- Hikayeler genelde aile içi haksızlık (miras/vasiyet, hediye ayrımcılığı, düğün/nişan iptali, aldatma,
+  ailenin "işe yaramaz" dediği kişinin aslında herkesi finanse etmesi) ve **kahramanın sakin ama ezici
+  karşı hamlesi** üzerine.
+
+### `tiktok.txt` (TikTok, hikayenin başı)
+- Başa yukarıdaki kalıpta **2-4 cümlelik özet + karşı hamle hook'u** yaz: haksızlık + kahramanın hamlesi,
+  ama sonucu ve finali söyleme.
 - Hook'tan sonra `hikaye.txt`'nin **başını aynen** kullan (Reddit başlık cümlesi yerine hook gelir),
   **özetleme, kısaltma yapma**. Toplam **1.050-1.100 kelime** olacak şekilde bir paragraf sonunda kes.
-- Kestiğin yerden sonra **1-2 cümlelik uçurum cümlesi** ekle: bir sonraki büyük olayı ima et, merakta bırak
-  (ör. "Ve telefonun öbür ucunda duyduğum ilk cümle her şeyi değiştirecekti.").
-- Kapanış cümlesini **yazma**; script otomatik ekler ("Hikayenin devamı ve finali YouTube'da…").
+- Olaylar hızlanırken, bir sahnenin ortasında kes (gerekirse cümle ortasında). Ayrı bir uçurum cümlesi şart
+  değil; kesinti noktası merak yaratmalı.
+- Kapanış cümlesini **yazma**; script otomatik ekler ("İkinci bölümü beklemek istemiyorsan…").
 - Örnek: `bolumler/2026-11-09-fabrika/tiktok.txt`.
 
 ### `metadata.md`
 - YouTube başlığı (en fazla 100 karakter, merak uyandıran, sonunda `| Reddit Hikayeleri`)
 - YouTube açıklaması (3-4 cümle özet, spoiler vermeden; sonunda `#reddit #reddithikayeleri #redditgunlugu`)
 - YouTube etiketleri (10-15 tane, virgülle)
-- TikTok açıklaması (en fazla 150 karakter, merakta bırakan, "Devamı YouTube'da 👆" ile biten, emoji + `#redditturkiye #hikaye #reddit #keşfet`)
+- TikTok açıklaması (rakip kalıbı): hikayenin ilk cümlesi BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın #redditturkiye #reddithikayeleri #keşfet`
 - Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
 
 ## 3. Videoları üret

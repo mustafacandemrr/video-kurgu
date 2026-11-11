@@ -40,7 +40,7 @@ FONT = "Montserrat ExtraBold"
 SES = "tr-TR-AhmetNeural"
 HIZ = "+10%"
 TURKUAZ = "&H00F5E03E&"          # #3EE0F5, ASS renk sırası BGR
-KAPANIS = "Hikayenin devamı ve finali YouTube'da! Daha fazlası için profildeki linke tıklayın ya da YouTube'da Reddit Günlüğü diye aratın."
+KAPANIS = "İkinci bölümü beklemek istemiyorsan, hikayenin tamamını YouTube kanalımda izleyebilirsin. Profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü kanalını arat."
 PEXELS_ARAMALAR = ["satisfying slime", "soap cutting", "kinetic sand"]
 FPS = 30
 
