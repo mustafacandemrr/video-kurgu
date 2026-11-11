@@ -46,14 +46,14 @@ yt-dlp --flat-playlist --print "%(view_count)s	%(channel)s	%(title)s" "ytsearch2
 
 ### Kanalın stratejisi (önemli)
 TikTok'un amacı **kitle toplayıp izleyiciyi YouTube'a göndermek**. Bu yüzden TikTok videosu hikayenin
-**özeti değildir** ve **finali asla vermez**: hikayenin **ilk ~10 dakikasıdır** ve en heyecanlı yerde,
+**özeti değildir** ve **finali asla vermez**: hikayenin **ilk ~6 dakikasıdır** ve en heyecanlı yerde,
 bir uçurum anında (cliffhanger) kesilir. Hikayenin devamı ve finali sadece YouTube'dadır.
 
 ### `hikaye.txt` (YouTube, tamamı)
 - **4.300-4.800 kelime** (Ahmet sesi +%10 hızda dakikada ~110 kelime okur → 39-44 dk; en az 30 dk şart).
 - İlk iki cümle güçlü bir merak kancası olsun.
-- Hikayeyi öyle kur ki **yaklaşık 1.000-1.100. kelime civarında büyük bir dönüm noktası / sır / şok** olsun
-  (TikTok tam orada kesilecek). Kancayı ve ilk 10 dakikayı en güçlü şekilde yaz; ilk 10 dakikada izleyici
+- Hikayeyi öyle kur ki **yaklaşık 520-560. kelime civarında büyük bir dönüm noktası / sır / şok** olsun
+  (TikTok tam orada kesilecek). Kancayı ve ilk 6 dakikayı en güçlü şekilde yaz; ilk 6 dakikada izleyici
   kötü karakteri tanısın, haksızlığı hissetsin ve "şimdi ne olacak?" diye sorsun.
 
 ### Rakip analizi (11 Kasım 2026): @sultan.reddit ve @emirreddit
@@ -79,21 +79,23 @@ ve 1,7 milyon). Analiz edilen en iyi videoların ortak kalıpları; bunları uyg
   ailenin "işe yaramaz" dediği kişinin aslında herkesi finanse etmesi) ve **kahramanın sakin ama ezici
   karşı hamlesi** üzerine.
 
-### `tiktok.txt` (TikTok, hikayenin başı)
+### `tiktok.txt` ve `tiktok2.txt` (iki TikTok, hikayenin başı, **~6 dk**)
+- Aynı hikayeden **iki ayrı TikTok** yaz: gövde aynı, **hook'lar farklı** (biri hikayenin başındaki
+  haksızlığı, öbürü ilerideki büyük şoku/karşı hamleyi öne çıkarsın). Örnek: `bolumler/2026-11-11-ambulans/`.
 - Başa yukarıdaki kalıpta **2-4 cümlelik özet + karşı hamle hook'u** yaz: haksızlık + kahramanın hamlesi,
   ama sonucu ve finali söyleme.
 - Hook'tan sonra `hikaye.txt`'nin **başını aynen** kullan (Reddit başlık cümlesi yerine hook gelir),
-  **özetleme, kısaltma yapma**. Toplam **1.050-1.100 kelime** olacak şekilde bir paragraf sonunda kes.
+  **özetleme, kısaltma yapma**. Toplam **~560-580 kelime** (Ahmet sesi gerçekte dakikada ~103 kelime okur; kapanışla ~5:45-6:00) olacak şekilde bir paragraf sonunda kes.
 - Olaylar hızlanırken, bir sahnenin ortasında kes (gerekirse cümle ortasında). Ayrı bir uçurum cümlesi şart
   değil; kesinti noktası merak yaratmalı.
 - Kapanış cümlesini **yazma**; script otomatik ekler ("İkinci bölümü beklemek istemiyorsan…").
-- Örnek: `bolumler/2026-11-09-fabrika/tiktok.txt`.
+- Örnek: `bolumler/2026-11-11-ambulans/tiktok.txt` ve `tiktok2.txt`.
 
 ### `metadata.md`
 - YouTube başlığı (en fazla 100 karakter, merak uyandıran, sonunda `| Reddit Hikayeleri`)
 - YouTube açıklaması (3-4 cümle özet, spoiler vermeden; sonunda `#reddit #reddithikayeleri #redditgunlugu`)
 - YouTube etiketleri (10-15 tane, virgülle)
-- TikTok açıklaması (rakip kalıbı): hikayenin ilk cümlesi BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın #redditturkiye #reddithikayeleri #keşfet`
+- İki TikTok açıklaması (rakip kalıbı, her biri kendi hook'unun ilk cümlesiyle): ilk cümle BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın #redditturkiye #reddithikayeleri #keşfet`. İki TikTok'u farklı saatlerde paylaşmasını öner (ör. 13:00 ve 21:00).
 - Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
 
 ## 3. Videoları üret
@@ -102,28 +104,28 @@ cd reddit-gunlugu
 K=bolumler/<bugünün klasörü>
 python3 uret.py tiktok  --klasor $K
 python3 uret.py youtube --klasor $K
-python3 uret.py teslim  --klasor $K     # tiktok-gonder.mp4, youtube-gonder.mp4 (<380 MiB)
+python3 uret.py teslim  --klasor $K     # tiktok-gonder.mp4, tiktok2-gonder.mp4, youtube-gonder.mp4 (<380 MiB)
 ```
 Uzun süren komutları arka planda çalıştır (YouTube render ~12 dk). Seslendirme kesilirse script kendisi tekrar dener.
 
 ## 4. Kontrol et
-- `ffprobe` ile süreler: YouTube **≥ 30 dk**, TikTok **9-11 dk**. Dışındaysa metni uzat/kısalt,
+- `ffprobe` ile süreler: YouTube **≥ 30 dk**, her TikTok **5:30-6:30**. Dışındaysa metni uzat/kısalt,
   `$K/_*ses*` dosyalarını sil ve tekrar üret.
 - Her videonun başından, ortasından ve sonundan birer kare al ve bak: altyazı okunuyor mu, logo yerinde mi,
   Türkçe harfler (İ, Ş, Ğ) doğru mu, TikTok'un son karesinde kapanış cümlesi var mı.
 
 ## 5. Teslim et
-1. `SendUserFile` ile `tiktok-gonder.mp4`, `youtube-gonder.mp4`, `metadata.md` ve `hikaye.txt`'yi gönder
+1. `SendUserFile` ile `tiktok-gonder.mp4`, `tiktok2-gonder.mp4`, `youtube-gonder.mp4`, `metadata.md` ve `hikaye.txt`'yi gönder
    (`status: "proactive"`, `display: "attach"`). Bir dosya sınırı aşarsa `teslim`'i daha düşük `sinir_mb` ile çalıştır.
 2. Google Drive'daki **"Reddit Günlüğü"** klasörüne (id `1sI2YL12nqI-Wj9PToB66bBJUsZYAwqJf`) o günün adıyla
    `metadata.md`'yi metin dosyası olarak yükle. Drive 10 MB üstünü kabul etmez; videoları Drive'a yükleme.
    Drive bağlantısı yoksa veya izin hatası verirse bu adımı atla ve son mesajda söyle.
-3. `bolumler/ARSIV.md`'ye yeni satır ekle. Metin dosyalarını (`hikaye.txt`, `tiktok.txt`, `metadata.md`, `arastirma.md`) ve
+3. `bolumler/ARSIV.md`'ye yeni satır ekle. Metin dosyalarını (`hikaye.txt`, `tiktok.txt`, `tiktok2.txt`, `metadata.md`, `arastirma.md`) ve
    arşivi commit edip `main`'e push et. Video ve ara dosyalar `.gitignore`'da; onları ekleme.
 
 ## 6. Son mesaj (kullanıcıya, Türkçe, kısa)
 - "Günaydın" ile başla; bugünün hikayesinin adı ve tek cümlelik özeti
 - Araştırmadan tek cümle: bu temayı neden seçtin (ör. hangi başlık kaç izlenme almış)
 - Video süreleri
-- Yükleme hatırlatması (tercih: YouTube 19:30, TikTok 21:00), başlık ve açıklamaların metadata.md'de olduğu
+- Yükleme hatırlatması (tercih: YouTube 19:30; TikTok 1 ve 2 farklı saatlerde, ör. 13:00 ve 21:00), başlık ve açıklamaların metadata.md'de olduğu
 - Bir adım başarısız olduysa ne olduğu, dürüstçe

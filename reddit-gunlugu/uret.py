@@ -261,6 +261,60 @@ def mixkit_indir(klasor):
     return alinan
 
 
+# Rakip hesaplardaki gibi çeşitli "satisfying" klipler (Mixkit ücretsiz lisans).
+# Yatay klipler ortadan 9:16 kırpılır; dikey slime klipleri araya serpiştirilir.
+MIXKIT_SATISFYING = [
+    47585, 32085, 36522, 41115, 39699, 50017, 45041, 1973, 47586, 41112, 44862, 50033, 45349, 41611,
+    12726, 32103, 50015, 41120, 45755, 32170, 39693, 48057, 47588, 43437, 9765, 45039, 44863, 41125,
+    47587, 50032, 33490, 32107, 41110, 47830, 52209, 50053, 47833, 41126, 39483,
+]
+
+
+def satisfying_arka_plan(cikti, klip_sn=5.5):
+    """Çeşitli satisfying klipleri 1080x1920, sessiz, ~5,5 sn'lik parçalar halinde birleştirir."""
+    if os.path.exists(cikti):
+        return cikti
+    kdir = os.path.join(ORTAK, "sat_klipler")
+    os.makedirs(kdir, exist_ok=True)
+    yatay = []
+    for i in MIXKIT_SATISFYING:
+        yol = os.path.join(kdir, f"{i}.mp4")
+        if not os.path.exists(yol):
+            try:
+                urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-720.mp4", yol)
+            except Exception as e:
+                print(f"  atlandı {i} ({e})")
+                continue
+        yatay.append(yol)
+    dikey = mixkit_indir(os.path.join(ORTAK, "klipler"))
+    sira, d = [], iter(dikey)
+    for n, y in enumerate(yatay):
+        sira.append(y)
+        if n % 3 == 2:
+            x = next(d, None)
+            if x:
+                sira.append(x)
+    print(f"  {len(sira)} satisfying klip birleştiriliyor")
+    gecici = []
+    for n, k in enumerate(sira):
+        w, h = map(int, subprocess.check_output(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+             "-of", "csv=p=0", k]).decode().strip().split(",")[:2])
+        vf = "scale=1080:1920" if h > w else "scale=-2:1920,crop=1080:1920"
+        g = os.path.join(kdir, f"_parca{n:03d}.mp4")
+        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "1", "-t", str(klip_sn), "-i", k, "-an",
+                  "-vf", f"{vf},fps={FPS},setsar=1,format=yuv420p",
+                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", g])
+        gecici.append(g)
+    lst = os.path.join(kdir, "_liste.txt")
+    with open(lst, "w") as f:
+        f.writelines(f"file '{os.path.abspath(x)}'\n" for x in gecici)
+    calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cikti])
+    for g in gecici:
+        os.remove(g)
+    return cikti
+
+
 def dikey_mi(yol):
     w, h = map(int, subprocess.check_output(
         ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
@@ -324,11 +378,12 @@ def varlik(klasor, ad):
 
 def teslim(klasor, sinir_mb=380):
     """Gönderilebilir küçük kopyalar: *-gonder.mp4 (her biri sinir_mb altında)."""
-    for tur in ("tiktok", "youtube"):
-        kaynak = os.path.join(klasor, f"{tur}.mp4")
+    for ad in tiktok_metinleri(klasor) + ["youtube"]:
+        tur = "youtube" if ad == "youtube" else "tiktok"
+        kaynak = os.path.join(klasor, f"{ad}.mp4")
         if not os.path.exists(kaynak):
             continue
-        hedef = os.path.join(klasor, f"{tur}-gonder.mp4")
+        hedef = os.path.join(klasor, f"{ad}-gonder.mp4")
         sure = sure_olc(kaynak)
         kbps = int(sinir_mb * 8 * 1024 * 1024 / sure / 1000) - 140   # ses + kap payı
         kbps = max(400, min(kbps, 1500 if tur == "tiktok" else 2500))
@@ -342,15 +397,17 @@ def teslim(klasor, sinir_mb=380):
             sys.exit(f"{hedef} 395 MiB üstünde, daha düşük sinir_mb ile tekrar çalıştırın.")
 
 
-def uret(tur, klasor, sure=None, onek=""):
+def uret(tur, klasor, sure=None, onek="", ad=None):
+    """ad: TikTok metin dosyasının adı (tiktok, tiktok2, …); çıktı <ad>.mp4."""
+    ad = ad or tur
     if tur == "youtube":
         W, H, metin = 1920, 1080, open(os.path.join(klasor, "hikaye.txt"), encoding="utf-8").read()
         boyut, metin_y = 100, 650
     else:
         W, H = 1080, 1920
-        yol = os.path.join(klasor, "tiktok.txt")
+        yol = os.path.join(klasor, f"{ad}.txt")
         if not os.path.exists(yol):
-            sys.exit("tiktok.txt yok: önce kısaltılmış metni hazırlayıp onaylayın.")
+            sys.exit(f"{ad}.txt yok: önce TikTok metnini hazırlayın.")
         metin = open(yol, encoding="utf-8").read().strip()
         if KAPANIS not in metin:
             metin += "\n" + KAPANIS
@@ -358,19 +415,26 @@ def uret(tur, klasor, sure=None, onek=""):
     if sure:   # test: yaklaşık süreye yetecek kadar metin (≈2.6 kelime/sn)
         kel = metin.split()
         metin = " ".join(kel[:int(sure * 2.8) + 10])
-    print(f"[{tur}] seslendiriliyor…")
-    mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{tur}_ses"))
+    print(f"[{ad}] seslendiriliyor…")
+    mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"))
     # logo: altyazı bloğunun hemen üstünde, ortalı
     logo_h = round(W * 0.18)
     logo_y = metin_y - boyut * 1.15 - logo_h / 2 - 12
-    ass = os.path.join(klasor, f"_{onek}{tur}.ass")
+    ass = os.path.join(klasor, f"_{onek}{ad}.ass")
     ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure)
     if tur == "youtube":
         arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
     else:
-        arka = tiktok_arka_plan(ORTAK, os.path.join(ORTAK, "_tiktok_bg.mp4"))
+        arka = satisfying_arka_plan(os.path.join(ORTAK, "_tiktok_satisfying_bg.mp4"))
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"),
-              os.path.join(klasor, f"{onek}{tur}.mp4"), W, H, round(logo_y), sure)
+              os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, round(logo_y), sure)
+
+
+def tiktok_metinleri(klasor):
+    """tiktok.txt, tiktok2.txt, … sıralı adlar."""
+    adlar = [os.path.basename(p)[:-4] for p in glob.glob(os.path.join(klasor, "tiktok*.txt"))
+             if re.fullmatch(r"tiktok\d*", os.path.basename(p)[:-4])]
+    return sorted(adlar, key=lambda a: int(a[6:] or 1))
 
 
 def main():
@@ -387,6 +451,12 @@ def main():
     elif a.komut == "test":
         for t in ("youtube", "tiktok"):
             uret(t, k, sure=a.sure or 30, onek="test-")
+    elif a.komut == "tiktok":
+        adlar = tiktok_metinleri(k)
+        if not adlar:
+            sys.exit("tiktok.txt yok: önce TikTok metnini hazırlayın.")
+        for ad in adlar:          # tiktok.txt, tiktok2.txt, … her biri ayrı video
+            uret("tiktok", k, sure=a.sure, ad=ad)
     else:
         uret(a.komut, k, sure=a.sure)
 
