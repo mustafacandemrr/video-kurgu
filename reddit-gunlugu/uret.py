@@ -325,38 +325,35 @@ def mixkit_indir(klasor):
 
 # Rakip hesaplardaki gibi çeşitli "satisfying" klipler (Mixkit ücretsiz lisans).
 # Yatay klipler ortadan 9:16 kırpılır; dikey slime klipleri araya serpiştirilir.
-MIXKIT_SATISFYING = [
-    47585, 32085, 36522, 41115, 39699, 50017, 45041, 1973, 47586, 41112, 44862, 50033, 45349, 41611,
-    12726, 32103, 50015, 41120, 45755, 32170, 39693, 48057, 47588, 43437, 9765, 45039, 44863, 41125,
-    47587, 50032, 33490, 32107, 41110, 47830, 52209, 50053, 47833, 41126, 39483,
-]
+# Rakip (@emirreddit) tarzı arka plan: fabrika/makine, kıvılcım, ahşap kesme, araba köpük-cila, halı/koltuk
+# temizleme, pasta/çikolata yakın çekimleri. Mixkit ücretsiz lisans (13 Kasım 2026'da seçildi). Yatay; 9:16 ortadan kırpılır.
+EMIR_TARZI = [2230, 2233, 2236, 2250, 2252, 2861, 4730, 4750, 14785, 16059, 17024, 17675, 20770, 20906, 32817, 34612, 39692, 39699, 41112, 41115, 41117, 44862, 44863, 45039, 45041, 45674, 45755, 46082, 46965, 47257, 47291, 47295, 47586, 47588, 47642, 47830, 48836, 50015, 50017, 50053, 52208]
+MIXKIT_SATISFYING = EMIR_TARZI
 
 
-def satisfying_arka_plan(cikti, klip_sn=5.5, varyant=0):
+def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
     """Çeşitli satisfying klipleri 1080x1920, sessiz, ~5,5 sn'lik parçalar halinde birleştirir.
     varyant>0: aynı hikayenin yeniden paylaşımı için farklı klip sırası ve farklı kesitler (rakip böyle yapıyor)."""
     if os.path.exists(cikti):
         return cikti
-    kdir = os.path.join(ORTAK, "sat_klipler")
+    kdir = os.path.join(ORTAK, "emir_klipler")
     os.makedirs(kdir, exist_ok=True)
     yatay = []
     for i in MIXKIT_SATISFYING:
         yol = os.path.join(kdir, f"{i}.mp4")
         if not os.path.exists(yol):
             try:
-                urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-720.mp4", yol)
+                try:
+                    urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-1080.mp4", yol)
+                except Exception:
+                    urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-720.mp4", yol)
             except Exception as e:
                 print(f"  atlandı {i} ({e})")
+                if os.path.exists(yol):
+                    os.remove(yol)
                 continue
         yatay.append(yol)
-    dikey = mixkit_indir(os.path.join(ORTAK, "klipler"))
-    sira, d = [], iter(dikey)
-    for n, y in enumerate(yatay):
-        sira.append(y)
-        if n % 3 == 2:
-            x = next(d, None)
-            if x:
-                sira.append(x)
+    sira = list(yatay)   # rakipte slime yok; sadece makine/süreç yakın çekimleri
     if varyant:
         import random
         random.Random(varyant).shuffle(sira)
@@ -497,7 +494,7 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
     else:
         v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2
-        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_satisfying_bg{'' if v == 0 else v}.mp4"), varyant=v)
+        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_emir_bg{'' if v == 0 else v}.mp4"), varyant=v)
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"),
               os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, round(logo_y), sure, kose_logo=(tur != "youtube"))
 
