@@ -332,8 +332,9 @@ MIXKIT_SATISFYING = [
 ]
 
 
-def satisfying_arka_plan(cikti, klip_sn=5.5):
-    """Çeşitli satisfying klipleri 1080x1920, sessiz, ~5,5 sn'lik parçalar halinde birleştirir."""
+def satisfying_arka_plan(cikti, klip_sn=5.5, varyant=0):
+    """Çeşitli satisfying klipleri 1080x1920, sessiz, ~5,5 sn'lik parçalar halinde birleştirir.
+    varyant>0: aynı hikayenin yeniden paylaşımı için farklı klip sırası ve farklı kesitler (rakip böyle yapıyor)."""
     if os.path.exists(cikti):
         return cikti
     kdir = os.path.join(ORTAK, "sat_klipler")
@@ -356,7 +357,10 @@ def satisfying_arka_plan(cikti, klip_sn=5.5):
             x = next(d, None)
             if x:
                 sira.append(x)
-    print(f"  {len(sira)} satisfying klip birleştiriliyor")
+    if varyant:
+        import random
+        random.Random(varyant).shuffle(sira)
+    print(f"  {len(sira)} satisfying klip birleştiriliyor (varyant {varyant})")
     gecici = []
     for n, k in enumerate(sira):
         w, h = map(int, subprocess.check_output(
@@ -364,7 +368,7 @@ def satisfying_arka_plan(cikti, klip_sn=5.5):
              "-of", "csv=p=0", k]).decode().strip().split(",")[:2])
         vf = "scale=1080:1920" if h > w else "scale=-2:1920,crop=1080:1920"
         g = os.path.join(kdir, f"_parca{n:03d}.mp4")
-        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "1", "-t", str(klip_sn), "-i", k, "-an",
+        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{max(0.0, min(1 + 2.5 * (varyant % 3), sure_olc(k) - klip_sn - 0.2)):.2f}", "-t", str(klip_sn), "-i", k, "-an",
                   "-vf", f"{vf},fps={FPS},setsar=1,format=yuv420p",
                   "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", g])
         gecici.append(g)
@@ -492,7 +496,8 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
     if tur == "youtube":
         arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
     else:
-        arka = satisfying_arka_plan(os.path.join(ORTAK, "_tiktok_satisfying_bg.mp4"))
+        v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2
+        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_satisfying_bg{'' if v == 0 else v}.mp4"), varyant=v)
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"),
               os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, round(logo_y), sure, kose_logo=(tur != "youtube"))
 

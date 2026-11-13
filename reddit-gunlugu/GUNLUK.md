@@ -101,7 +101,19 @@ artık uygulanan kurallar (ayrıntı: `ANALIZ-TIKTOK.md`, 13 Kasım bölümü):
 - **Yeniden yükleme:** Emir aynı videoyu 2-3 kez yüklüyor (aynı video 36 B / 65 B / 148 B; 259 B / 493 B aldı).
   Son mesajda kullanıcıya hatırlat: ilk yükleme düşük kalırsa ertesi gün aynısını tekrar yüklesin.
 
-### `tiktok.txt` ve `tiktok2.txt` (iki TikTok, hikayenin başı, **~5:00-5:10**)
+### Konu seçimi ve 3 versiyon (13 Kasım 2026, kullanıcı kararı)
+Kullanıcı: "Videoda hiçbir şey dikkatimi çekmiyor; Emir Reddit'in hook'larını al, aynı hikayeyi farklı editlerle tekrar paylaşıyorlar."
+- **Konu:** Her gün @emirreddit'in (ve Sultan Reddit'in) en çok izlenen hikayelerinden, arşivde olmayan birinin
+  **konusunu ve hook yapısını** al; olayları, karakterleri ve finali **kendin yaz** (metni/videoyu kopyalama).
+  Liste: `yt-dlp --flat-playlist --print "%(view_count)s|||%(description)s" "https://www.tiktok.com/@emirreddit" | sort -rn`.
+  Henüz kullanılmayanlar (13 Kasım): kiracılar kira indirimi (902 B), "babam bunu bilmiyor ama" (777 B),
+  yeğen "gerçek torunlar önce yer" (724 B), kocanın yabancı dilde sırrı (722 B), annemin düğünü (493 B),
+  kocamın günlüğü (423 B), nişanlının sesi açık video (418 B), Disney biletleri (201 B), tatil masrafı yeğenler (148 B).
+- **3 TikTok:** `tiktok.txt`, `tiktok2.txt`, `tiktok3.txt`; gövde aynı, hook'lar farklı (1: Emir'in yapısı birebir,
+  2: gizli gerçek/şok, 3: hakaret alıntısı). `uret.py` her versiyona farklı arka plan sırası ve kesit verir.
+  metadata.md'de üç açıklama ve paylaşım saatleri olsun.
+
+### `tiktok.txt`, `tiktok2.txt`, `tiktok3.txt` (üç TikTok, hikayenin başı, **~5:00-5:10**)
 - Aynı hikayeden **iki ayrı TikTok** yaz: gövde aynı, **hook'lar farklı** (biri hikayenin başındaki
   haksızlığı, öbürü ilerideki büyük şoku/karşı hamleyi öne çıkarsın). Örnek: `bolumler/2026-11-11-ambulans/`.
 - Başa **Emir kalıbında tek güçlü ilk cümle** + en fazla 2-3 kısa cümle (haksızlık/sır + kahramanın hamlesi) yaz;
