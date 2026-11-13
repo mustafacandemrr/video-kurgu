@@ -46,13 +46,13 @@ yt-dlp --flat-playlist --print "%(view_count)s	%(channel)s	%(title)s" "ytsearch2
 
 ### Kanalın stratejisi (önemli)
 TikTok'un amacı **kitle toplayıp izleyiciyi YouTube'a göndermek**. Bu yüzden TikTok videosu hikayenin
-**özeti değildir** ve **finali asla vermez**: hikayenin **ilk ~6 dakikasıdır** ve en heyecanlı yerde,
+**özeti değildir** ve **finali asla vermez**: hikayenin **başıdır (~5:00-5:10)** ve en heyecanlı yerde,
 bir uçurum anında (cliffhanger) kesilir. Hikayenin devamı ve finali sadece YouTube'dadır.
 
 ### `hikaye.txt` (YouTube, tamamı)
 - **4.300-4.800 kelime** (Ahmet sesi +%10 hızda dakikada ~110 kelime okur → 39-44 dk; en az 30 dk şart).
 - İlk iki cümle güçlü bir merak kancası olsun.
-- Hikayeyi öyle kur ki **yaklaşık 520-560. kelime civarında büyük bir dönüm noktası / sır / şok** olsun
+- Hikayeyi öyle kur ki **yaklaşık 520-560. kelime civarında büyük bir dönüm noktası / sır / şok** olsun, **800-850. kelime civarında da ikinci bir uçurum** olsun
   (TikTok tam orada kesilecek). Kancayı ve ilk 6 dakikayı en güçlü şekilde yaz; ilk 6 dakikada izleyici
   kötü karakteri tanısın, haksızlığı hissetsin ve "şimdi ne olacak?" diye sorsun.
 
@@ -79,13 +79,35 @@ ve 1,7 milyon). Analiz edilen en iyi videoların ortak kalıpları; bunları uyg
   ailenin "işe yaramaz" dediği kişinin aslında herkesi finanse etmesi) ve **kahramanın sakin ama ezici
   karşı hamlesi** üzerine.
 
-### `tiktok.txt` ve `tiktok2.txt` (iki TikTok, hikayenin başı, **~6 dk**)
+### Emir Reddit kalıbı (13 Kasım 2026 güncellemesi, kullanıcı isteği: "Emir Reddit'in hook'larını kullan")
+Kullanıcı "şu an izlenmiyor" dedi; @emirreddit (TikTok, video başı 200 B-1,8 M) ile karşılaştırınca bulunan farklar ve
+artık uygulanan kurallar (ayrıntı: `ANALIZ-TIKTOK.md`, 13 Kasım bölümü):
+- **Duraklama yok:** Emir'de 0,25 sn üstü sessizlik yok; bizde her cümle sonunda ~1,2 sn vardı (sürenin %30'u).
+  `uret.py` artık TikTok sesinde tüm sessizlikleri 0,1 sn'ye kısaltıyor ve +%20 hızla okutuyor (YouTube değişmedi).
+- **Süre 5:00-5:10** (Emir'in bütün videoları 300-310 sn). TikTok metni bu yüzden **~830-850 kelime** (hook dahil).
+- **Altyazı:** ekranda tek kelime, kırmızı, ince siyah kenar; logo ortada değil, sağ altta küçük. (`uret.py` otomatik.)
+- **Hook = tek, somut, ilk cümle**; açıklama bu cümlenin ilk ~10 kelimesi + "...". Emir'in en çok izlenen kalıpları:
+  - Sır/kulak misafiri: "BABAM BUNU BİLMİYOR AMA BİR ADAMA…" (777 B), "KOCAM, ANNESİNE KORECE OLARAK…SÖYLEMİŞTİ" (722 B)
+  - Haksızlık + somut eşya karşıtlığı: "BABAM 'BU YIL HEDİYE YOK' DEDİ, KIZ KARDEŞİM İSE BİR İPHONE, 5.000 DOLARLIK…" (926 B)
+  - Hakaret alıntısı: "KARDEŞİM DEDİ Kİ: 'AİLENİN İŞE YARAMAZ İNSANLARINI ATALIM. SEN ÖNCE GİDERSİN'" (798 B),
+    "YEĞENİM 7 YAŞINDAKİ OĞLUMA BAKIP 'SADECE BÜYÜKANNENİN GERÇEK TORUNLARI ÖNCE YER'" (724 B)
+  - İroni/paradoks: "BABAMIN VASİYETİNDE BANA MADDİ DEĞERİ OLAN HİÇBİR ŞEY BIRAKILMADIĞI…" (1,8 M),
+    "ANNEMİN DÜĞÜNÜNDEYDİM. ORADA OLDUĞUMDAN HABERİ BİLE YOKTU" (493 B)
+  - Talep + beklenmedik karşılık: "KİRACILARIM KİRAYI DÜŞÜRMEMİ İSTEDİ. BEN DE…" (902 B)
+  - Kaza ile ortaya çıkan gerçek: "NİŞANLIM INSTAGRAM'A BİR VİDEO YÜKLEDİ VE SESİNİ KAPATMAYI UNUTTU" (418 B)
+  İki TikTok'tan birinde mutlaka bu kalıplardan birini **kelimesi kelimesine yapı olarak** kullan (içerik özgün kalsın).
+- **Açıklama formatı (Emir'in birebir yapısı):** `İLK CÜMLENİN İLK ~10 KELİMESİ... 🛑 Hikâyenin 2. Bölümü profilimdeki
+  bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye` (tek hashtag).
+- **Yeniden yükleme:** Emir aynı videoyu 2-3 kez yüklüyor (aynı video 36 B / 65 B / 148 B; 259 B / 493 B aldı).
+  Son mesajda kullanıcıya hatırlat: ilk yükleme düşük kalırsa ertesi gün aynısını tekrar yüklesin.
+
+### `tiktok.txt` ve `tiktok2.txt` (iki TikTok, hikayenin başı, **~5:00-5:10**)
 - Aynı hikayeden **iki ayrı TikTok** yaz: gövde aynı, **hook'lar farklı** (biri hikayenin başındaki
   haksızlığı, öbürü ilerideki büyük şoku/karşı hamleyi öne çıkarsın). Örnek: `bolumler/2026-11-11-ambulans/`.
-- Başa yukarıdaki kalıpta **2-4 cümlelik özet + karşı hamle hook'u** yaz: haksızlık + kahramanın hamlesi,
-  ama sonucu ve finali söyleme.
+- Başa **Emir kalıbında tek güçlü ilk cümle** + en fazla 2-3 kısa cümle (haksızlık/sır + kahramanın hamlesi) yaz;
+  sonucu ve finali söyleme. İlk cümle tek başına açıklamaya yazılacak; somut, alıntılı, şaşırtıcı olsun.
 - Hook'tan sonra `hikaye.txt`'nin **başını aynen** kullan (Reddit başlık cümlesi yerine hook gelir),
-  **özetleme, kısaltma yapma**. Toplam **~560-580 kelime** (Ahmet sesi gerçekte dakikada ~103 kelime okur; kapanışla ~5:45-6:00) olacak şekilde bir paragraf sonunda kes.
+  **özetleme, kısaltma yapma**. Toplam **~830-850 kelime** (duraklamasız +%20 seste dakikada ~165 kelime; kapanışla ~5:00-5:10) olacak şekilde kes.
 - Olaylar hızlanırken, bir sahnenin ortasında kes (gerekirse cümle ortasında). Ayrı bir uçurum cümlesi şart
   değil; kesinti noktası merak yaratmalı.
 - Kapanış cümlesini **yazma**; script otomatik ekler ("İkinci bölümü beklemek istemiyorsan…").
@@ -95,7 +117,7 @@ ve 1,7 milyon). Analiz edilen en iyi videoların ortak kalıpları; bunları uyg
 - YouTube başlığı (en fazla 100 karakter, merak uyandıran, sonunda `| Reddit Hikayeleri`)
 - YouTube açıklaması (3-4 cümle özet, spoiler vermeden; sonunda `#reddit #reddithikayeleri #redditgunlugu`)
 - YouTube etiketleri (10-15 tane, virgülle)
-- İki TikTok açıklaması (rakip kalıbı, her biri kendi hook'unun ilk cümlesiyle): ilk cümle BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın #redditturkiye #reddithikayeleri #keşfet`. İki TikTok'u farklı saatlerde paylaşmasını öner (ör. 13:00 ve 21:00).
+- İki TikTok açıklaması (Emir formatı, her biri kendi hook'unun ilk cümlesiyle): ilk cümlenin ilk ~10 kelimesi BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye`. İki TikTok'u farklı saatlerde paylaşmasını öner (ör. 13:00 ve 21:00).
 - Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
 
 ## 3. Videoları üret
@@ -109,13 +131,16 @@ python3 uret.py teslim  --klasor $K     # tiktok-gonder.mp4, tiktok2-gonder.mp4,
 Uzun süren komutları arka planda çalıştır (YouTube render ~12 dk). Seslendirme kesilirse script kendisi tekrar dener.
 
 ## 4. Kontrol et
-- `ffprobe` ile süreler: YouTube **≥ 30 dk**, her TikTok **5:30-6:30**. Dışındaysa metni uzat/kısalt,
+- `ffprobe` ile süreler: YouTube **≥ 30 dk**, her TikTok **4:55-5:15**. Dışındaysa metni uzat/kısalt,
   `$K/_*ses*` dosyalarını sil ve tekrar üret.
 - Her videonun başından, ortasından ve sonundan birer kare al ve bak: altyazı okunuyor mu, logo yerinde mi,
   Türkçe harfler (İ, Ş, Ğ) doğru mu, TikTok'un son karesinde kapanış cümlesi var mı.
 
 ## 5. Teslim et
-1. `SendUserFile` ile `tiktok-gonder.mp4`, `tiktok2-gonder.mp4`, `youtube-gonder.mp4`, `metadata.md` ve `hikaye.txt`'yi gönder
+1. `SendUserFile` ile `tiktok-gonder.mp4`, `tiktok2-gonder.mp4`, YouTube, `metadata.md` ve `hikaye.txt`'yi gönder.
+   Kullanıcı telefonda 368 MB'lık YouTube dosyasını indiremedi: önce 720p küçük kopyayı gönder
+   (`ffmpeg -i youtube.mp4 -vf scale=1280:720 -c:v libx264 -preset veryfast -b:v 420k -maxrate 600k -bufsize 1200k -c:a aac -b:a 96k -movflags +faststart youtube-kucuk.mp4`, ~155 MB),
+   sonra ayrıca `youtube-gonder.mp4`'ü
    (`status: "proactive"`, `display: "attach"`). Bir dosya sınırı aşarsa `teslim`'i daha düşük `sinir_mb` ile çalıştır.
 2. Google Drive'daki **"Reddit Günlüğü"** klasörüne (id `1sI2YL12nqI-Wj9PToB66bBJUsZYAwqJf`) o günün adıyla
    `metadata.md`'yi metin dosyası olarak yükle. Drive 10 MB üstünü kabul etmez; videoları Drive'a yükleme.

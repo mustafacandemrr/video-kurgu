@@ -38,7 +38,10 @@ BURA = os.path.dirname(os.path.abspath(__file__))
 FONT_DIR = os.path.join(BURA, "fonts")
 FONT = "Montserrat ExtraBold"
 SES = "tr-TR-AhmetNeural"
-HIZ = "+10%"
+HIZ = "+10%"          # YouTube
+HIZ_TIKTOK = "+20%"   # TikTok: rakip (@emirreddit) ~5,5 hece/sn konuşuyor
+BOSLUK_TIKTOK = 0.10  # TikTok: kelimeler arası en uzun sessizlik (sn); rakipte 0,25 sn üstü duraklama yok
+KIRMIZI = "&H002A1AFF&"          # #FF1A2A, rakip altyazı rengi (BGR)
 TURKUAZ = "&H00F5E03E&"          # #3EE0F5, ASS renk sırası BGR
 KAPANIS = "İkinci bölümü beklemek istemiyorsan, hikayenin tamamını YouTube kanalımda izleyebilirsin. Profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü kanalını arat."
 PEXELS_ARAMALAR = ["satisfying slime", "soap cutting", "kinetic sand"]
@@ -68,10 +71,10 @@ def parcala(metin, sinir=1500):
     return parcalar
 
 
-async def _tts_parca(metin, mp3):
+async def _tts_parca(metin, mp3, hiz=HIZ):
     import edge_tts
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
-    com = edge_tts.Communicate(metin, SES, rate=HIZ, boundary="WordBoundary", proxy=proxy)
+    com = edge_tts.Communicate(metin, SES, rate=hiz, boundary="WordBoundary", proxy=proxy)
     kelimeler = []
     with open(mp3, "wb") as f:
         async for c in com.stream():
@@ -91,7 +94,7 @@ def whisper_zamanlari(mp3):
     return [[w.start, w.end, w.word.strip()] for s in segs for w in s.words]
 
 
-def seslendir(metin, hedef):
+def seslendir(metin, hedef, hiz=HIZ):
     """metin -> hedef.mp3 + hedef.json (kelime zamanları). Varsa yeniden üretmez."""
     mp3, js = hedef + ".mp3", hedef + ".json"
     if os.path.exists(mp3) and os.path.exists(js):
@@ -105,7 +108,7 @@ def seslendir(metin, hedef):
         beklenen = len(p.split())
         son_kelime = re.sub(r"\W", "", p.split()[-1]).lower()
         for deneme in range(4):
-            k = asyncio.run(_tts_parca(p, pm))
+            k = asyncio.run(_tts_parca(p, pm, hiz))
             # edge-tts bazen akışı erken keser: son kelime metnin sonuna ulaşmadıysa tekrar dene
             son_ok = bool(k) and re.sub(r"\W", "", k[-1][2]).lower() == son_kelime
             if son_ok and len(k) >= 0.9 * beklenen:
@@ -125,6 +128,54 @@ def seslendir(metin, hedef):
               "-c:a", "libmp3lame", "-b:a", "128k", mp3])
     json.dump(tum, open(js, "w", encoding="utf-8"), ensure_ascii=False)
     return mp3, tum
+
+
+def sessizlik_kisalt(mp3, kelimeler, hedef, en_fazla=BOSLUK_TIKTOK):
+    """Kelimeler arası en_fazla saniyeden uzun boşlukları kısaltır; kelime zamanlarını kaydırır.
+    Rakip TikTok'larda cümle arası duraklama yok; bizde edge-tts her cümlede ~1 sn susuyordu."""
+    import numpy as np
+    out_mp3, out_js = hedef + ".mp3", hedef + ".json"
+    if os.path.exists(out_mp3) and os.path.exists(out_js):
+        return out_mp3, json.load(open(out_js, encoding="utf-8"))
+    SR = 24000
+    ham = subprocess.check_output(["ffmpeg", "-nostdin", "-v", "error", "-i", mp3, "-ac", "1", "-ar", str(SR),
+                                   "-f", "s16le", "-"])
+    x = np.frombuffer(ham, np.int16)
+    # Sessizlikleri sesin kendisinden ölç (edge-tts kelime bitişleri sessizliği kısa gösteriyor)
+    log = subprocess.run(["ffmpeg", "-nostdin", "-hide_banner", "-i", mp3, "-af",
+                          f"silencedetect=n=-38dB:d={en_fazla:.2f}", "-f", "null", "-"],
+                         capture_output=True, text=True).stderr
+    bas = [float(v) for v in re.findall(r"silence_start: ([0-9.]+)", log)]
+    son = [float(v) for v in re.findall(r"silence_end: ([0-9.]+)", log)]
+    kes = []   # (başlangıç, bitiş) saniye: silinecek aralıklar
+    for s, e in zip(bas, son):
+        if e - s > en_fazla:
+            kes.append((s + en_fazla / 2, e - en_fazla / 2))
+    parcalar, onceki = [], 0
+    for s, e in kes:
+        parcalar.append(x[onceki:int(s * SR)])
+        onceki = int(e * SR)
+    parcalar.append(x[onceki:])
+    y = np.concatenate(parcalar)
+    yeni = []
+    def esle(z):   # eski zaman -> yeni zaman
+        k = 0.0
+        for s, e in kes:
+            if z >= e:
+                k += e - s
+            elif z > s:
+                return s - k
+            else:
+                break
+        return z - k
+    for w in kelimeler:
+        yeni.append([esle(w[0]), esle(w[1]), w[2]])
+    p = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "s16le", "-ar", str(SR), "-ac", "1",
+                          "-i", "-", "-c:a", "libmp3lame", "-b:a", "128k", out_mp3], stdin=subprocess.PIPE)
+    p.communicate(y.tobytes())
+    json.dump(yeni, open(out_js, "w", encoding="utf-8"), ensure_ascii=False)
+    print(f"  sessizlik kısaltıldı: {len(x) / SR:.0f} sn -> {len(y) / SR:.0f} sn")
+    return out_mp3, yeni
 
 
 # ----------------------------------------------------------- ALTYAZI ----
@@ -160,7 +211,7 @@ def ts(s):
     return f"{int(s // 3600)}:{int(s % 3600 // 60):02d}:{s % 60:05.2f}"
 
 
-def ass_yaz(kelimeler, yol, W, H, boyut, metin_y, sinir=None):
+def ass_yaz(kelimeler, yol, W, H, boyut, metin_y, sinir=None, tek_kelime=False):
     """Grup ekranda dururken o an okunan kelime turkuaz yanar."""
     sat = [f"""[Script Info]
 ScriptType: v4.00+
@@ -171,9 +222,20 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Ana,{FONT},{boyut},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,{max(4, boyut // 11)},2,5,{W // 12},{W // 12},0,1
+Style: Kirmizi,{FONT},{boyut},{KIRMIZI},{KIRMIZI},&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,{max(3, boyut // 16)},3,5,{W // 20},{W // 20},0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"""]
+    if tek_kelime:   # rakip stili: ekranda tek kelime, kırmızı
+        for i, w in enumerate(kelimeler):
+            if sinir and w[0] >= sinir:
+                continue
+            bit = kelimeler[i + 1][0] if i + 1 < len(kelimeler) else w[1] + 0.4
+            bit = min(bit, w[1] + 0.5)
+            t = tr_buyuk(re.sub(r'[“”"«»]', "", w[2].strip()))
+            sat.append(f"Dialogue: 0,{ts(w[0])},{ts(bit)},Kirmizi,,0,0,0,,{{\\pos({W // 2},{metin_y})}}{t}")
+        open(yol, "w", encoding="utf-8").write("\n".join(sat) + "\n")
+        return
     gs = gruplar(kelimeler)
     for gi, g in enumerate(gs):
         g_son = gs[gi + 1][0][0] if gi + 1 < len(gs) else g[-1][1] + 0.4
@@ -352,13 +414,14 @@ def tiktok_arka_plan(klasor, cikti):
 
 
 # ------------------------------------------------------------ VİDEO ----
-def video_yap(arka, mp3, ass, logo, cikti, W, H, logo_y, sure=None):
+def video_yap(arka, mp3, ass, logo, cikti, W, H, logo_y, sure=None, kose_logo=False):
     """Arka planı döngüler; logo ve ASS altyazıyı gömer; sesi ekler."""
     toplam = sure if sure else sure_olc(mp3) + 0.6
-    logo_w = round(W * 0.18)
+    logo_w = round(W * (0.09 if kose_logo else 0.18))
+    konum = f"x=W-w-{W // 25}:y=H-h-{H // 9}" if kose_logo else f"x=(W-w)/2:y={logo_y}-h/2"
     fc = (f"[0:v]scale={W}:{H},setsar=1[bg];"
           f"[2:v]scale={logo_w}:-1[lg];"
-          f"[bg][lg]overlay=x=(W-w)/2:y={logo_y}-h/2[v1];"
+          f"[bg][lg]overlay={konum}[v1];"
           f"[v1]ass='{ass}':fontsdir='{FONT_DIR}'[v]")
     calistir(["ffmpeg", "-nostdin", "-v", "error", "-stats", "-y", "-stream_loop", "-1", "-i", arka,
               "-i", mp3, "-i", logo, "-filter_complex", fc, "-map", "[v]", "-map", "1:a",
@@ -411,23 +474,27 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         metin = open(yol, encoding="utf-8").read().strip()
         if KAPANIS not in metin:
             metin += "\n" + KAPANIS
-        boyut, metin_y = 122, 1010
+        boyut, metin_y = 104, 960
     if sure:   # test: yaklaşık süreye yetecek kadar metin (≈2.6 kelime/sn)
         kel = metin.split()
         metin = " ".join(kel[:int(sure * 2.8) + 10])
     print(f"[{ad}] seslendiriliyor…")
-    mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"))
+    if tur == "youtube":
+        mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"))
+    else:
+        mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"), hiz=HIZ_TIKTOK)
+        mp3, kelimeler = sessizlik_kisalt(mp3, kelimeler, os.path.join(klasor, f"_{onek}{ad}_ses_sik"))
     # logo: altyazı bloğunun hemen üstünde, ortalı
     logo_h = round(W * 0.18)
     logo_y = metin_y - boyut * 1.15 - logo_h / 2 - 12
     ass = os.path.join(klasor, f"_{onek}{ad}.ass")
-    ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure)
+    ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure, tek_kelime=(tur != "youtube"))
     if tur == "youtube":
         arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
     else:
         arka = satisfying_arka_plan(os.path.join(ORTAK, "_tiktok_satisfying_bg.mp4"))
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"),
-              os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, round(logo_y), sure)
+              os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, round(logo_y), sure, kose_logo=(tur != "youtube"))
 
 
 def tiktok_metinleri(klasor):

@@ -16,13 +16,13 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, aile dramı, intikam hik
 
 ## TikTok 1 (tiktok-gonder.mp4) — haksızlık hook'u
 **Açıklama:**
-KIZ KARDEŞİM TELEFONUMDA BANKA HESABIMI GÖRDÜ: DÖRT MİLYON İKİ YÜZ BİN LİRA... 🛑 Hikâyenin 2. bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın #redditturkiye #reddithikayeleri #keşfet
+KIZ KARDEŞİM TELEFONUMDA DÖRT MİLYON LİRAM OLDUĞUNU GÖRDÜ VE AİLEM O PARAYI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — şok hook'u, aynı hikaye
+## TikTok 2 (tiktok2-gonder.mp4) — "Babam bunu bilmiyor ama" hook'u
 **Açıklama:**
-BABAM ON YEDİ YIL ÖNCE OTUZ SEKİZ AİLENİN BİRİKİMİNİ BATIRDI VE TEK GÜN HAPİS YATMADI... 🛑 Hikâyenin 2. bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın #redditturkiye #reddithikayeleri #keşfet
+BABAM BUNU BİLMİYOR AMA DOKUZ YILDIR ONUN DOLANDIRDIĞI OTUZ SEKİZ AİLEYE... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## Yüklerken
 - İki platformda da **"yapay zekâ ile oluşturulan içerik"** seçeneğini aç (seslendirme yapay zekâ sesi).
-- TikTok 1 ve TikTok 2'yi **farklı saatlerde** paylaş (ör. 13:00 ve 21:00).
+- TikTok 1 ve TikTok 2'yi **farklı saatlerde** paylaş (ör. 13:00 ve 21:00). Rakip (@emirreddit) aynı videoyu 2-3 kez yeniden yüklüyor; ilk yükleme düşük kalırsa ertesi gün aynı videoyu tekrar yükle.
 - YouTube: 19:30.
