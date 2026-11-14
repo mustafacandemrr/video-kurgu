@@ -132,6 +132,25 @@ Kullanıcı: "Videoda hiçbir şey dikkatimi çekmiyor; Emir Reddit'in hook'lar�
 - İki TikTok açıklaması (Emir formatı, her biri kendi hook'unun ilk cümlesiyle): ilk cümlenin ilk ~10 kelimesi BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye`. İki TikTok'u farklı saatlerde paylaşmasını öner (ör. 13:00 ve 21:00).
 - Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
 
+### YouTube görünümü ve abone hatırlatmaları (14 Kasım 2026, kullanıcı isteği)
+Kullanıcı: "TikTok'ta ilk video 14 B izlendi; YouTube'da abone az, kapak yok."
+- `uret.py youtube` artık Emir tarzı üretir (`kart.py`): Minecraft arka planının üstünde ekranın çoğunu kaplayan
+  turkuaz çerçeveli beyaz kart; kartta logo, "Reddit Günlüğü" + onay rozeti ve dev büyük harf başlık; altyazı kartın
+  alt kısmında siyah, okunan kelime kırmızı; sol altta logo.
+- Başlık: bölüm klasöründe `kart.txt` varsa o (en iyi hook cümlesi, ~15-25 kelime, sonu "..."), yoksa
+  `hikaye.txt`'nin ilk paragrafının ilk 22 kelimesi. **TikTok'ta en çok tutan hook'u `kart.txt`'ye yaz.**
+- Ses: ilk paragraftan sonra "Başlamadan önce küçük bir rica… abone olmayı ve zil butonuna basmayı unutma",
+  sonda abone/beğen/yorum çağrısı (`YT_GIRIS`, `YT_KAPANIS`). Ekranda: girişte, sonra her 5 dakikada bir ve kapanışta
+  ortada "ABONE OL → ✓ ABONE OLUNDU" animasyonu.
+- Kapak: `kapak.jpg` (1280x720, aynı kart, bulanık arka plan) otomatik üretilir; teslimde gönder ve
+  "YouTube'da özel küçük resim olarak yükle" de.
+- Maskotlu logo gelirse `girdi/logo.png` yerine koy (kare, şeffaf PNG); kart, kapak ve köşe logosu onu kullanır.
+
+### TikTok kapanışı (14 Kasım 2026)
+Emir kapanışta izleyiciye "paylaş seçeneğine" bastırıyor (paylaşım TikTok'ta en güçlü sinyal). Bizim kapanış
+(`KAPANIS`): YouTube yönlendirmesi + "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder" +
+abone hatırlatması; kapanış boyunca sağda paylaş butonunu gösteren sallanan "PAYLAŞ ➜" oku.
+
 ## 3. Videoları üret
 ```bash
 cd reddit-gunlugu
@@ -149,7 +168,7 @@ Uzun süren komutları arka planda çalıştır (YouTube render ~12 dk). Seslend
   Türkçe harfler (İ, Ş, Ğ) doğru mu, TikTok'un son karesinde kapanış cümlesi var mı.
 
 ## 5. Teslim et
-1. `SendUserFile` ile `tiktok-gonder.mp4`, `tiktok2-gonder.mp4`, YouTube, `metadata.md` ve `hikaye.txt`'yi gönder.
+1. `SendUserFile` ile üç TikTok, YouTube, `kapak.jpg`, `metadata.md` ve `hikaye.txt`'yi gönder. Her TikTok'u ayrı gönder, açıklamasını dosya notuna yaz (kullanıcı böyle istiyor).
    Kullanıcı telefonda 368 MB'lık YouTube dosyasını indiremedi: önce 720p küçük kopyayı gönder
    (`ffmpeg -i youtube.mp4 -vf scale=1280:720 -c:v libx264 -preset veryfast -b:v 420k -maxrate 600k -bufsize 1200k -c:a aac -b:a 96k -movflags +faststart youtube-kucuk.mp4`, ~155 MB),
    sonra ayrıca `youtube-gonder.mp4`'ü

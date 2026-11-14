@@ -43,7 +43,18 @@ HIZ_TIKTOK = "+20%"   # TikTok: rakip (@emirreddit) ~5,5 hece/sn konuşuyor
 BOSLUK_TIKTOK = 0.10  # TikTok: kelimeler arası en uzun sessizlik (sn); rakipte 0,25 sn üstü duraklama yok
 KIRMIZI = "&H002A1AFF&"          # #FF1A2A, rakip altyazı rengi (BGR)
 TURKUAZ = "&H00F5E03E&"          # #3EE0F5, ASS renk sırası BGR
-KAPANIS = "İkinci bölümü beklemek istemiyorsan, hikayenin tamamını YouTube kanalımda izleyebilirsin. Profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü kanalını arat."
+# TikTok kapanışı (rakip @emirreddit de izleyiciye paylaş butonuna bastırıyor: paylaşım TikTok'ta en güçlü sinyallerden)
+KAPANIS = ("İkinci bölümü beklemek istemiyorsan, hikayenin tamamını YouTube kanalımda izleyebilirsin. "
+           "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder. "
+           "Sonra profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü kanalını arat. "
+           "Abone olmayı da unutma!")
+# YouTube: kanal yeni, abone hatırlatmaları (sesli + ekranda abone ol animasyonu)
+YT_GIRIS = ("Başlamadan önce küçük bir rica. Kanalımız daha çok yeni. Bu hikayeyi beğenirsen abone olmayı "
+            "ve zil butonuna basmayı unutma. Şimdi hikayeye geçelim.")
+YT_KAPANIS = ("Hikayeyi sonuna kadar dinlediğin için teşekkürler. Kanalımız daha çok yeni ve her abonelik bize "
+              "çok büyük destek oluyor. Abone olmayı, videoyu beğenmeyi ve yorumlara kendi fikrini yazmayı unutma. "
+              "Bir sonraki hikayede görüşmek üzere.")
+ABONE_ARALIK = 300   # sn: ekranda abone ol animasyonu sıklığı
 PEXELS_ARAMALAR = ["satisfying slime", "soap cutting", "kinetic sand"]
 FPS = 30
 
@@ -211,7 +222,7 @@ def ts(s):
     return f"{int(s // 3600)}:{int(s % 3600 // 60):02d}:{s % 60:05.2f}"
 
 
-def ass_yaz(kelimeler, yol, W, H, boyut, metin_y, sinir=None, tek_kelime=False):
+def ass_yaz(kelimeler, yol, W, H, boyut, metin_y, sinir=None, tek_kelime=False, kart=False):
     """Grup ekranda dururken o an okunan kelime turkuaz yanar."""
     sat = [f"""[Script Info]
 ScriptType: v4.00+
@@ -222,6 +233,7 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Ana,{FONT},{boyut},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,{max(4, boyut // 11)},2,5,{W // 12},{W // 12},0,1
+Style: Kart,{FONT},{boyut},&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,1,0,1,0,0,5,{W // 12},{W // 12},0,1
 Style: Kirmizi,{FONT},{boyut},{KIRMIZI},{KIRMIZI},&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,{max(3, boyut // 16)},3,5,{W // 20},{W // 20},0,1
 
 [Events]
@@ -248,8 +260,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
             parcalar = []
             for wj, w2 in enumerate(g):
                 t = tr_buyuk(w2[2].strip())
-                parcalar.append(f"{{\\c{TURKUAZ}}}{t}{{\\c&H00FFFFFF&}}" if wj == wi else t)
-            sat.append(f"Dialogue: 0,{ts(bas)},{ts(bit)},Ana,,0,0,0,,{{\\pos({W // 2},{metin_y})}}" + " ".join(parcalar))
+                if kart:   # beyaz kart üstünde: siyah yazı, okunan kelime kırmızı
+                    parcalar.append(f"{{\\c{KIRMIZI}}}{t}{{\\c&H00000000&}}" if wj == wi else t)
+                else:
+                    parcalar.append(f"{{\\c{TURKUAZ}}}{t}{{\\c&H00FFFFFF&}}" if wj == wi else t)
+            stil = "Kart" if kart else "Ana"
+            sat.append(f"Dialogue: 0,{ts(bas)},{ts(bit)},{stil},,0,0,0,,{{\\pos({W // 2},{metin_y})}}" + " ".join(parcalar))
     open(yol, "w", encoding="utf-8").write("\n".join(sat) + "\n")
 
 
@@ -431,6 +447,51 @@ def video_yap(arka, mp3, ass, logo, cikti, W, H, logo_y, sure=None, kose_logo=Fa
     print(f"Hazır: {cikti}")
 
 
+def youtube_kartli(arka, mp3, ass, kart_png, logo, abone_mov, cikti, W, H, t_giris, t_kapanis):
+    """Minecraft arka planı + Emir tarzı büyük kart + altyazı (kartın altında) + sol altta logo
+    + ABONE_ARALIK'ta bir ve kapanışta ortada abone ol animasyonu."""
+    toplam = sure_olc(mp3) + 0.6
+    logo_w = round(W * 0.085)
+    fc = (f"[0:v]scale={W}:{H},setsar=1[bg];"
+          f"[bg][2:v]overlay=0:0[v1];"
+          f"[3:v]scale={logo_w}:-1[lg];"
+          f"[v1][lg]overlay=x={W // 60}:y=H-h-{H // 60}[v2];"
+          f"[v2]ass='{ass}':fontsdir='{FONT_DIR}'[v3];"
+          f"[v3][4:v]overlay=0:0:enable='gte(t,{t_giris:.2f})*lt(mod(t-{t_giris:.2f},{ABONE_ARALIK}),4)'[v4];"
+          f"[v4][5:v]overlay=0:0:eof_action=pass[v]")
+    calistir(["ffmpeg", "-nostdin", "-v", "error", "-stats", "-y", "-stream_loop", "-1", "-i", arka,
+              "-i", mp3, "-loop", "1", "-i", kart_png, "-i", logo,
+              "-itsoffset", f"{t_giris:.2f}", "-stream_loop", "-1", "-i", abone_mov,
+              "-itsoffset", f"{t_kapanis:.2f}", "-i", abone_mov,
+              "-filter_complex", fc, "-map", "[v]", "-map", "1:a",
+              "-t", f"{toplam:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+              "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", cikti])
+    print(f"Hazır: {cikti}")
+
+
+def kart_basligi(klasor, metin):
+    """Kartta/kapakta yazacak başlık: kart.txt varsa o; yoksa ilk paragrafın ilk ~22 kelimesi + '...'."""
+    yol = os.path.join(klasor, "kart.txt")
+    if os.path.exists(yol):
+        return open(yol, encoding="utf-8").read().strip()
+    ilk = metin.strip().split("\n")[0].split()
+    return " ".join(ilk[:22]).rstrip(".,;:") + ("..." if len(ilk) > 22 else "")
+
+
+def tiktok_paylas_oku(mp4, kelimeler):
+    """TikTok kapanışında sağdaki paylaş butonunu gösteren, sallanan ok."""
+    import kart
+    ok = kart.paylas_oku(os.path.join(ORTAK, "_paylas_ok.png"))
+    n = len(KAPANIS.split())
+    t0 = kelimeler[max(0, len(kelimeler) - n)][0]
+    gecici = mp4[:-4] + "_ok.mp4"
+    calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", mp4, "-i", ok, "-filter_complex",
+              f"[0:v][1:v]overlay=x=W-w-130+18*sin(t*9):y=1300:enable='gte(t,{t0:.2f})'[v]",
+              "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+              "-c:a", "copy", "-movflags", "+faststart", gecici])
+    os.replace(gecici, mp4)
+
+
 ORTAK = os.path.join(BURA, "girdi")   # paylaşılan logo.png ve minecraft.png
 
 
@@ -466,7 +527,10 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
     ad = ad or tur
     if tur == "youtube":
         W, H, metin = 1920, 1080, open(os.path.join(klasor, "hikaye.txt"), encoding="utf-8").read()
-        boyut, metin_y = 100, 650
+        paragraflar = metin.strip().split("\n\n")
+        giris_kelime = len(paragraflar[0].split())
+        metin = paragraflar[0] + "\n\n" + YT_GIRIS + "\n\n" + "\n\n".join(paragraflar[1:]) + "\n\n" + YT_KAPANIS
+        boyut, metin_y = 84, 905
     else:
         W, H = 1080, 1920
         yol = os.path.join(klasor, f"{ad}.txt")
@@ -489,14 +553,28 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
     logo_h = round(W * 0.18)
     logo_y = metin_y - boyut * 1.15 - logo_h / 2 - 12
     ass = os.path.join(klasor, f"_{onek}{ad}.ass")
-    ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure, tek_kelime=(tur != "youtube"))
+    ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure, tek_kelime=(tur != "youtube"), kart=(tur == "youtube"))
     if tur == "youtube":
+        import kart
         arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
+        baslik = kart_basligi(klasor, open(os.path.join(klasor, "hikaye.txt"), encoding="utf-8").read())
+        k, _ = kart.kart_ciz(baslik, varlik(klasor, "logo.png"), W, H, kenar=(110, 45), alt_bosluk=230, baslik_max=100)
+        kart_png = os.path.join(klasor, f"_{onek}kart.png")
+        k.save(kart_png)
+        kart.kapak(baslik, varlik(klasor, "logo.png"), varlik(klasor, "minecraft.png"), os.path.join(klasor, "kapak.jpg"))
+        abone = kart.abone_animasyonu(os.path.join(ORTAK, "_abone.mov"), W, H)
+        t_giris = kelimeler[min(giris_kelime, len(kelimeler) - 1)][0]
+        t_kapanis = kelimeler[max(0, len(kelimeler) - len(YT_KAPANIS.split()))][0]
+        youtube_kartli(arka, mp3, ass, kart_png, varlik(klasor, "logo.png"), abone,
+                       os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, t_giris, t_kapanis)
+        return
     else:
         v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2
         arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_emir_bg{'' if v == 0 else v}.mp4"), varyant=v)
-    video_yap(arka, mp3, ass, varlik(klasor, "logo.png"),
-              os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, round(logo_y), sure, kose_logo=(tur != "youtube"))
+    cikti = os.path.join(klasor, f"{onek}{ad}.mp4")
+    video_yap(arka, mp3, ass, varlik(klasor, "logo.png"), cikti, W, H, round(logo_y), sure, kose_logo=True)
+    if not sure:
+        tiktok_paylas_oku(cikti, kelimeler)
 
 
 def tiktok_metinleri(klasor):
