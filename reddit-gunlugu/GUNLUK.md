@@ -127,7 +127,7 @@ Sırayla, her gün en üstteki kullanılmamış iki tanesini al; kullanınca sat
 **Uyarlama kuralı:** rakibin metnini/videosunu kopyalama (zaten sadece başlık/hook'u görüyoruz). Kurulumu (ilk durum +
 haksızlık) ve hook yapısını al; Türkiye'ye taşı, karakterleri, ara olayları, ortadaki şoku ve finali kendin yaz.
 Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse rolü kardeş/eş olarak değiştir.
-1. Emir 1,9 M — "Babamın vasiyetinde bana maddi değeri olan hiçbir şey bırakılmadığı okunduğunda herkes güldü…"
+1. ✅ (15.11 vasiyet) Emir 1,9 M — "Babamın vasiyetinde bana maddi değeri olan hiçbir şey bırakılmadığı okunduğunda herkes güldü…"
    (lokanta bölümünde marka mirası kullanıldı; farklı bir miras nesnesiyle yaz: ör. eski bir arsa senedi değil, bir defter/bir anahtar)
 2. Emir 726 B — "Kocam annesine Korece olarak en iyi arkadaşımı hamile bıraktığını söylemişti…" → erkek: "Karım annesiyle
    Kürtçe/Almanca konuşurken…" (anlatıcı dili bildiğini saklamış)
@@ -146,7 +146,7 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 15. Emir 201 B — "Ailem neşeli bir aile buluşmasında Disney biletlerini dağıtırken…" → Türkiye: tatil/otel paketi
 16. Emir 153 B — "Tamamen benim karşıladığım bir tatile yeğenlerimin yanlarında…"
 17. Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
-Kullanılanlar: ✅ hediye yok (13.11), ✅ kiracılar (14.11), ✅ babam bunu bilmiyor ama (15.11), ✅ işe yaramazlar (12.11).
+Kullanılanlar: ✅ vasiyet (15.11 b), ✅ hediye yok (13.11), ✅ kiracılar (14.11), ✅ babam bunu bilmiyor ama (15.11), ✅ işe yaramazlar (12.11).
 
 ### `tiktok.txt` (her hikayeye bir TikTok, hikayenin başı, **~5:00-5:10**)
 - `hikaye.txt`'nin ilk paragrafı Emir kalıbında hook olsun: **tek güçlü ilk cümle** + en fazla 2-3 kısa cümle
