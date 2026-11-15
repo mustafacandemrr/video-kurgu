@@ -95,42 +95,51 @@ artık uygulanan kurallar (ayrıntı: `ANALIZ-TIKTOK.md`, 13 Kasım bölümü):
     "ANNEMİN DÜĞÜNÜNDEYDİM. ORADA OLDUĞUMDAN HABERİ BİLE YOKTU" (493 B)
   - Talep + beklenmedik karşılık: "KİRACILARIM KİRAYI DÜŞÜRMEMİ İSTEDİ. BEN DE…" (902 B)
   - Kaza ile ortaya çıkan gerçek: "NİŞANLIM INSTAGRAM'A BİR VİDEO YÜKLEDİ VE SESİNİ KAPATMAYI UNUTTU" (418 B)
-  İki TikTok'tan birinde mutlaka bu kalıplardan birini **kelimesi kelimesine yapı olarak** kullan (içerik özgün kalsın).
+  Her hikayenin hook'unda bu kalıplardan birini **yapı olarak** kullan (içerik özgün kalsın).
 - **Açıklama formatı (Emir'in birebir yapısı):** `İLK CÜMLENİN İLK ~10 KELİMESİ... 🛑 Hikâyenin 2. Bölümü profilimdeki
   bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye` (tek hashtag).
 - **Yeniden yükleme:** Emir aynı videoyu 2-3 kez yüklüyor (aynı video 36 B / 65 B / 148 B; 259 B / 493 B aldı).
   Son mesajda kullanıcıya hatırlat: ilk yükleme düşük kalırsa ertesi gün aynısını tekrar yüklesin.
 
-### Konu seçimi ve 3 versiyon (13 Kasım 2026, kullanıcı kararı)
-Kullanıcı: "Videoda hiçbir şey dikkatimi çekmiyor; Emir Reddit'in hook'larını al, aynı hikayeyi farklı editlerle tekrar paylaşıyorlar."
-- **Konu:** Her gün @emirreddit'in (ve Sultan Reddit'in) en çok izlenen hikayelerinden, arşivde olmayan birinin
+### GÜNLÜK PLAN: günde 2 hikaye, her hikayeye 1 TikTok + 1 YouTube (15 Kasım 2026, kullanıcı kararı)
+Kullanıcı: "Aynı hikayeden 3 TikTok mantıksız; izleyici YouTube'un TikTok'tan farklı olduğunu söylüyor. Günde 2 hikaye
+atalım (sabah/akşam), her hikayeye bir kısa video." Rakip verisi (15 Kasım, yt-dlp + YouTube RSS):
+- @emirreddit: her hikaye için **tek** ~5:03'lük TikTok; **aynı videoyu aynı açıklamayla** aynı gün 30 dk-3 saat arayla
+  2-3 kez yüklüyor (ör. "Annemin düğünü" 13:17/13:50/14:20 → 526 B / 58 B / 380 B). YouTube'a hikaye başına 1 uzun video.
+- @sultan.reddit: TikTok'ta günde 4-5 video; YouTube'a **günde 2 uzun video** (sabah ~08:00, öğlen ~12:00 TR), 30-58 dk.
+
+Bu yüzden her çalıştırmada **iki hikaye** üret: `bolumler/YYYY-AA-GG-a-konu/` ve `bolumler/YYYY-AA-GG-b-konu/`.
+- **Konu:** @emirreddit'in (ve Sultan Reddit'in) en çok izlenen hikayelerinden, arşivde olmayan **iki** tanesinin
   **konusunu ve hook yapısını** al; olayları, karakterleri ve finali **kendin yaz** (metni/videoyu kopyalama).
   Liste: `yt-dlp --flat-playlist --print "%(view_count)s|||%(description)s" "https://www.tiktok.com/@emirreddit" | sort -rn`.
-  Henüz kullanılmayanlar (13 Kasım): kiracılar kira indirimi (902 B), "babam bunu bilmiyor ama" (777 B),
-  yeğen "gerçek torunlar önce yer" (724 B), kocanın yabancı dilde sırrı (722 B), annemin düğünü (493 B),
-  kocamın günlüğü (423 B), nişanlının sesi açık video (418 B), Disney biletleri (201 B), tatil masrafı yeğenler (148 B).
-- **3 TikTok:** `tiktok.txt`, `tiktok2.txt`, `tiktok3.txt`; gövde aynı, hook'lar farklı (1: Emir'in yapısı birebir,
-  2: gizli gerçek/şok, 3: hakaret alıntısı). `uret.py` her versiyona farklı arka plan sırası ve kesit verir.
-  metadata.md'de üç açıklama ve paylaşım saatleri olsun.
+  Henüz kullanılmayanlar (15 Kasım): yeğen "gerçek torunlar önce yer" (725 B), kocanın yabancı dilde sırrı (726 B),
+  annemin düğünü (524 B), kocamın günlüğü (424 B), nişanlının sesi açık video (419 B), "karım gözlerimin içine
+  bakarak…" (360 B), Disney biletleri (201 B), tatil masrafı yeğenler (153 B), trafik kazası sonrası karım (146 B).
+  İki hikayenin ana teması birbirinden farklı olsun (ör. biri aile/miras, biri evlilik/iş yeri).
+- `arastirma.md` günde bir kez, ilk hikayenin (`-a-`) klasörüne; ikisinin seçim nedenini de yaz.
+- Her hikayede **tek** `tiktok.txt` olsun (`tiktok2.txt`/`tiktok3.txt` yazma). TikTok = `hikaye.txt`'nin **ilk
+  paragrafı (hook) dahil başından itibaren aynen**, ~830-850 kelimede uçurumda kesilmiş hali. Böylece YouTube videosu
+  TikTok'la birebir aynı cümlelerle açılır; TikTok'ta duyulan her şey YouTube'da aynı sırayla vardır.
+- `kart.txt` = hook'un ilk cümlesi (sonu "..."); YouTube başlığı da bu cümle (aşağıya bak).
 
-### `tiktok.txt`, `tiktok2.txt`, `tiktok3.txt` (üç TikTok, hikayenin başı, **~5:00-5:10**)
-- Aynı hikayeden **iki ayrı TikTok** yaz: gövde aynı, **hook'lar farklı** (biri hikayenin başındaki
-  haksızlığı, öbürü ilerideki büyük şoku/karşı hamleyi öne çıkarsın). Örnek: `bolumler/2026-11-11-ambulans/`.
-- Başa **Emir kalıbında tek güçlü ilk cümle** + en fazla 2-3 kısa cümle (haksızlık/sır + kahramanın hamlesi) yaz;
-  sonucu ve finali söyleme. İlk cümle tek başına açıklamaya yazılacak; somut, alıntılı, şaşırtıcı olsun.
-- Hook'tan sonra `hikaye.txt`'nin **başını aynen** kullan (Reddit başlık cümlesi yerine hook gelir),
-  **özetleme, kısaltma yapma**. Toplam **~830-850 kelime** (duraklamasız +%20 seste dakikada ~165 kelime; kapanışla ~5:00-5:10) olacak şekilde kes.
-- Olaylar hızlanırken, bir sahnenin ortasında kes (gerekirse cümle ortasında). Ayrı bir uçurum cümlesi şart
-  değil; kesinti noktası merak yaratmalı.
-- Kapanış cümlesini **yazma**; script otomatik ekler ("İkinci bölümü beklemek istemiyorsan…").
-- Örnek: `bolumler/2026-11-11-ambulans/tiktok.txt` ve `tiktok2.txt`.
+### `tiktok.txt` (her hikayeye bir TikTok, hikayenin başı, **~5:00-5:10**)
+- `hikaye.txt`'nin ilk paragrafı Emir kalıbında hook olsun: **tek güçlü ilk cümle** + en fazla 2-3 kısa cümle
+  (haksızlık/sır + kahramanın hamlesi); sonucu ve finali söyleme. Somut, alıntılı, şaşırtıcı.
+- `tiktok.txt` = `hikaye.txt`'nin başı **aynen** (özetleme, kısaltma, ekleme yok). Toplam **~830-850 kelime**
+  (duraklamasız +%20 seste dakikada ~165 kelime; kapanışla ~5:00-5:10).
+- Olaylar hızlanırken, bir sahnenin ortasında kes (gerekirse cümle ortasında).
+- Kapanış cümlesini **yazma**; script otomatik ekler (YouTube yönlendirmesi + paylaş + abone).
 
-### `metadata.md`
-- YouTube başlığı (en fazla 100 karakter, merak uyandıran, sonunda `| Reddit Hikayeleri`)
-- YouTube açıklaması (3-4 cümle özet, spoiler vermeden; sonunda `#reddit #reddithikayeleri #redditgunlugu`)
-- YouTube etiketleri (10-15 tane, virgülle)
-- İki TikTok açıklaması (Emir formatı, her biri kendi hook'unun ilk cümlesiyle): ilk cümlenin ilk ~10 kelimesi BÜYÜK HARFLE ve "..." ile kesik + ` 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye`. İki TikTok'u farklı saatlerde paylaşmasını öner (ör. 13:00 ve 21:00).
-- Hatırlatma: "İki platformda da 'yapay zekâ ile oluşturulan içerik' seçeneğini aç. YouTube 19:30, TikTok 21:00."
+### `metadata.md` (her hikaye klasöründe)
+- YouTube başlığı = hook'un ilk cümlesi (≤100 karakter, sonu "…", sığarsa `| Reddit Hikayeleri`)
+- YouTube açıklaması: ilk satır "TikTok'tan geldiysen 2. bölüm MM:SS'te başlıyor 👇", sonra `bolum2.txt` satırları,
+  sonra 3-4 cümle spoiler'sız özet, "Sence…? Yorumlara yaz.", abone cümlesi, `#reddit #reddithikayeleri #redditgunlugu`
+- YouTube etiketleri (10-15, virgülle) ve "Kapak: kapak.jpg (özel küçük resim)"
+- TikTok açıklaması (Emir formatı): ilk cümlenin ilk ~10 kelimesi BÜYÜK HARFLE + "..." + ` 🛑 Hikâyenin 2. Bölümü
+  profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye`
+- TikTok sabitlenmiş yorumu (YouTube başlığı + MM:SS)
+- Paylaşım saatleri: **Hikaye A** YouTube 12:00, TikTok 12:30 (+ aynı video 13:30 ve 15:00'te tekrar);
+  **Hikaye B** YouTube 19:30, TikTok 20:00 (+ 21:00 ve 22:30'da tekrar). Her ikisinde "yapay zekâ ile oluşturulan içerik" açık.
 
 ### YouTube görünümü ve abone hatırlatmaları (14 Kasım 2026, kullanıcı isteği)
 Kullanıcı: "TikTok'ta ilk video 14 B izlendi; YouTube'da abone az, kapak yok."
@@ -167,18 +176,19 @@ cd reddit-gunlugu
 K=bolumler/<bugünün klasörü>
 python3 uret.py tiktok  --klasor $K
 python3 uret.py youtube --klasor $K
-python3 uret.py teslim  --klasor $K     # tiktok-gonder.mp4, tiktok2-gonder.mp4, youtube-gonder.mp4 (<380 MiB)
+python3 uret.py teslim  --klasor $K     # tiktok-gonder.mp4, youtube-gonder.mp4 (<380 MiB)
 ```
+**İki hikaye için de** (a ve b) çalıştır; ikisini tek arka plan komutunda sırayla üret (toplam ~1-1,5 saat).
 Uzun süren komutları arka planda çalıştır (YouTube render ~12 dk). Seslendirme kesilirse script kendisi tekrar dener.
 
 ## 4. Kontrol et
-- `ffprobe` ile süreler: YouTube **≥ 30 dk**, her TikTok **4:55-5:15**. Dışındaysa metni uzat/kısalt,
+- `ffprobe` ile süreler (her hikaye): YouTube **≥ 30 dk**, TikTok **4:55-5:15**. Dışındaysa metni uzat/kısalt,
   `$K/_*ses*` dosyalarını sil ve tekrar üret.
 - Her videonun başından, ortasından ve sonundan birer kare al ve bak: altyazı okunuyor mu, logo yerinde mi,
   Türkçe harfler (İ, Ş, Ğ) doğru mu, TikTok'un son karesinde kapanış cümlesi var mı.
 
 ## 5. Teslim et
-1. `SendUserFile` ile üç TikTok, YouTube, `kapak.jpg`, `metadata.md` ve `hikaye.txt`'yi gönder. Her TikTok'u ayrı gönder, açıklamasını dosya notuna yaz (kullanıcı böyle istiyor).
+1. Her hikaye için ayrı ayrı `SendUserFile`: TikTok (açıklaması dosya notunda), YouTube 720p (başlığı dosya notunda), `kapak.jpg`, `metadata.md`, `hikaye.txt`. Önce Hikaye A, sonra Hikaye B.
    Kullanıcı telefonda 368 MB'lık YouTube dosyasını indiremedi: önce 720p küçük kopyayı gönder
    (`ffmpeg -i youtube.mp4 -vf scale=1280:720 -c:v libx264 -preset veryfast -b:v 420k -maxrate 600k -bufsize 1200k -c:a aac -b:a 96k -movflags +faststart youtube-kucuk.mp4`, ~155 MB),
    sonra ayrıca `youtube-gonder.mp4`'ü
@@ -186,12 +196,13 @@ Uzun süren komutları arka planda çalıştır (YouTube render ~12 dk). Seslend
 2. Google Drive'daki **"Reddit Günlüğü"** klasörüne (id `1sI2YL12nqI-Wj9PToB66bBJUsZYAwqJf`) o günün adıyla
    `metadata.md`'yi metin dosyası olarak yükle. Drive 10 MB üstünü kabul etmez; videoları Drive'a yükleme.
    Drive bağlantısı yoksa veya izin hatası verirse bu adımı atla ve son mesajda söyle.
-3. `bolumler/ARSIV.md`'ye yeni satır ekle. Metin dosyalarını (`hikaye.txt`, `tiktok.txt`, `tiktok2.txt`, `metadata.md`, `arastirma.md`) ve
+3. `bolumler/ARSIV.md`'ye yeni satır ekle. İki hikayenin metin dosyalarını (`hikaye.txt`, `tiktok.txt`, `kart.txt`, `bolum2.txt`, `metadata.md`, `kapak.jpg`, `arastirma.md`) ve
    arşivi commit edip `main`'e push et. Video ve ara dosyalar `.gitignore`'da; onları ekleme.
 
 ## 6. Son mesaj (kullanıcıya, Türkçe, kısa)
-- "Günaydın" ile başla; bugünün hikayesinin adı ve tek cümlelik özeti
-- Araştırmadan tek cümle: bu temayı neden seçtin (ör. hangi başlık kaç izlenme almış)
-- Video süreleri
-- Yükleme hatırlatması (tercih: YouTube 19:30; TikTok 1 ve 2 farklı saatlerde, ör. 13:00 ve 21:00), başlık ve açıklamaların metadata.md'de olduğu
+- "Günaydın" ile başla; iki hikayenin adı ve birer cümlelik özeti
+- Araştırmadan tek cümle: bu temaları neden seçtin (ör. hangi başlık kaç izlenme almış)
+- Video süreleri (her hikaye için TikTok ve YouTube)
+- Yükleme hatırlatması: Hikaye A öğlen (YouTube 12:00, TikTok 12:30 + 2 tekrar), Hikaye B akşam (YouTube 19:30,
+  TikTok 20:00 + 2 tekrar); TikTok profil bağlantısını o an yayındaki YouTube videosuna çevirmesi; başlık ve açıklamaların metadata.md'de olduğu
 - Bir adım başarısız olduysa ne olduğu, dürüstçe
