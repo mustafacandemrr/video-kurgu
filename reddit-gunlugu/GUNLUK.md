@@ -122,6 +122,32 @@ Bu yüzden her çalıştırmada **iki hikaye** üret: `bolumler/YYYY-AA-GG-a-kon
   TikTok'la birebir aynı cümlelerle açılır; TikTok'ta duyulan her şey YouTube'da aynı sırayla vardır.
 - `kart.txt` = hook'un ilk cümlesi (sonu "..."); YouTube başlığı da bu cümle (aşağıya bak).
 
+### Sıradaki konular (15 Kasım 2026, kullanıcı: "Bu iki kişinin en çok izlenen hikayelerini bize uyarla")
+Sırayla, her gün en üstteki kullanılmamış iki tanesini al; kullanınca satırın başına ✅ ve tarih koy.
+**Uyarlama kuralı:** rakibin metnini/videosunu kopyalama (zaten sadece başlık/hook'u görüyoruz). Kurulumu (ilk durum +
+haksızlık) ve hook yapısını al; Türkiye'ye taşı, karakterleri, ara olayları, ortadaki şoku ve finali kendin yaz.
+Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse rolü kardeş/eş olarak değiştir.
+1. Emir 1,9 M — "Babamın vasiyetinde bana maddi değeri olan hiçbir şey bırakılmadığı okunduğunda herkes güldü…"
+   (lokanta bölümünde marka mirası kullanıldı; farklı bir miras nesnesiyle yaz: ör. eski bir arsa senedi değil, bir defter/bir anahtar)
+2. Emir 726 B — "Kocam annesine Korece olarak en iyi arkadaşımı hamile bıraktığını söylemişti…" → erkek: "Karım annesiyle
+   Kürtçe/Almanca konuşurken…" (anlatıcı dili bildiğini saklamış)
+3. Emir 725 B — "Akşam yemeğinde yeğenim 7 yaşındaki oğluma 'Sadece büyükannenin gerçek torunları önce yer' dedi"
+4. Emir 524 B — "Annemin düğünündeydim. Orada olduğumdan haberi bile yoktu…" → erkek: "Babamın düğünündeydim…"
+5. Sultan 148 B — "Ağabeyim bana ailenin en sıkıcı insanı derdi, çünkü şakalarına hep ağlardım…"
+6. Emir 424 B — "Karımın günlüğünü yanlışlıkla okudum ve benimle evlenmenin hayatının en büyük hatası olduğunu yazmıştı…"
+7. Emir 419 B — "Nişanlım Instagram'a bir video yükledi ve sesini kapatmayı unuttu…"
+8. Emir 360 B — "Karım gözlerimin içine bakarak bana şöyle dedi: 'Yemek yapmak, temizlik yapmak…'"
+9. Sultan 84 B — "Ailemin bir geleneği var…" (aile sırrı/gelenek)
+10. Sultan 77 B — "Evleneceğimi söylediğimde ailem güldü. Düğün günümde annem…"
+11. Sultan 66 B — "Kız kardeşim oğluma koymayı seçtiğim ismi yeni doğan bebeğine verdi. Bilmediği şey, o ismin…"
+12. Sultan 66 B — "Düğünden dakikalar önce nişanlımdan bir mesaj geldi: 'Bunu yapamam'…"
+13. Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
+14. Sultan 55 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
+15. Emir 201 B — "Ailem neşeli bir aile buluşmasında Disney biletlerini dağıtırken…" → Türkiye: tatil/otel paketi
+16. Emir 153 B — "Tamamen benim karşıladığım bir tatile yeğenlerimin yanlarında…"
+17. Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
+Kullanılanlar: ✅ hediye yok (13.11), ✅ kiracılar (14.11), ✅ babam bunu bilmiyor ama (15.11), ✅ işe yaramazlar (12.11).
+
 ### `tiktok.txt` (her hikayeye bir TikTok, hikayenin başı, **~5:00-5:10**)
 - `hikaye.txt`'nin ilk paragrafı Emir kalıbında hook olsun: **tek güçlü ilk cümle** + en fazla 2-3 kısa cümle
   (haksızlık/sır + kahramanın hamlesi); sonucu ve finali söyleme. Somut, alıntılı, şaşırtıcı.
