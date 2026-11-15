@@ -447,7 +447,7 @@ def video_yap(arka, mp3, ass, logo, cikti, W, H, logo_y, sure=None, kose_logo=Fa
     print(f"Hazır: {cikti}")
 
 
-def youtube_kartli(arka, mp3, ass, kart_png, logo, abone_mov, cikti, W, H, t_giris, t_kapanis):
+def youtube_kartli(arka, mp3, ass, kart_png, logo, abone_mov, cikti, W, H, t_giris, t_kapanis, rozet=None, t_bolum2=None):
     """Minecraft arka planı + Emir tarzı büyük kart + altyazı (kartın altında) + sol altta logo
     + ABONE_ARALIK'ta bir ve kapanışta ortada abone ol animasyonu."""
     toplam = sure_olc(mp3) + 0.6
@@ -458,15 +458,34 @@ def youtube_kartli(arka, mp3, ass, kart_png, logo, abone_mov, cikti, W, H, t_gir
           f"[v1][lg]overlay=x={W // 60}:y=H-h-{H // 60}[v2];"
           f"[v2]ass='{ass}':fontsdir='{FONT_DIR}'[v3];"
           f"[v3][4:v]overlay=0:0:enable='gte(t,{t_giris:.2f})*lt(mod(t-{t_giris:.2f},{ABONE_ARALIK}),4)'[v4];"
-          f"[v4][5:v]overlay=0:0:eof_action=pass[v]")
+          f"[v4][5:v]overlay=0:0:eof_action=pass" + ("[v5];" if rozet else "[v]"))
+    ek = []
+    if rozet:   # TikTok'un kesildiği yerde 8 sn "2. BÖLÜM BURADAN BAŞLIYOR"
+        fc += f"[v5][6:v]overlay=0:0:enable='between(t,{t_bolum2:.2f},{t_bolum2 + 8:.2f})'[v]"
+        ek = ["-loop", "1", "-i", rozet]
     calistir(["ffmpeg", "-nostdin", "-v", "error", "-stats", "-y", "-stream_loop", "-1", "-i", arka,
               "-i", mp3, "-loop", "1", "-i", kart_png, "-i", logo,
               "-itsoffset", f"{t_giris:.2f}", "-stream_loop", "-1", "-i", abone_mov,
-              "-itsoffset", f"{t_kapanis:.2f}", "-i", abone_mov,
+              "-itsoffset", f"{t_kapanis:.2f}", "-i", abone_mov, *ek,
               "-filter_complex", fc, "-map", "[v]", "-map", "1:a",
               "-t", f"{toplam:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
               "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", cikti])
     print(f"Hazır: {cikti}")
+
+
+def tiktok_kesim_zamani(klasor, kelimeler):
+    """tiktok.txt'nin son kelimeleri YouTube sesinde nerede bitiyor? (2. bölümün başladığı an, sn)"""
+    yol = os.path.join(klasor, "tiktok.txt")
+    if not os.path.exists(yol):
+        return None
+    temiz = lambda s: re.sub(r"\W", "", s).lower()
+    son = [temiz(w) for w in open(yol, encoding="utf-8").read().split()[-8:] if temiz(w)]
+    yt = [temiz(k[2]) for k in kelimeler]
+    for i in range(len(yt) - len(son) + 1):
+        if yt[i:i + len(son)] == son:
+            j = i + len(son)
+            return kelimeler[min(j, len(kelimeler) - 1)][0]
+    return None
 
 
 def kart_basligi(klasor, metin):
@@ -565,8 +584,15 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         abone = kart.abone_animasyonu(os.path.join(ORTAK, "_abone.mov"), W, H)
         t_giris = kelimeler[min(giris_kelime, len(kelimeler) - 1)][0]
         t_kapanis = kelimeler[max(0, len(kelimeler) - len(YT_KAPANIS.split()))][0]
+        t_bolum2 = tiktok_kesim_zamani(klasor, kelimeler)
+        rozet = kart.bolum2_rozeti(os.path.join(ORTAK, "_bolum2.png")) if t_bolum2 else None
+        if t_bolum2:
+            dk = f"{int(t_bolum2 // 60):02d}:{int(t_bolum2 % 60):02d}"
+            open(os.path.join(klasor, "bolum2.txt"), "w").write(
+                f"00:00 Hikaye başlıyor\n{dk} TikTok'ta kaldığın yer: 2. bölüm burada başlıyor\n")
+            print(f"  TikTok kesim noktası YouTube'da {dk}")
         youtube_kartli(arka, mp3, ass, kart_png, varlik(klasor, "logo.png"), abone,
-                       os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, t_giris, t_kapanis)
+                       os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, t_giris, t_kapanis, rozet, t_bolum2)
         return
     else:
         v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2

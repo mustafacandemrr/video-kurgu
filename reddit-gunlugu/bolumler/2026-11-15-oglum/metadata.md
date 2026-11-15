@@ -2,9 +2,14 @@
 
 ## YouTube
 **Başlık:**
-Babam Arkadaşına "Keşke Senin Oğlun Benim Oğlum Olsaydı" Dedi… Ertesi Sabah Annem Onu Tanımadı | Reddit Hikayeleri
+Babam Bunu Bilmiyor Ama Arkadaşına "Keşke Senin Oğlun Benim Oğlum Olsaydı" Dediğini Duydum…
 
 **Açıklama:**
+TikTok'tan geldiysen 2. bölüm 08:08'de başlıyor 👇
+
+00:00 Hikaye başlıyor
+08:08 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+
 Emekli komiser babam beni hiç beğenmedi; ben anaokulu öğretmeniyim, o ise arkadaşının polis oğlunu anlatıp durdu. Emeklilik yemeğinde balkonda "Keşke senin oğlun benim oğlum olsaydı" dediğini duydum. Babamın bilmediği bir şey vardı: iki yıldır her sabah altı buçukta Alzheimer'lı annemin yanında olan bendim. Ertesi sabah gitmedim. Saat dokuz kırkta komşumuz aradı.
 
 Sence doğru olanı mı yaptım? Yorumlara yaz.
@@ -26,6 +31,9 @@ ANNEM OTUZ BEŞ YILLIK KOCASINA, BABAMA, SOKAĞIN ORTASINDA "BEYEFENDİ, SİZ K�
 
 ## TikTok 3 (tiktok3-gonder.mp4) — alıntı hook'u
 EMEKLİ KOMİSER BABAM EN YAKIN ARKADAŞINA "BENİMKİ ÇOCUKLARA ŞARKI SÖYLÜYOR..." 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+
+## TikTok sabitlenmiş yorum (üç videoya da)
+2. bölüm YouTube'da: Reddit Günlüğü kanalında "Babam Bunu Bilmiyor Ama…" videosu, 08:08'den itibaren 👆
 
 ## Yüklerken
 - Üç TikTok farklı saatlerde (ör. 12:00, 17:00, 21:00). Hangisi tutarsa birkaç gün sonra tekrar yükle.

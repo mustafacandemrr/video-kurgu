@@ -209,3 +209,22 @@ def paylas_oku(cikti, W=1080, H=1920):
     d.polygon(ok, fill=(230, 33, 23), outline=(0, 0, 0), width=5)
     img.save(cikti)
     return cikti
+
+
+def bolum2_rozeti(cikti, W=1920, H=1080):
+    """YouTube'da TikTok'un kesildiği an: üstte '2. BÖLÜM BURADAN BAŞLIYOR' şeridi (şeffaf PNG)."""
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    f = _font(64)
+    yazi = "▶ 2. BÖLÜM BURADAN BAŞLIYOR"
+    try:
+        tw = d.textlength(yazi, font=f)
+    except Exception:
+        yazi = "2. BÖLÜM BURADAN BAŞLIYOR"
+        tw = d.textlength(yazi, font=f)
+    w, h = tw + 120, 120
+    x0, y0 = (W - w) / 2, 8
+    d.rounded_rectangle([x0, y0, x0 + w, y0 + h], radius=h / 2, fill=KIRMIZI, outline="white", width=6)
+    d.text(((W - tw) / 2, y0 + 22), yazi, font=f, fill="white")
+    img.save(cikti)
+    return cikti

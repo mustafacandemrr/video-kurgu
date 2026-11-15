@@ -151,6 +151,16 @@ Emir kapanışta izleyiciye "paylaş seçeneğine" bastırıyor (paylaşım TikT
 (`KAPANIS`): YouTube yönlendirmesi + "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder" +
 abone hatırlatması; kapanış boyunca sağda paylaş butonunu gösteren sallanan "PAYLAŞ ➜" oku.
 
+### TikTok → YouTube geçişi (15 Kasım 2026, kullanıcı: "İnsanlar YouTube TikTok'takiyle farklı diyor")
+- **YouTube başlığı = TikTok 1'in ilk cümlesi** (aynı kelimelerle, ≤100 karakter, sonu "…"; sığarsa `| Reddit Hikayeleri`).
+  İzleyici TikTok'ta duyduğu cümleyi YouTube'da arıyor; farklı başlık "başka video" sanılıyor. `kart.txt` de aynı cümle.
+- `uret.py youtube` TikTok'un kesildiği yeri YouTube sesinde bulur, o anda 8 sn "2. BÖLÜM BURADAN BAŞLIYOR"
+  rozeti gösterir ve `bolum2.txt`'ye bölüm satırlarını yazar. **YouTube açıklamasının ilk satırı:**
+  "TikTok'tan geldiysen 2. bölüm MM:SS'te başlıyor 👇" ve açıklamada `bolum2.txt` satırları (YouTube bölümleri).
+- TikTok metni `hikaye.txt`'nin başıyla kelimesi kelimesine aynı olmalı (hook hariç); TikTok'a hikayede olmayan cümle ekleme.
+- metadata.md'ye TikTok için **sabitlenmiş yorum** ekle: "2. bölüm YouTube'da: Reddit Günlüğü kanalında '<YouTube başlığı>' videosu, MM:SS'ten itibaren 👆"
+- Son mesajda hatırlat: TikTok profil bağlantısı o günün YouTube videosunu göstersin.
+
 ## 3. Videoları üret
 ```bash
 cd reddit-gunlugu
