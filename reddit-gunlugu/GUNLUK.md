@@ -101,15 +101,32 @@ artık uygulanan kurallar (ayrıntı: `ANALIZ-TIKTOK.md`, 13 Kasım bölümü):
 - **Yeniden yükleme:** Emir aynı videoyu 2-3 kez yüklüyor (aynı video 36 B / 65 B / 148 B; 259 B / 493 B aldı).
   Son mesajda kullanıcıya hatırlat: ilk yükleme düşük kalırsa ertesi gün aynısını tekrar yüklesin.
 
-### GÜNLÜK PLAN: günde 2 hikaye, her hikayeye 1 TikTok + 1 YouTube (15 Kasım 2026, kullanıcı kararı)
-Kullanıcı: "Aynı hikayeden 3 TikTok mantıksız; izleyici YouTube'un TikTok'tan farklı olduğunu söylüyor. Günde 2 hikaye
-atalım (sabah/akşam), her hikayeye bir kısa video." Rakip verisi (15 Kasım, yt-dlp + YouTube RSS):
-- @emirreddit: her hikaye için **tek** ~5:03'lük TikTok; **aynı videoyu aynı açıklamayla** aynı gün 30 dk-3 saat arayla
-  2-3 kez yüklüyor (ör. "Annemin düğünü" 13:17/13:50/14:20 → 526 B / 58 B / 380 B). YouTube'a hikaye başına 1 uzun video.
-- @sultan.reddit: TikTok'ta günde 4-5 video; YouTube'a **günde 2 uzun video** (sabah ~08:00, öğlen ~12:00 TR), 30-58 dk.
+### GÜNLÜK PLAN: günde 3 hikaye, her hikayeye 1 YouTube + 2 kancalı TikTok (16 Kasım 2026, kullanıcı kararı)
+Kullanıcı: "YouTube'u günde 3'e çıkaracağız. Yarının videolarını bugün akşamdan YouTube'a saat kurarak yükleyeceğim
+(08:00, 12:00, 19:00). TikTok'ları gün içinde yüklerim. Her videoya birden fazla kanca istiyorum: video aynı, ilk
+5-15 saniye farklı." Bu görev gece çalışır ve **ertesi günün** içeriğini üretir; kullanıcı akşam üzeri yükleyip zamanlar.
+(Rakip verisi, 15 Kasım: Emir her hikayeyi tek ~5:03'lük TikTok olarak 2-3 kez yeniden yüklüyor; Sultan YouTube'a günde
+2 uzun video, ~08:00 ve ~12:00.)
 
-Bu yüzden her çalıştırmada **iki hikaye** üret: `bolumler/YYYY-AA-GG-a-konu/` ve `bolumler/YYYY-AA-GG-b-konu/`.
-- **Konu:** @emirreddit'in (ve Sultan Reddit'in) en çok izlenen hikayelerinden, arşivde olmayan **iki** tanesinin
+Her çalıştırmada **üç hikaye**: `bolumler/<YARININ TARİHİ>-a-konu/`, `-b-konu/`, `-c-konu/` (klasör tarihi = yayın günü).
+- YouTube yayın saatleri: A 08:00, B 12:00, C 19:00 (metadata.md'ye yaz).
+- Her hikayede **iki TikTok**: `tiktok.txt` (kanca 1 = `hikaye.txt`'nin ilk paragrafı) ve `tiktok2.txt` (kanca 2 =
+  hikayenin içinden en çarpıcı an/sır/alıntı, 2-3 cümle, finali vermeden). İkisinde de kancadan sonraki gövde aynı:
+  `hikaye.txt`'nin ikinci paragrafından başlayıp ~830-850. kelimeye kadar aynen. Örnek: `bolumler/2026-11-16-a-almanca/tiktok2.txt`.
+- metadata.md'de iki TikTok açıklaması (her biri kendi kancasının ilk ~10 kelimesi) ve önerilen TikTok saatleri:
+  A 09:00 + 14:00, B 13:00 + 18:00, C 20:00 + 22:00 (kanca 1 önce, kanca 2 sonra).
+- Üretim sırası: A, B, C tek arka plan komutunda; teslimde her hikaye için TikTok 1, TikTok 2, YouTube 720p, kapak, metadata.
+- `kart.txt` = kanca 1'in ilk cümlesi; YouTube başlığı da bu cümle.
+
+### Rakip hikayelerini okuma (16 Kasım 2026)
+Kullanıcı: "Emir'in en popüler içeriklerinin hikayesini çekip benzerlerini yap." YouTube sayfaları bot engeline takılıyor
+ve Whisper modeli indirilemiyor; Emir'in TikTok altyazısı tek kelime ve kırmızı olduğu için **OCR** ile okunuyor:
+`apt-get install -y tesseract-ocr tesseract-ocr-tur`, sonra `python3 rakip_ocr.py <tiktok_video_url> <çıktı.txt>`
+(kırmızı pikselleri ayırıp tesseract'a verir; metin gürültülü ama olay örgüsü anlaşılır). Okunan metin **sadece analiz
+içindir**: depoya koyma, kopyalama. Kendi cümlelerinle 3-5 satırlık bir kurulum özeti çıkar, "Sıradaki konular"
+listesinde ilgili satırın altına yaz; hikayeyi o kurulumdan yola çıkıp kendi olaylarınla ve finalinle yaz.
+
+- **Konu:** @emirreddit'in (ve Sultan Reddit'in) en çok izlenen hikayelerinden, arşivde olmayan **üç** tanesinin
   **konusunu ve hook yapısını** al; olayları, karakterleri ve finali **kendin yaz** (metni/videoyu kopyalama).
   Liste: `yt-dlp --flat-playlist --print "%(view_count)s|||%(description)s" "https://www.tiktok.com/@emirreddit" | sort -rn`.
   Henüz kullanılmayanlar (15 Kasım): yeğen "gerçek torunlar önce yer" (725 B), kocanın yabancı dilde sırrı (726 B),
