@@ -5,10 +5,10 @@
 Karım Annesiyle Almanca Konuşurken Bir Kelime Bile Anlamadığımı Sanıyordu…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm MM:SS'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:33'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-MM:SS TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:33 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Karım ve kayınvalidem benden bir şey saklamak istediklerinde hep Almancaya geçerdi. Bilmedikleri bir şey vardı: iki yıldır her sabah beşte kalkıp, karımın doksan yaşındaki anneannesine sürpriz yapmak için gizlice Almanca öğreniyordum. Bir akşam mutfakta, evin tapusuyla ilgili bir plan duydum. Ve o doğum gününde mikrofonu elime aldım.
 
@@ -27,7 +27,7 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, aldatma, evlilik, kayın
 KARIM ANNESİYLE ALMANCA KONUŞURKEN BİR KELİME BİLE ANLAMADIĞIMI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum
-2. bölüm YouTube'da: Reddit Günlüğü kanalında "Karım Annesiyle Almanca Konuşurken…" videosu, MM:SS'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü kanalında "Karım Annesiyle Almanca Konuşurken…" videosu, 08:33'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir (akşam B'ye geçir).
