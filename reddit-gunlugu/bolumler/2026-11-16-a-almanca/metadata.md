@@ -24,10 +24,10 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, aldatma, evlilik, kayın
 **Kapak:** kapak.jpg (özel küçük resim)
 
 ## TikTok (12:30, aynı videoyu 13:30 ve 15:00'te tekrar yükle)
-KARIM ANNESİYLE ALMANCA KONUŞURKEN BİR KELİME BİLE ANLAMADIĞIMI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+KARIM ANNESİYLE ALMANCA KONUŞURKEN BİR KELİME BİLE ANLAMADIĞIMI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum
-2. bölüm YouTube'da: Reddit Günlüğü kanalında "Karım Annesiyle Almanca Konuşurken…" videosu, 08:33'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Karım Annesiyle Almanca Konuşurken…" videosu, 08:33'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir (akşam B'ye geçir).

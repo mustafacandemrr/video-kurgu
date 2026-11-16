@@ -74,7 +74,7 @@ ve 1,7 milyon). Analiz edilen en iyi videoların ortak kalıpları; bunları uyg
   Ayrı bir "her şey değişecekti" cümlesine gerek yok; kesinti kendisi merak yaratır.
 - **Kapanış (sabit, script ekler):** "İkinci bölümü beklemek istemiyorsan…" kalıbıyla YouTube'a yönlendirirler.
 - **TikTok açıklaması:** Hikayenin ilk cümlesi **BÜYÜK HARFLE** ve "..." ile kesik + 🛑 + "Hikâyenin 2. bölümü
-  profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını arayın" + 2-3 hashtag.
+  profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını arayın" + 2-3 hashtag.
 - Hikayeler genelde aile içi haksızlık (miras/vasiyet, hediye ayrımcılığı, düğün/nişan iptali, aldatma,
   ailenin "işe yaramaz" dediği kişinin aslında herkesi finanse etmesi) ve **kahramanın sakin ama ezici
   karşı hamlesi** üzerine.
@@ -97,7 +97,7 @@ artık uygulanan kurallar (ayrıntı: `ANALIZ-TIKTOK.md`, 13 Kasım bölümü):
   - Kaza ile ortaya çıkan gerçek: "NİŞANLIM INSTAGRAM'A BİR VİDEO YÜKLEDİ VE SESİNİ KAPATMAYI UNUTTU" (418 B)
   Her hikayenin hook'unda bu kalıplardan birini **yapı olarak** kullan (içerik özgün kalsın).
 - **Açıklama formatı (Emir'in birebir yapısı):** `İLK CÜMLENİN İLK ~10 KELİMESİ... 🛑 Hikâyenin 2. Bölümü profilimdeki
-  bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye` (tek hashtag).
+  bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye` (tek hashtag).
 - **Yeniden yükleme:** Emir aynı videoyu 2-3 kez yüklüyor (aynı video 36 B / 65 B / 148 B; 259 B / 493 B aldı).
   Son mesajda kullanıcıya hatırlat: ilk yükleme düşük kalırsa ertesi gün aynısını tekrar yüklesin.
 
@@ -162,7 +162,7 @@ Kullanılanlar: ✅ vasiyet (15.11 b), ✅ hediye yok (13.11), ✅ kiracılar (1
   sonra 3-4 cümle spoiler'sız özet, "Sence…? Yorumlara yaz.", abone cümlesi, `#reddit #reddithikayeleri #redditgunlugu`
 - YouTube etiketleri (10-15, virgülle) ve "Kapak: kapak.jpg (özel küçük resim)"
 - TikTok açıklaması (Emir formatı): ilk cümlenin ilk ~10 kelimesi BÜYÜK HARFLE + "..." + ` 🛑 Hikâyenin 2. Bölümü
-  profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye`
+  profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye`
 - TikTok sabitlenmiş yorumu (YouTube başlığı + MM:SS)
 - Paylaşım saatleri: **Hikaye A** YouTube 12:00, TikTok 12:30 (+ aynı video 13:30 ve 15:00'te tekrar);
   **Hikaye B** YouTube 19:30, TikTok 20:00 (+ 21:00 ve 22:30'da tekrar). Her ikisinde "yapay zekâ ile oluşturulan içerik" açık.
@@ -193,7 +193,7 @@ abone hatırlatması; kapanış boyunca sağda paylaş butonunu gösteren sallan
   rozeti gösterir ve `bolum2.txt`'ye bölüm satırlarını yazar. **YouTube açıklamasının ilk satırı:**
   "TikTok'tan geldiysen 2. bölüm MM:SS'te başlıyor 👇" ve açıklamada `bolum2.txt` satırları (YouTube bölümleri).
 - TikTok metni `hikaye.txt`'nin başıyla kelimesi kelimesine aynı olmalı (hook hariç); TikTok'a hikayede olmayan cümle ekleme.
-- metadata.md'ye TikTok için **sabitlenmiş yorum** ekle: "2. bölüm YouTube'da: Reddit Günlüğü kanalında '<YouTube başlığı>' videosu, MM:SS'ten itibaren 👆"
+- metadata.md'ye TikTok için **sabitlenmiş yorum** ekle: "2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında '<YouTube başlığı>' videosu, MM:SS'ten itibaren 👆"
 - Son mesajda hatırlat: TikTok profil bağlantısı o günün YouTube videosunu göstersin.
 
 ## 3. Videoları üret

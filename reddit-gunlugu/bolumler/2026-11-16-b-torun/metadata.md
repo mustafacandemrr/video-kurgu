@@ -24,10 +24,10 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, evlatlık, babaanne, tor
 **Kapak:** kapak.jpg (özel küçük resim)
 
 ## TikTok (20:00, aynı videoyu 21:00 ve 22:30'da tekrar yükle)
-BAYRAM SOFRASINDA YEĞENİM, YEDİ YAŞINDAKİ OĞLUMA BAKIP "SADECE BABAANNEMİN GERÇEK... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+BAYRAM SOFRASINDA YEĞENİM, YEDİ YAŞINDAKİ OĞLUMA BAKIP "SADECE BABAANNEMİN GERÇEK... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum
-2. bölüm YouTube'da: Reddit Günlüğü kanalında "Yeğenim 7 Yaşındaki Oğluma…" videosu, 08:23'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Yeğenim 7 Yaşındaki Oğluma…" videosu, 08:23'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını akşam bu YouTube videosuna çevir.

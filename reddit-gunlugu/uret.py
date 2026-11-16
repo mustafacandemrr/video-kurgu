@@ -46,7 +46,7 @@ TURKUAZ = "&H00F5E03E&"          # #3EE0F5, ASS renk sırası BGR
 # TikTok kapanışı (rakip @emirreddit de izleyiciye paylaş butonuna bastırıyor: paylaşım TikTok'ta en güçlü sinyallerden)
 KAPANIS = ("İkinci bölümü beklemek istemiyorsan, hikayenin tamamını YouTube kanalımda izleyebilirsin. "
            "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder. "
-           "Sonra profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü kanalını arat. "
+           "Sonra profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü Plus kanalını arat. "
            "Abone olmayı da unutma!")
 # YouTube: kanal yeni, abone hatırlatmaları (sesli + ekranda abone ol animasyonu)
 YT_GIRIS = ("Başlamadan önce küçük bir rica. Kanalımız daha çok yeni. Bu hikayeyi beğenirsen abone olmayı "
