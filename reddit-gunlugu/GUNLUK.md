@@ -129,9 +129,9 @@ haksızlık) ve hook yapısını al; Türkiye'ye taşı, karakterleri, ara olayl
 Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse rolü kardeş/eş olarak değiştir.
 1. ✅ (15.11 vasiyet) Emir 1,9 M — "Babamın vasiyetinde bana maddi değeri olan hiçbir şey bırakılmadığı okunduğunda herkes güldü…"
    (lokanta bölümünde marka mirası kullanıldı; farklı bir miras nesnesiyle yaz: ör. eski bir arsa senedi değil, bir defter/bir anahtar)
-2. Emir 726 B — "Kocam annesine Korece olarak en iyi arkadaşımı hamile bıraktığını söylemişti…" → erkek: "Karım annesiyle
+2. ✅ (16.11 a) Emir 726 B — "Kocam annesine Korece olarak en iyi arkadaşımı hamile bıraktığını söylemişti…" → erkek: "Karım annesiyle
    Kürtçe/Almanca konuşurken…" (anlatıcı dili bildiğini saklamış)
-3. Emir 725 B — "Akşam yemeğinde yeğenim 7 yaşındaki oğluma 'Sadece büyükannenin gerçek torunları önce yer' dedi"
+3. ✅ (16.11 b) Emir 725 B — "Akşam yemeğinde yeğenim 7 yaşındaki oğluma 'Sadece büyükannenin gerçek torunları önce yer' dedi"
 4. Emir 524 B — "Annemin düğünündeydim. Orada olduğumdan haberi bile yoktu…" → erkek: "Babamın düğünündeydim…"
 5. Sultan 148 B — "Ağabeyim bana ailenin en sıkıcı insanı derdi, çünkü şakalarına hep ağlardım…"
 6. Emir 424 B — "Karımın günlüğünü yanlışlıkla okudum ve benimle evlenmenin hayatının en büyük hatası olduğunu yazmıştı…"
