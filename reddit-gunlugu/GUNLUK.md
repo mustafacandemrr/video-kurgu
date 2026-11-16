@@ -163,6 +163,36 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 15. Emir 201 B — "Ailem neşeli bir aile buluşmasında Disney biletlerini dağıtırken…" → Türkiye: tatil/otel paketi
 16. Emir 153 B — "Tamamen benim karşıladığım bir tatile yeğenlerimin yanlarında…"
 17. Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
+**Rakip kurulumları (16 Kasım, TikTok altyazısından OCR; kendi cümlelerimizle özet, birebir kopyalama yok):**
+- *Annemin düğünü (Emir 524 B):* Anlatıcıyı bebekken annesi terk etmiş, babası tek başına büyütmüş (saç örmeyi
+  videolardan öğrenmiş, çift vardiya çalışmış); sonra üvey anne gerçek anne olmuş. Anlatıcı düğün fotoğrafçısı;
+  bir gün çekim için gittiği malikanedeki düğün, hiç tanımadığı öz annesinin düğünü çıkıyor. → Bizde: erkek fotoğrafçı,
+  "babamın düğünündeydim", bizi bırakan babanın yeni ailesi.
+- *Kocamın günlüğü (Emir 424 B):* On yıllık evlilik, iki çocuk; dolap düzenlerken eşin eski defteri düşüp açılıyor;
+  altı yıldır yazdığı satırlarda "seninle evlenmek hayatımın en büyük hatası, sıkıcısın, çocuklar ve boşanmanın
+  masrafı yüzünden kalıyorum" yazıyor. Anlatıcı hiçbir şey söylemeden kendi hayatını sessizce yeniden kurmaya başlıyor.
+  → Bizde: "Karımın günlüğü", erkek anlatıcı.
+- *Nişanlımın Instagram videosu (Emir 419 B):* Anlatıcı aslında zengin bir ailenin varisi, babasının şirketinde
+  sıradan biri gibi çalışıyor; nişanlısının sesi açık unuttuğu videoda başka biriyle konuşurken "onunla mı evleneceğim,
+  asla, yanımda tuttuğum küçük bir köpek o" dediği duyuluyor. Anlatıcı yüzüğü çıkarıp babasına "görücü usulünü kabul
+  ediyorum" yazıyor, düğün organizatörüne "gelini değiştiriyoruz" diyor.
+- *Karım gözlerimin içine bakarak… (Emir 379 B):* Çatı ustası koca; karısı eskiden kamyonetin göstergesine "su içmeyi
+  unutma" gibi notlar bırakırmış, o hepsini bir kahve kutusunda saklamış; notlar kesilmiş, karısı ona ev arkadaşı gibi
+  davranıyor; bir gün "yemek yapmak, temizlik, seninle aynı yatakta yatmak zorunda değilim" diyor. Anlatıcı ona
+  "zorunluluksuz" bir evliliğin neye benzediğini gösteriyor.
+- *Erkek arkadaşımın arkadaş grubu (Emir 193 B):* Sevgilisi "en yakın kız arkadaşımı üzersen biter" diye uyarıyor;
+  o arkadaş grubun dokunulmazı. Tanışma yemeğinde arkadaş beyaz bir elbiseyle masanın ortasında oturuyor. → Bizde:
+  "Kız arkadaşımın en yakın erkek arkadaşı".
+- *Trafik kazası (Emir 188 B):* Anlatıcıya tır çarpıyor; acilden karısını arıyor; karısı arkada kahkahalar olan bir
+  restoranda, "şimdi kalkıp gitmem ayıp olur, birini ara" deyip kapatıyor; anlatıcı kayınbiraderini arayınca
+  hepsinin aynı restoranda olduğu çıkıyor.
+- *Tatil masrafı (Emir 156 B):* Bütün masrafı anlatıcının karşıladığı tatile yeğenleri bir arkadaşlarını da getirmek
+  istiyor, parayı yine onun ödemesini bekliyorlar; "hayır" deyince "o gelmezse biz de gelmeyiz" diyorlar; anlatıcı
+  "tamam, evde kalın" diyor; anne kardeşin tarafını tutuyor.
+- *İş arkadaşı Madison (Emir 131 B):* Anlatıcı babasının "sahip olduklarını gösterme" öğüdüyle lüks hayatını saklıyor;
+  iş arkadaşı aylar sonra annesi ve avukatıyla mahkemeye gelip "kocan beni hamile bıraktı" diye milyonlarca tazminat
+  istiyor; anlatıcının kocası beş yıl önce ölmüştür.
+
 Kullanılanlar: ✅ vasiyet (15.11 b), ✅ hediye yok (13.11), ✅ kiracılar (14.11), ✅ babam bunu bilmiyor ama (15.11), ✅ işe yaramazlar (12.11).
 
 ### `tiktok.txt` (her hikayeye bir TikTok, hikayenin başı, **~5:00-5:10**)
