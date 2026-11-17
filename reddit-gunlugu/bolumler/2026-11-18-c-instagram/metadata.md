@@ -5,10 +5,10 @@
 Nişanlım Instagram'a Bir Video Yükledi ve Sesini Kapatmayı Unuttu…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:14'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:14 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Nişanlım, babamın üç bin kişilik fabrikasının sahibi olduğunu hiç bilmedi; ona sıradan bir sevkiyat uzmanı olduğumu söylemiştim. Bir gece Instagram videosunun arkasında sesini duydum: "Alp sadece yanımda tuttuğum küçük bir köpek." Yüzüğü çıkardım ve düğün organizatörüne tek cümle söyledim: "Gelini değiştiriyoruz."
 
@@ -30,7 +30,7 @@ NİŞANLIM INSTAGRAM'A BİR VİDEO YÜKLEDİ VE SESİNİ KAPATMAYI UNUTTU. ARKAD
 BABAM ÜÇ BİN KİŞİNİN ÇALIŞTIĞI BİR FABRİKANIN SAHİBİ. AMA NİŞANLIM BUNU HİÇ BİLMEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Nişanlım Instagram'a Bir Video Yükledi…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Nişanlım Instagram'a Bir Video Yükledi…" videosu, 08:14'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
