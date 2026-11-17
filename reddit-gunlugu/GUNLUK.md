@@ -149,10 +149,10 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 2. ✅ (16.11 a) Emir 726 B — "Kocam annesine Korece olarak en iyi arkadaşımı hamile bıraktığını söylemişti…" → erkek: "Karım annesiyle
    Kürtçe/Almanca konuşurken…" (anlatıcı dili bildiğini saklamış)
 3. ✅ (16.11 b) Emir 725 B — "Akşam yemeğinde yeğenim 7 yaşındaki oğluma 'Sadece büyükannenin gerçek torunları önce yer' dedi"
-4. Emir 524 B — "Annemin düğünündeydim. Orada olduğumdan haberi bile yoktu…" → erkek: "Babamın düğünündeydim…"
+4. ✅ (18.11) Emir 524 B — "Annemin düğünündeydim. Orada olduğumdan haberi bile yoktu…" → erkek: "Babamın düğünündeydim…"
 5. Sultan 148 B — "Ağabeyim bana ailenin en sıkıcı insanı derdi, çünkü şakalarına hep ağlardım…"
-6. Emir 424 B — "Karımın günlüğünü yanlışlıkla okudum ve benimle evlenmenin hayatının en büyük hatası olduğunu yazmıştı…"
-7. Emir 419 B — "Nişanlım Instagram'a bir video yükledi ve sesini kapatmayı unuttu…"
+6. ✅ (18.11) Emir 424 B — "Karımın günlüğünü yanlışlıkla okudum ve benimle evlenmenin hayatının en büyük hatası olduğunu yazmıştı…"
+7. ✅ (18.11) Emir 419 B — "Nişanlım Instagram'a bir video yükledi ve sesini kapatmayı unuttu…"
 8. Emir 360 B — "Karım gözlerimin içine bakarak bana şöyle dedi: 'Yemek yapmak, temizlik yapmak…'"
 9. Sultan 84 B — "Ailemin bir geleneği var…" (aile sırrı/gelenek)
 10. Sultan 77 B — "Evleneceğimi söylediğimde ailem güldü. Düğün günümde annem…"
