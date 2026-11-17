@@ -5,10 +5,10 @@
 Babamın Düğünündeydim. Orada Olduğumdan Haberi Bile Yoktu…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:25'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:25 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Otuz dört yıl önce, ben altı aylıkken bizi terk eden babam yeniden evlendi. Düğününün fotoğrafçısı bendim ve beni tanımadı bile. Aile fotoğrafı çekilirken "Eksik kimse var mı?" diye sordular. Kamerayı indirdim.
 
@@ -30,7 +30,7 @@ BABAMIN DÜĞÜNÜNDEYDİM. ORADA OLDUĞUMDAN HABERİ BİLE YOKTU. ÇÜNKÜ OTUZ
 BABAM DÜĞÜN KONUŞMASINDA MİKROFONU ALDI VE "HAYATIMDA HİÇBİR ŞEYDEN PİŞMAN DEĞİLİM" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Babamın Düğünündeydim…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Babamın Düğünündeydim…" videosu, 08:25'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
