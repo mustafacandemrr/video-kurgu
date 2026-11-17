@@ -228,6 +228,12 @@ Kullanıcı: "TikTok'ta ilk video 14 B izlendi; YouTube'da abone az, kapak yok."
   "YouTube'da özel küçük resim olarak yükle" de.
 - Maskotlu logo gelirse `girdi/logo.png` yerine koy (kare, şeffaf PNG); kart, kapak ve köşe logosu onu kullanır.
 
+### TikTok arka planı (17 Kasım 2026, kullanıcı: "TikTok arka planını değiştirelim, diğer kanallar gibi")
+Rakipler (@emirreddit, @sultan.reddit) makine videolarından **elle yapılan iş yakın çekimlerine** geçti: kaykay/tuval
+boyama, pasta süsleme, yemek hazırlama, güzellik/oje. `uret.py` artık `EL_ISI` listesini (51 Mixkit klibi: pasta,
+çikolata, boyama, çömlek, oje, hamur/suşi, yemek; ücretsiz lisans) kullanır; klipler `girdi/el_klipler/`, önbellek
+`girdi/_tiktok_el_bg*.mp4`. Rakiplerin kendi videolarını/başka içerik üreticilerinin görüntülerini kullanma.
+
 ### TikTok kapanışı (14 Kasım 2026)
 Emir kapanışta izleyiciye "paylaş seçeneğine" bastırıyor (paylaşım TikTok'ta en güçlü sinyal). Bizim kapanış
 (`KAPANIS`): YouTube yönlendirmesi + "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder" +

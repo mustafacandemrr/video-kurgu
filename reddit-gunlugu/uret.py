@@ -344,7 +344,16 @@ def mixkit_indir(klasor):
 # Rakip (@emirreddit) tarzı arka plan: fabrika/makine, kıvılcım, ahşap kesme, araba köpük-cila, halı/koltuk
 # temizleme, pasta/çikolata yakın çekimleri. Mixkit ücretsiz lisans (13 Kasım 2026'da seçildi). Yatay; 9:16 ortadan kırpılır.
 EMIR_TARZI = [2230, 2233, 2236, 2250, 2252, 2861, 4730, 4750, 14785, 16059, 17024, 17675, 20770, 20906, 32817, 34612, 39692, 39699, 41112, 41115, 41117, 44862, 44863, 45039, 45041, 45674, 45755, 46082, 46965, 47257, 47291, 47295, 47586, 47588, 47642, 47830, 48836, 50015, 50017, 50053, 52208]
-MIXKIT_SATISFYING = EMIR_TARZI
+# 17 Kasım 2026: rakipler (@emirreddit, @sultan.reddit) makineden "elle yapılan iş" yakın çekimlerine geçti
+# (kaykay/tuval boyama, pasta süsleme, yemek hazırlama, güzellik). Aynı tarz, Mixkit ücretsiz lisans.
+EL_ISI = [50015, 50017, 50019, 50020, 50022, 50023, 50052, 50018, 50053, 50033, 50032,
+          41115, 41125, 41110, 41120, 41112, 41117, 44096,
+          43444, 41611, 5258, 43446, 43445, 40319, 51019, 2858,
+          9765, 32170, 32103, 32107, 40013,
+          7412, 13084, 7118, 22417, 15804,
+          42465, 42466, 42471, 46770, 45920, 46009, 46008, 46007, 47555, 43037, 47103, 45726, 9278,
+          367, 40552]
+MIXKIT_SATISFYING = EL_ISI
 
 
 def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
@@ -352,7 +361,7 @@ def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
     varyant>0: aynı hikayenin yeniden paylaşımı için farklı klip sırası ve farklı kesitler (rakip böyle yapıyor)."""
     if os.path.exists(cikti):
         return cikti
-    kdir = os.path.join(ORTAK, "emir_klipler")
+    kdir = os.path.join(ORTAK, "el_klipler")
     os.makedirs(kdir, exist_ok=True)
     yatay = []
     for i in MIXKIT_SATISFYING:
@@ -596,7 +605,7 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         return
     else:
         v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2
-        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_emir_bg{'' if v == 0 else v}.mp4"), varyant=v)
+        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_el_bg{'' if v == 0 else v}.mp4"), varyant=v)
     cikti = os.path.join(klasor, f"{onek}{ad}.mp4")
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"), cikti, W, H, round(logo_y), sure, kose_logo=True)
     if not sure:
