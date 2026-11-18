@@ -5,10 +5,10 @@
 Bütün Masrafını Benim Karşıladığım Aile Tatiline Yeğenlerim İki Arkadaşlarını da Getirmek İstedi…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 07:50'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+07:50 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Her yaz bütün ailemi tatile götürüyorum. Bu yıl yeğenlerim iki arkadaşlarını da benim paramla getirmek istedi; "hayır" deyince "o zaman biz de gelmeyiz" dediler. Annem kardeşimin tarafını tuttu: "Senin paran var ama kalbin yok." Bilmediği şey, çekmecemde onun için bekleyen bir tapuydu.
 
@@ -30,7 +30,7 @@ BÜTÜN MASRAFINI BENİM KARŞILADIĞIM AİLE TATİLİNE YEĞENLERİM İKİ ARKA
 ANNEM BANA "SENİN PARAN VAR AMA KALBİN YOK" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Bütün Masrafını Benim Karşıladığım Aile Tatiline…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Bütün Masrafını Benim Karşıladığım Aile Tatiline…" videosu, 07:50'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
