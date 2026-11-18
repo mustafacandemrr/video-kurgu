@@ -5,10 +5,10 @@
 Yıldönümü Yemeğimizde Garson Siparişimizi Almaya Geldiğinde Karım Menümü Elimden Aldı…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 07:48'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+07:48 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 On iki yıllık işimden çıkarıldıktan üç ay sonra, on yıllık evlilik yıldönümümüzde karım garsona "O yemeyecek, bu ay eve bir kuruş getirmedi" dedi ve paraları masada yelpaze gibi açtı. Bilmediği bir şey vardı: oturduğumuz evin son taksitlerini benim tazminatım ödemişti. Ve yan masadaki yaşlı adam beni tanıyordu.
 
@@ -30,7 +30,7 @@ YILDÖNÜMÜ YEMEĞİMİZDE GARSON SİPARİŞİMİZİ ALMAYA GELDİĞİNDE KARIM
 KARIM ON YILLIK EVLİLİK YILDÖNÜMÜMÜZDE GARSONA "KAZANMAYAN YEMEZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Yıldönümü Yemeğimizde…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Yıldönümü Yemeğimizde…" videosu, 07:48'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.

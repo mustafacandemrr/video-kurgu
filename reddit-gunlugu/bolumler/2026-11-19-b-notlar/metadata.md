@@ -5,10 +5,10 @@
 Karım Gözlerimin İçine Bakarak Bana Şöyle Dedi: "Seninle Aynı Yatakta Yatmak Zorunda Değilim"…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:07'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:07 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 On beş yıl boyunca karım her sabah kamyonetimin göstergesine küçük bir not bıraktı, ben dört yüz on iki notun hepsini sakladım. Bir yıl önce notlar kesildi ve karım bana ev arkadaşı gibi davranmaya başladı. Bir gece "Hiçbir şeye mecbur değilim" dedi. Ben de ona zorunluluğu olmayan bir evliliğin neye benzediğini gösterdim.
 
@@ -30,7 +30,7 @@ KARIM GÖZLERİMİN İÇİNE BAKARAK BANA ŞÖYLE DEDİ: "YEMEK YAPMAK, TEMİZL�
 ON BEŞ YIL BOYUNCA KARIM HER SABAH KAMYONETİMİN GÖSTERGESİNE KÜÇÜK BİR NOT BIRAKTI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Karım Gözlerimin İçine Bakarak…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Karım Gözlerimin İçine Bakarak…" videosu, 08:07'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
