@@ -153,7 +153,7 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 5. Sultan 148 B — "Ağabeyim bana ailenin en sıkıcı insanı derdi, çünkü şakalarına hep ağlardım…"
 6. ✅ (18.11) Emir 424 B — "Karımın günlüğünü yanlışlıkla okudum ve benimle evlenmenin hayatının en büyük hatası olduğunu yazmıştı…"
 7. ✅ (18.11) Emir 419 B — "Nişanlım Instagram'a bir video yükledi ve sesini kapatmayı unuttu…"
-8. Emir 360 B — "Karım gözlerimin içine bakarak bana şöyle dedi: 'Yemek yapmak, temizlik yapmak…'"
+8. ✅ (19.11 b) Emir 360 B — "Karım gözlerimin içine bakarak bana şöyle dedi: 'Yemek yapmak, temizlik yapmak…'"
 9. Sultan 84 B — "Ailemin bir geleneği var…" (aile sırrı/gelenek)
 10. Sultan 77 B — "Evleneceğimi söylediğimde ailem güldü. Düğün günümde annem…"
 11. Sultan 66 B — "Kız kardeşim oğluma koymayı seçtiğim ismi yeni doğan bebeğine verdi. Bilmediği şey, o ismin…"
@@ -161,8 +161,9 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 13. Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
 14. Sultan 55 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
 15. Emir 201 B — "Ailem neşeli bir aile buluşmasında Disney biletlerini dağıtırken…" → Türkiye: tatil/otel paketi
-16. Emir 153 B — "Tamamen benim karşıladığım bir tatile yeğenlerimin yanlarında…"
+16. ✅ (19.11 c) Emir 153 B — "Tamamen benim karşıladığım bir tatile yeğenlerimin yanlarında…"
 17. Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
+18. ✅ (19.11 a) Emir 674 B — "Yıldönümü yemeğimizde garson siparişimizi almaya geldiğinde kocam…" (yeni hit, 18.11)
 **Rakip kurulumları (16 Kasım, TikTok altyazısından OCR; kendi cümlelerimizle özet, birebir kopyalama yok):**
 - *Annemin düğünü (Emir 524 B):* Anlatıcıyı bebekken annesi terk etmiş, babası tek başına büyütmüş (saç örmeyi
   videolardan öğrenmiş, çift vardiya çalışmış); sonra üvey anne gerçek anne olmuş. Anlatıcı düğün fotoğrafçısı;
