@@ -5,10 +5,10 @@
 Korkunç Bir Trafik Kazası Geçirdikten Sonra Acil Servisten Karımı Aradım…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:39'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:39 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Bir tır şeridime girdi, acil serviste kırık kaburgalarla yatarken karımı aradım. Arkada kahkahalar vardı: "Şimdi kalkıp gelemem, ayıp olur, birini ara." Kayınbiraderim de aynı yemekteydi, benim kartımla ödenen bir nişan yemeğinde. Beni almaya gelen tek kişi, sekiz yıldır konuşmadığım ağabeyimdi. Ve bana babamın cenazesiyle ilgili bilmediğim bir şey söyledi.
 
@@ -30,7 +30,7 @@ KORKUNÇ BİR TRAFİK KAZASI GEÇİRDİKTEN SONRA ACİL SERVİSTEN KARIMI ARADIM
 ACİL SERVİSTE, KIRIK KABURGALARLA YATARKEN BENİ ALMAYA GELEN TEK KİŞİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Korkunç Bir Trafik Kazası…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Korkunç Bir Trafik Kazası…" videosu, 08:39'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
