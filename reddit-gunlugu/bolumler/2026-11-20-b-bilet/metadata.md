@@ -5,10 +5,10 @@
 Babam Yaş Gününde Bütün Aileyi Topladı ve Torunlarına Tek Tek Zarf Dağıttı…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:00'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:00 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Babam altmış beşinci yaş gününde torunlarına Antalya'da otel tatili hediye etti. Sıra sekiz yaşındaki kızıma gelince "Sizinkiler öyle yerlere alışık değil" dedi. Kızımın elini tutup kalktım. Bir hafta sonra gece üçte Antalya'daki bir hastaneden telefon geldi ve babamı bulmak için aradıkları tek kişi bendim.
 
@@ -30,7 +30,7 @@ BABAM YAŞ GÜNÜNDE BÜTÜN AİLEYİ TOPLADI VE TORUNLARINA TEK TEK ZARF... �
 BABAM ALTI TORUNUNDAN BEŞİNE ANTALYA'DA OTEL TATİLİ HEDİYE ETTİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Babam Yaş Gününde…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Babam Yaş Gününde…" videosu, 08:00'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
