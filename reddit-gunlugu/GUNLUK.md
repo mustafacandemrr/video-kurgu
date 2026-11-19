@@ -160,10 +160,11 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 12. Sultan 66 B — "Düğünden dakikalar önce nişanlımdan bir mesaj geldi: 'Bunu yapamam'…"
 13. Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
 14. Sultan 55 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
-15. Emir 201 B — "Ailem neşeli bir aile buluşmasında Disney biletlerini dağıtırken…" → Türkiye: tatil/otel paketi
+15. ✅ (20.11 b) Emir 201 B — "Ailem neşeli bir aile buluşmasında Disney biletlerini dağıtırken…" → Türkiye: tatil/otel paketi
 16. ✅ (19.11 c) Emir 153 B — "Tamamen benim karşıladığım bir tatile yeğenlerimin yanlarında…"
-17. Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
+17. ✅ (20.11 a) Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
 18. ✅ (19.11 a) Emir 674 B — "Yıldönümü yemeğimizde garson siparişimizi almaya geldiğinde kocam…" (yeni hit, 18.11)
+19. ✅ (20.11 c) Emir 194 B — "Erkek arkadaşımın üç erkek ve bir kızdan oluşan bir arkadaş grubu…" → "Kız arkadaşımın en yakın erkek arkadaşı"
 **Rakip kurulumları (16 Kasım, TikTok altyazısından OCR; kendi cümlelerimizle özet, birebir kopyalama yok):**
 - *Annemin düğünü (Emir 524 B):* Anlatıcıyı bebekken annesi terk etmiş, babası tek başına büyütmüş (saç örmeyi
   videolardan öğrenmiş, çift vardiya çalışmış); sonra üvey anne gerçek anne olmuş. Anlatıcı düğün fotoğrafçısı;
