@@ -5,10 +5,10 @@
 Kız Arkadaşım Beni Arkadaş Grubuyla Tanıştırmadan Önce Tek Bir Şey Söyledi: "Can'ı Üzersen Biter"…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 07:54'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+07:54 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Kız arkadaşımın en yakın erkek arkadaşı grubun dokunulmazıydı. Tanışma yemeğinde masanın başına oturdu, onun yerine sipariş verdi ve bana "Sen de geçicisin" dedi. O gece gruptan biri bana yazdı: "Sen dördüncüsün. Kanıtlarım var." Ben bir itfaiyeciyim ve bir yangına girmeden önce keşif yapmayı bilirim.
 
@@ -30,7 +30,7 @@ KIZ ARKADAŞIM BENİ ARKADAŞ GRUBUYLA TANIŞTIRMADAN ÖNCE TEK BİR ŞEY SÖYLE
 KIZ ARKADAŞIMIN EN YAKIN ERKEK ARKADAŞI, ONUN SON ÜÇ SEVGİLİSİNİ DE AYNI YÖNTEMLE... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Kız Arkadaşım Beni Arkadaş Grubuyla…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Kız Arkadaşım Beni Arkadaş Grubuyla…" videosu, 07:54'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
