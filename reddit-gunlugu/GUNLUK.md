@@ -165,6 +165,10 @@ Kadın anlatıcılı konuları erkek anlatıcıya çevir (ses: Ahmet), gerekirse
 17. ✅ (20.11 a) Emir 146 B — "Korkunç bir trafik kazası geçirdikten sonra karımı aradım ve…"
 18. ✅ (19.11 a) Emir 674 B — "Yıldönümü yemeğimizde garson siparişimizi almaya geldiğinde kocam…" (yeni hit, 18.11)
 19. ✅ (20.11 c) Emir 194 B — "Erkek arkadaşımın üç erkek ve bir kızdan oluşan bir arkadaş grubu…" → "Kız arkadaşımın en yakın erkek arkadaşı"
+20. ✅ (21.11 a) Sultan 38 B (YouTube) — "Okula oğlumu almaya gittiğimde diğerlerine benim onun bakıcısı olduğumu söyledi" → "şoförümüz"
+21. ✅ (21.11 b) Sultan 20 B — "Eve sürpriz yapmak için erken döndüm; karımı bir hizmetçi gibi bulaşık yıkarken buldum"
+22. ✅ (21.11 c) Sultan 24 B — "Apartmanımızın WhatsApp grubunda bir anda tuhaf bir duyuru çıktı"
+**Not (20.11):** Emir'in TikTok konularının hepsi kullanıldı. Yeni konu için Sultan'ın YouTube başlıklarına bak: `yt-dlp --flat-playlist --playlist-end 30 --print "%(view_count)s	%(title)s" "https://www.youtube.com/@sultanreddit/videos" | sort -rn`. Sıradaki adaylar: "Aile yemeğinde babam harçlığımın yetip yetmediğini sordu" (14 B), "Bir müşteri yanlış sos yüzünden işimden atılmamı sağladı" (5,7 B), "Kızlarım babalarından boşanırsam beni görmeyeceklerini söyledi" (8,7 B), "Karımın kızı beni ailenin önünde aşağıladı" (10 B).
 **Rakip kurulumları (16 Kasım, TikTok altyazısından OCR; kendi cümlelerimizle özet, birebir kopyalama yok):**
 - *Annemin düğünü (Emir 524 B):* Anlatıcıyı bebekken annesi terk etmiş, babası tek başına büyütmüş (saç örmeyi
   videolardan öğrenmiş, çift vardiya çalışmış); sonra üvey anne gerçek anne olmuş. Anlatıcı düğün fotoğrafçısı;
