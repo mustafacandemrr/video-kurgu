@@ -5,10 +5,10 @@
 Kızımı Okuldan Almaya Gittiğimde Arkadaşlarına Beni "Bu Bizim Şoförümüz" Diye Tanıttı…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:18'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:18 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Belediye otobüsü şoförüyüm, kızım tam burslu olarak İstanbul'un en pahalı okuluna girdi. Bir gün onu almaya gittiğimde arkadaşlarına beni "şoförümüz" diye tanıttı. Üç ay boyunca bu oyunu oynadım, arka kapıyı açıp "Buyurun Defne Hanım" dedim. Ta ki mezuniyet gecesi sınıfın en zengin kızının babası beni otoparkta görene kadar.
 
@@ -30,7 +30,7 @@ KIZIMI OKULDAN ALMAYA GİTTİĞİMDE ARKADAŞLARINA BENİ "BU BİZİM ŞOFÖRÜM
 ON DÖRT YAŞINDAKİ KIZIM ÜÇ AY BOYUNCA BENİ OKULDA HERKESE ŞOFÖRÜ OLARAK TANITTI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Kızımı Okuldan Almaya Gittiğimde…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Kızımı Okuldan Almaya Gittiğimde…" videosu, 08:18'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
