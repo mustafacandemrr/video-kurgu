@@ -5,10 +5,10 @@
 Apartmanımızın WhatsApp Grubunda Gece Yarısı Bir Duyuru Çıktı…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:07'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:07 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Apartman yöneticimiz iki yıl boyunca asansör parası topladı ama asansör hiç tamir edilmedi. Seksen yaşındaki komşum Nevin Hanım iki yıl dört kat merdiveni tek tek indi. Sonra yönetici gece yarısı gruba yazdı: "Bütün tamir parasını Nevin Hanım ödesin." Bilmediği şey, Nevin Hanım'ın ona okumayı öğreten öğretmeni olduğuydu.
 
@@ -30,7 +30,7 @@ APARTMANIMIZIN WHATSAPP GRUBUNDA GECE YARISI BİR DUYURU ÇIKTI... 🛑 Hikâyen
 APARTMAN YÖNETİCİMİZ İKİ YIL BOYUNCA HER AY ASANSÖR PARASI TOPLADI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Apartmanımızın WhatsApp Grubunda…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Apartmanımızın WhatsApp Grubunda…" videosu, 08:07'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
