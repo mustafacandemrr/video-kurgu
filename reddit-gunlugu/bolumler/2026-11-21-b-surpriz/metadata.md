@@ -5,10 +5,10 @@
 Eve Sürpriz Yapmak İçin İki Hafta Erken Döndüm…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:14'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:14 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Üç yıldır Irak'taki şantiyeden her ay maaşımın yarısını anneme gönderiyordum, karım ve kızım için. İki hafta erken döndüğüm gece karımı soğuk suyla bütün ailenin bulaşığını yıkarken, dört yaşındaki kızımı ise penceresiz bir kilerde uyurken buldum. Gönderdiğim paranın nereye gittiğini bankanın ekranında gördüm.
 
@@ -30,7 +30,7 @@ EVE SÜRPRİZ YAPMAK İÇİN İKİ HAFTA ERKEN DÖNDÜM. KAPIYI KENDİ ANAHTARIM
 ÜÇ YIL BOYUNCA IRAK'TAKİ ŞANTİYEDEN HER AY MAAŞIMIN YARISINI ANNEME GÖNDERDİM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Eve Sürpriz Yapmak İçin…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Eve Sürpriz Yapmak İçin…" videosu, 08:14'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
