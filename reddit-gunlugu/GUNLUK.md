@@ -240,6 +240,32 @@ boyama, pasta süsleme, yemek hazırlama, güzellik/oje. `uret.py` artık `EL_IS
 çikolata, boyama, çömlek, oje, hamur/suşi, yemek; ücretsiz lisans) kullanır; klipler `girdi/el_klipler/`, önbellek
 `girdi/_tiktok_el_bg*.mp4`. Rakiplerin kendi videolarını/başka içerik üreticilerinin görüntülerini kullanma.
 
+### Rakip incelemesi 2 (20 Kasım 2026, kullanıcı: "Emir, Reddit Kafası, Zengin Reddit, Sultan Reddit'i incele")
+Hesaplar ve en çok izlenen TikTok'ları: @sultan.reddit (1,4 M / 1,2 M / 848 B), @zengin.reddit (434 B / 258 B / 182 B),
+@emirreddit (2 M vasiyet, 1 M kiracılar, 931 B hediye, 846 B yıldönümü), Reddit Kafası = @redditkafa (en çok 64 B, küçük).
+YouTube: @sultanreddit, @zenginreddit, @emirreddit (Emir YouTube'a İngilizce başlıkla da yüklüyor).
+- **Görünüm:** Sultan ve Zengin'in en çok izlenen TikTok'larında **altyazı yok**; sadece ses + arka plan. Arka planda
+  her sahne 30-75 sn sürüyor: yüz bakımı/cilt, pasta ganaj kaplama, berber, saç örme, beton döküm, mobilya boyama,
+  koyun kırkma, sörf tahtası boyama, kokteyl. Emir'de kırmızı tek kelime altyazı var (o da 2 M alıyor), biz altyazıyı koruyoruz.
+- **Uygulandı:** `uret.py` `SAHNE` listesi (68 Mixkit klibi: berber, oto cila, marangoz, temizlik, spa, dövme, pasta,
+  çikolata, boyama, çömlek, oje, suşi) ve `UZUN_KLIP_SN = 20` (her klip bütün olarak, 20 sn'ye kadar). Klipler
+  `girdi/sahne_klipler/`, önbellek `girdi/_tiktok_sahne_bg*.mp4`.
+- **En çok izlenen hikaye kurulumları (YouTube başlıklarından; gerçekçi olanlar, sırayla kullan):**
+  1. Sultan 150 B — "Ağabeyim bana ailenin en sıkıcı insanı derdi, çünkü şakalarına hep ağlardım. Saçıma sakız…"
+  2. Sultan 81 B — "Evleneceğimi söylediğimde ailem güldü. Düğün günümde annem…"
+  3. Sultan 68 B — "Düğünden dakikalar önce nişanlımdan bir mesaj geldi: 'Bunu yapamam'…"
+  4. Sultan 68 B — "Üç yıldır birlikteydim ve ondan aldığım en pahalı hediye üç bin liralık…"
+  5. Sultan 67 B — "Kız kardeşim oğluma koymayı seçtiğim ismi yeni doğan bebeğine verdi…"
+  6. Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
+  7. Sultan 56 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
+  8. Sultan 50 B — "Şoförüm beni her işe götürdüğünde yanında sevgilisini de getiriyordu…"
+  9. Zengin 39 B — "Kocamın 'sevgim onu boğuyor' dediğini duydum ve ona bir daha dokunmamaya karar verdim…" → erkek: karım
+  10. Zengin 17 B — "İnternetten tanıştığım sevgilim birden bana öğle yemeğinin fotoğrafını attı…"
+  11. Zengin 14 B — "Erkek arkadaşım beni çocukluk arkadaşıyla değiştirdi. Şikâyet etmedim…"
+  12. Sultan 14 B — "Aile yemeğinde babam harçlığımın yetip yetmediğini sordu. 'Ne harçlığı?'…"
+  13. Emir YouTube 42 B — "Görümcem ıstakoz ve pahalı şarap ısmarladı. 'Hesabı ayıralım' dedim…"
+  14. Emir YouTube 63 B — "Benzin alırken yerel bir paylaşım viral oldu: 'Birini eve getirmek istiyorum…'"
+
 ### TikTok kapanışı (14 Kasım 2026)
 Emir kapanışta izleyiciye "paylaş seçeneğine" bastırıyor (paylaşım TikTok'ta en güçlü sinyal). Bizim kapanış
 (`KAPANIS`): YouTube yönlendirmesi + "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder" +

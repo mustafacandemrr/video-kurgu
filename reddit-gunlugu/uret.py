@@ -353,7 +353,21 @@ EL_ISI = [50015, 50017, 50019, 50020, 50022, 50023, 50052, 50018, 50053, 50033, 
           7412, 13084, 7118, 22417, 15804,
           42465, 42466, 42471, 46770, 45920, 46009, 46008, 46007, 47555, 43037, 47103, 45726, 9278,
           367, 40552]
-MIXKIT_SATISFYING = EL_ISI
+# 20 Kasım 2026 (kullanıcı: "arka planı biraz daha değiştir"): Sultan ve Zengin Reddit'in en çok izlenen TikTok'larında
+# altyazı yok ve her sahne 30-75 sn sürüyor (yüz bakımı, pasta kaplama, berber, beton/mobilya, oto cila). Bizde de klipler
+# artık 3,5 sn değil, klibin tamamı (en fazla UZUN_KLIP_SN) oynuyor; türler genişletildi. Mixkit ücretsiz lisans.
+UZUN_KLIP_SN = 20
+SAHNE = [40128, 43222, 40129, 13122, 43229, 43224, 357, 40122, 40130,
+         47834, 47830, 47586, 47587, 49064, 36522, 12726,
+         772, 44858, 39692, 39699, 39691, 39683, 39700, 39689, 39695, 44862, 44863,
+         34661, 45040, 46626, 10340,
+         52153, 52168, 52167, 52151, 51185, 50412,
+         394, 393, 390,
+         50015, 50019, 50052, 50023, 50033, 50018,
+         41115, 41125, 43444, 41611, 43446, 43445, 40319, 51019,
+         9765, 32170, 32103, 32107, 40013, 7412, 13084, 7118,
+         45920, 46009, 46008, 46007, 42465, 42466]
+MIXKIT_SATISFYING = SAHNE
 
 
 def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
@@ -361,7 +375,7 @@ def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
     varyant>0: aynı hikayenin yeniden paylaşımı için farklı klip sırası ve farklı kesitler (rakip böyle yapıyor)."""
     if os.path.exists(cikti):
         return cikti
-    kdir = os.path.join(ORTAK, "el_klipler")
+    kdir = os.path.join(ORTAK, "sahne_klipler")
     os.makedirs(kdir, exist_ok=True)
     yatay = []
     for i in MIXKIT_SATISFYING:
@@ -379,9 +393,8 @@ def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
                 continue
         yatay.append(yol)
     sira = list(yatay)   # rakipte slime yok; sadece makine/süreç yakın çekimleri
-    if varyant:
-        import random
-        random.Random(varyant).shuffle(sira)
+    import random
+    random.Random(varyant + 7).shuffle(sira)   # türler karışık sırada gelsin
     print(f"  {len(sira)} satisfying klip birleştiriliyor (varyant {varyant})")
     gecici = []
     for n, k in enumerate(sira):
@@ -390,7 +403,9 @@ def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
              "-of", "csv=p=0", k]).decode().strip().split(",")[:2])
         vf = "scale=1080:1920" if h > w else "scale=-2:1920,crop=1080:1920"
         g = os.path.join(kdir, f"_parca{n:03d}.mp4")
-        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{max(0.0, min(1 + 2.5 * (varyant % 3), sure_olc(k) - klip_sn - 0.2)):.2f}", "-t", str(klip_sn), "-i", k, "-an",
+        ks = sure_olc(k)
+        uz = max(3.0, min(UZUN_KLIP_SN, ks - 0.5))
+        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "0.2", "-t", f"{uz:.2f}", "-i", k, "-an",
                   "-vf", f"{vf},fps={FPS},setsar=1,format=yuv420p",
                   "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", g])
         gecici.append(g)
@@ -605,7 +620,7 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         return
     else:
         v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2
-        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_el_bg{'' if v == 0 else v}.mp4"), varyant=v)
+        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_sahne_bg{'' if v == 0 else v}.mp4"), varyant=v)
     cikti = os.path.join(klasor, f"{onek}{ad}.mp4")
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"), cikti, W, H, round(logo_y), sure, kose_logo=True)
     if not sure:
