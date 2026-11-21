@@ -5,10 +5,10 @@
 Bizim Ailede Kimse Teşekkür Etmez. Her İyiliği Babamın "Hesap Defteri"ne Yazarız…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:12'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:12 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Babam kırk yıl boyunca bize yaptığı her iyiliği siyah deri kaplı bir deftere yazdı. Cenaze yemeğinde kardeşlerim defteri masaya koyup kızımın ameliyat borcunu hesapladı: dört yüz bin lira. Sonra sekiz yaşındaki kızım defterin arkasında da yazı olduğunu söyledi.
 
@@ -30,7 +30,7 @@ BİZİM AİLEDE KİMSE TEŞEKKÜR ETMEZ. HER İYİLİĞİ BABAMIN SİYAH DERİ K
 BABAMIN CENAZE YEMEĞİNDE AĞABEYİM BABAMIN SİYAH "HESAP DEFTERİ"Nİ MASAYA KOYDU... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Bizim Ailede Kimse Teşekkür Etmez…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Bizim Ailede Kimse Teşekkür Etmez…" videosu, 08:12'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
