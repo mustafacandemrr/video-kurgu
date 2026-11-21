@@ -5,10 +5,10 @@
 Ağabeyim Bana Otuz Yıl Boyunca Ailenin En Sıkıcı İnsanı Dedi, Çünkü Şakalarına Hiç Gülmedim…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:03'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:03 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Ağabeyim çocukken saçıma sakız yapıştırırdı, ağladığımda bana "sıkıcı" derdi. Otuz yıl sonra kızımın sekizinci doğum gününde aynı şakayı ona yaptı ve bütün aile güldü. O gece ağabeyimin on bir yaşındaki oğlu beni gizlice aradı: "Babam bunu bana da yapıyor, her gün."
 
@@ -30,7 +30,7 @@ AĞABEYİM BANA OTUZ YIL BOYUNCA AİLENİN EN SIKICI İNSANI DEDİ, ÇÜNKÜ... 
 AĞABEYİM KIZIMIN SEKİZİNCİ DOĞUM GÜNÜNDE, MUMLARI ÜFLERKEN SAÇINA... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ağabeyim Bana Otuz Yıl Boyunca…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ağabeyim Bana Otuz Yıl Boyunca…" videosu, 08:03'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
