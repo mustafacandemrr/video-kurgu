@@ -24,10 +24,10 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, düğün, kekemelik, kay
 **Kapak:** kapak.jpg (özel küçük resim)
 
 ## TikTok 1 (tiktok-gonder.mp4) — 13:00
-EVLENECEĞİMİ SÖYLEDİĞİMDE AİLEM GÜLDÜ. AĞABEYİM "SENİ KİM ALIR... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+DÜĞÜNÜMDE MİKROFONU ALDIĞIMDA SALONDAKİ ÜÇ YÜZ KİŞİ TAKILMAMI BEKLİYORDU... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — 18:00 (aynı hikaye, farklı kanca)
-OTUZ İKİ YIL BOYUNCA KEKEME OLDUĞUM İÇİN AİLEM HER KONUŞTUĞUMDA GÜLDÜ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+## TikTok 2 (tiktok2-gonder.mp4) — TEST: ARKA PLAN testi — 18:00 (aynı hikaye ve kanca, tek fark test edilen değişken)
+DÜĞÜNÜMDE MİKROFONU ALDIĞIMDA SALONDAKİ ÜÇ YÜZ KİŞİ TAKILMAMI BEKLİYORDU... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
 2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Evleneceğimi Söylediğimde Ailem Güldü…" videosu, 08:44'ten itibaren 👆

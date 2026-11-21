@@ -101,6 +101,50 @@ artık uygulanan kurallar (ayrıntı: `ANALIZ-TIKTOK.md`, 13 Kasım bölümü):
 - **Yeniden yükleme:** Emir aynı videoyu 2-3 kez yüklüyor (aynı video 36 B / 65 B / 148 B; 259 B / 493 B aldı).
   Son mesajda kullanıcıya hatırlat: ilk yükleme düşük kalırsa ertesi gün aynısını tekrar yüklesin.
 
+### TİKTOK OPTİMİZASYON SİSTEMİ (21 Kasım 2026, kullanıcı brifingi — bu bölüm aşağıdaki eski TikTok kurallarının önüne geçer)
+Kullanıcının verisi: TikTok 1 → 108,6 B izlenme, ort. 51 sn, %17 izlenme, %2,52 tamamlama; TikTok 2 → 26,5 B, 37,9 sn,
+%13, %3,41. İkisinde de ilk saniyelerde büyük kayıp. **Öncelik daha çok video değil, tutma oranı.** Önerileri garanti
+gibi değil, test edilecek hipotez olarak sun.
+
+**Her hikaye için `tiktok_plan.md` (teslimde gönder) şunları içerir:**
+1. Üç farklı hook (H1, H2, H3). Kurallar: ilk 1-2 sn'de olay/cümle; 10-15 sn'de güçlü merak; selamlama yok;
+   sonu söyleme; yapay/abartılı cümle yok; hook'tan sonra hikaye doğal devam eder, aynı olay ikinci kez anlatılmaz.
+2. En güçlü hook'un seçimi ve gerekçesi.
+3. ~4-5 dk TikTok anlatım metni (YouTube'un ilk 5 dk'sının kopyası DEĞİL, TikTok'a özel kurgu):
+   0-15 sn hook · 15-45 sn temel çatışma · 45-90 sn yeni gelişme/merak · 90-180 sn ilerleme, gerilim ·
+   180-270 sn dönüm noktası · son 10-15 sn doğal merak noktası + YouTube yönlendirmesi (katı değil, akışa göre).
+   "Bu hesabı sadece bunu anlatmak için açtım…" gibi dolgu cümleleri TikTok'ta YOK; geçmiş bilgisi kısa ve çatışmanın
+   içine serpiştirilir. ~650-720 kelime (+ kapanış) ≈ 4:20-4:50.
+   **Son cümle(ler) `hikaye.txt`'deki bir cümleyle kelimesi kelimesine aynı olmalı** (en az son 8 kelime): YouTube'daki
+   "2. bölüm buradan başlıyor" zamanı bu eşleşmeyle bulunur.
+4. Zaman kodlarına göre arka plan önerisi (hangi kategori hangi bölümde).
+5. Altyazı vurguları: metinde `*kelime*` (en fazla ~8-10 kelime, hikayenin kilit nesneleri/isimleri). Script bunları
+   sarı gösterir, seslendirmeye yıldız gitmez.
+6. TikTok başlığı ve açıklaması (ilk ~10 kelime BÜYÜK HARF + "..." + 🛑 REDDIT GÜNLÜĞÜ PLUS kalıbı + #redditturkiye).
+7. YouTube'a yönlendiren kapanış: sabit `KAPANIS` (uret.py): "Hikâyenin devamı ve tamamı YouTube'da, Reddit Günlüğü Plus
+   kanalında. Devamı için profilime göz atabilirsin. Beğendiysen sağdaki paylaş butonuyla bu hikâyeyi bir arkadaşına
+   gönder." Sahte merak noktası yok: kesilen yer hikayede gerçekten olan bir an.
+
+**Dosyalar:** `tiktok.txt` = H1 + TikTok gövdesi; `tiktok2.txt` = günün testine göre (aşağı bak). Her TikTok'un yanına
+isteğe bağlı `tiktok.json` / `tiktok2.json`: `{"altyazi": "tek"|"grup", "tempo": "hizli"|"dogal", "arka": "karisik"|
+["sac","pasta",...], "varyant": 0}`. Varsayılan (kontrol): tek kelime kırmızı altyazı, hızlı tempo (+%20, duraklama ≤0,1 sn),
+karışık kategori sahneleri.
+
+**Arka plan (uret.py `KATEGORI`, Mixkit ücretsiz lisans):** sac, pasta, slime (slime + oyun hamuru), sabun (el yapımı sabun),
+el_sanati (boyama, çömlek, oje), ahsap, metal (kaynak, taşlama, demirci), temizlik (oto cila, koltuk/halı), yemek, bakim
+(spa, dövme). Her sahne tek kategoriden 30-60 sn; klipler bütün oynar. Kinetik kum için lisanslı klip bulunamadı.
+Lisanssız (rakip/başka üreticilerin) görüntüsü kullanma.
+
+**Test sistemi (bir testte tek değişken):** Her gün A/B/C'nin iki TikTok'u farklı bir değişkeni test eder; diğer her şey
+(metin gövdesi, arka plan sırası `varyant`, tempo, altyazı) aynı tutulur:
+- Hook testi: tiktok.txt = H1, tiktok2.txt = H2 + aynı gövde; ikisinde `"varyant": 0`.
+- Arka plan testi: aynı hook; tiktok.json `"arka": "karisik"`, tiktok2.json `"arka": [tek ya da iki kategori]`.
+- Altyazı testi: aynı hook ve arka plan; tiktok2.json `"altyazi": "grup"`.
+- Tempo testi: aynı hook; tiktok2.json `"tempo": "dogal"`.
+Sırayla döndür. Not: iki TikTok farklı saatlerde paylaşıldığı için saat de karışan bir etken; mümkünse aynı saatte
+farklı günlerde karşılaştır. Sonuçları `bolumler/TIKTOK_TEST.md` tablosuna kullanıcı doldurur (ilk 3 sn tutma, ort.
+izleme, %izlenme, tamamlama, profil ziyareti, yeni takipçi, YouTube'a giden). Kazanan ayar bir sonraki haftanın kontrolü olur.
+
 ### GÜNLÜK PLAN: günde 3 hikaye, her hikayeye 1 YouTube + 2 kancalı TikTok (16 Kasım 2026, kullanıcı kararı)
 Kullanıcı: "YouTube'u günde 3'e çıkaracağız. Yarının videolarını bugün akşamdan YouTube'a saat kurarak yükleyeceğim
 (08:00, 12:00, 19:00). TikTok'ları gün içinde yüklerim. Her videoya birden fazla kanca istiyorum: video aynı, ilk

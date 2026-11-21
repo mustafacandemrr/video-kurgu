@@ -24,10 +24,10 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, ağabey, kardeş, şaka,
 **Kapak:** kapak.jpg (özel küçük resim)
 
 ## TikTok 1 (tiktok-gonder.mp4) — 09:00
-AĞABEYİM BANA OTUZ YIL BOYUNCA AİLENİN EN SIKICI İNSANI DEDİ, ÇÜNKÜ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+KIZIMIN SEKİZİNCİ DOĞUM GÜNÜNDE, O MUMLARI ÜFLERKEN, AĞABEYİM SAÇININ ORTASINA... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — 14:00 (aynı hikaye, farklı kanca)
-AĞABEYİM KIZIMIN SEKİZİNCİ DOĞUM GÜNÜNDE, MUMLARI ÜFLERKEN SAÇINA... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+## TikTok 2 (tiktok2-gonder.mp4) — TEST: HOOK testi — 14:00 (aynı hikaye, farklı kanca)
+SEKİZ YAŞIMDAYKEN AĞABEYİM UYURKEN SAÇIMA SAKIZ YAPIŞTIRDI VE ANNEM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
 2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ağabeyim Bana Otuz Yıl Boyunca…" videosu, 08:03'ten itibaren 👆

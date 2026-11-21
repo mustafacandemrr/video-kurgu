@@ -24,10 +24,10 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, aile, baba, kardeşler, 
 **Kapak:** kapak.jpg (özel küçük resim)
 
 ## TikTok 1 (tiktok-gonder.mp4) — 20:00
-BİZİM AİLEDE KİMSE TEŞEKKÜR ETMEZ. HER İYİLİĞİ BABAMIN SİYAH DERİ KAPLI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+BABAMIN CENAZE YEMEĞİNDE AĞABEYİM, BABAMIN SİYAH DERİ HESAP DEFTERİ'Nİ MASAYA KOYDU... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — 22:00 (aynı hikaye, farklı kanca)
-BABAMIN CENAZE YEMEĞİNDE AĞABEYİM BABAMIN SİYAH "HESAP DEFTERİ"Nİ MASAYA KOYDU... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+## TikTok 2 (tiktok2-gonder.mp4) — TEST: ALTYAZI testi — 22:00 (aynı hikaye ve kanca, tek fark test edilen değişken)
+BABAMIN CENAZE YEMEĞİNDE AĞABEYİM, BABAMIN SİYAH DERİ HESAP DEFTERİ'Nİ MASAYA KOYDU... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
 2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Bizim Ailede Kimse Teşekkür Etmez…" videosu, 08:12'ten itibaren 👆

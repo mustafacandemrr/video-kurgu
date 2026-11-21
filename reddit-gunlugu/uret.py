@@ -44,10 +44,15 @@ BOSLUK_TIKTOK = 0.10  # TikTok: kelimeler arası en uzun sessizlik (sn); rakipte
 KIRMIZI = "&H002A1AFF&"          # #FF1A2A, rakip altyazı rengi (BGR)
 TURKUAZ = "&H00F5E03E&"          # #3EE0F5, ASS renk sırası BGR
 # TikTok kapanışı (rakip @emirreddit de izleyiciye paylaş butonuna bastırıyor: paylaşım TikTok'ta en güçlü sinyallerden)
-KAPANIS = ("İkinci bölümü beklemek istemiyorsan, hikayenin tamamını YouTube kanalımda izleyebilirsin. "
-           "Önce sağdaki paylaş butonuna bas ve bu hikayeyi bir arkadaşına gönder. "
-           "Sonra profilimdeki YouTube bağlantısına tıkla ya da YouTube'da Reddit Günlüğü Plus kanalını arat. "
-           "Abone olmayı da unutma!")
+KAPANIS = ("Hikâyenin devamı ve tamamı YouTube'da, Reddit Günlüğü Plus kanalında. "
+           "Devamı için profilime göz atabilirsin. "
+           "Beğendiysen sağdaki paylaş butonuyla bu hikâyeyi bir arkadaşına gönder.")
+SARI = "&H0000D4FF&"            # #FFD400 vurgu rengi (BGR)
+# TikTok test ayarları (21 Kasım 2026, kullanıcı: "Reddit hikâye kanalı – TikTok içerik optimizasyonu").
+# Her TikTok'un yanında isteğe bağlı <ad>.json: {"altyazi": "tek"|"grup", "tempo": "hizli"|"dogal",
+# "arka": "karisik" ya da kategori listesi}. Bir testte tek değişken değiştirilir; yoksa kontrol (varsayılan) ayarı.
+VARSAYILAN_AYAR = {"altyazi": "tek", "tempo": "hizli", "arka": "karisik"}
+TEMPO = {"hizli": ("+20%", 0.10), "dogal": ("+12%", 0.40)}   # (edge-tts hızı, en uzun duraklama sn)
 # YouTube: kanal yeni, abone hatırlatmaları (sesli + ekranda abone ol animasyonu)
 YT_GIRIS = ("Başlamadan önce küçük bir rica. Kanalımız daha çok yeni. Bu hikayeyi beğenirsen abone olmayı "
             "ve zil butonuna basmayı unutma. Şimdi hikayeye geçelim.")
@@ -222,7 +227,7 @@ def ts(s):
     return f"{int(s // 3600)}:{int(s % 3600 // 60):02d}:{s % 60:05.2f}"
 
 
-def ass_yaz(kelimeler, yol, W, H, boyut, metin_y, sinir=None, tek_kelime=False, kart=False):
+def ass_yaz(kelimeler, yol, W, H, boyut, metin_y, sinir=None, tek_kelime=False, kart=False, vurgu=None, grup=False):
     """Grup ekranda dururken o an okunan kelime turkuaz yanar."""
     sat = [f"""[Script Info]
 ScriptType: v4.00+
@@ -238,14 +243,28 @@ Style: Kirmizi,{FONT},{boyut},{KIRMIZI},{KIRMIZI},&H00000000,&H80000000,0,0,0,0,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"""]
-    if tek_kelime:   # rakip stili: ekranda tek kelime, kırmızı
+    vurgu = vurgu or set()
+    sade = lambda t: re.sub(r"\W", "", t).lower()
+    if grup:   # test: 2-3 kelimelik beyaz gruplar, sadece işaretli önemli kelimeler sarı
+        gs = gruplar(kelimeler)
+        for gi, g in enumerate(gs):
+            if sinir and g[0][0] >= sinir:
+                continue
+            g_bit = min(g[-1][1] + 0.25, gs[gi + 1][0][0]) if gi + 1 < len(gs) else g[-1][1] + 0.4
+            t = " ".join((f"{{\\c{SARI}}}{tr_buyuk(w[2].strip())}{{\\c&H00FFFFFF&}}" if sade(w[2]) in vurgu
+                          else tr_buyuk(w[2].strip())) for w in g)
+            sat.append(f"Dialogue: 0,{ts(g[0][0])},{ts(g_bit)},Ana,,0,0,0,,{{\\pos({W // 2},{metin_y})}}{t}")
+        open(yol, "w", encoding="utf-8").write("\n".join(sat) + "\n")
+        return
+    if tek_kelime:   # rakip stili: ekranda tek kelime, kırmızı (işaretli önemli kelimeler sarı)
         for i, w in enumerate(kelimeler):
             if sinir and w[0] >= sinir:
                 continue
             bit = kelimeler[i + 1][0] if i + 1 < len(kelimeler) else w[1] + 0.4
             bit = min(bit, w[1] + 0.5)
             t = tr_buyuk(re.sub(r'[“”"«»]', "", w[2].strip()))
-            sat.append(f"Dialogue: 0,{ts(w[0])},{ts(bit)},Kirmizi,,0,0,0,,{{\\pos({W // 2},{metin_y})}}{t}")
+            renk = f"{{\\c{SARI}}}" if sade(w[2]) in vurgu else ""
+            sat.append(f"Dialogue: 0,{ts(w[0])},{ts(bit)},Kirmizi,,0,0,0,,{{\\pos({W // 2},{metin_y})}}{renk}{t}")
         open(yol, "w", encoding="utf-8").write("\n".join(sat) + "\n")
         return
     gs = gruplar(kelimeler)
@@ -357,58 +376,82 @@ EL_ISI = [50015, 50017, 50019, 50020, 50022, 50023, 50052, 50018, 50053, 50033, 
 # altyazı yok ve her sahne 30-75 sn sürüyor (yüz bakımı, pasta kaplama, berber, beton/mobilya, oto cila). Bizde de klipler
 # artık 3,5 sn değil, klibin tamamı (en fazla UZUN_KLIP_SN) oynuyor; türler genişletildi. Mixkit ücretsiz lisans.
 UZUN_KLIP_SN = 20
-SAHNE = [40128, 43222, 40129, 13122, 43229, 43224, 357, 40122, 40130,
-         47834, 47830, 47586, 47587, 49064, 36522, 12726,
-         772, 44858, 39692, 39699, 39691, 39683, 39700, 39689, 39695, 44862, 44863,
-         34661, 45040, 46626, 10340,
-         52153, 52168, 52167, 52151, 51185, 50412,
-         394, 393, 390,
-         50015, 50019, 50052, 50023, 50033, 50018,
-         41115, 41125, 43444, 41611, 43446, 43445, 40319, 51019,
-         9765, 32170, 32103, 32107, 40013, 7412, 13084, 7118,
-         45920, 46009, 46008, 46007, 42465, 42466]
+# 21 Kasım 2026: kategori bazlı sahneler. Her sahne aynı kategoriden art arda klipler, 30-60 sn (SAHNE_SN);
+# klipler bütün oynar (doğal bitiş). Mixkit ücretsiz lisans. Kinetik kum için lisanslı klip bulunamadı.
+KATEGORI = {
+    "sac":      [40128, 43222, 40129, 13122, 43229, 43224, 357, 40122, 40130, 47845, 47842],
+    "pasta":    [50015, 50019, 50052, 50023, 50033, 50018, 50017, 50020, 50022, 50053, 41115, 41125, 41110, 44096],
+    "slime":    [47340, 47351, 47348, 47347, 47349, 47325, 47327, 47335, 47332, 47334, 47330, 47331, 47333],
+    "sabun":    [2803, 2808, 2815, 2805, 2804, 2812],
+    "el_sanati": [43444, 41611, 43446, 43445, 40319, 51019, 9765, 32170, 32103, 32107, 40013, 7412, 13084, 7118],
+    "ahsap":    [772, 44858, 39692, 39699, 39691, 39683, 39700, 39689, 39695, 44862, 44863],
+    "metal":    [47642, 46082, 47293, 32817, 32818, 47295, 47291, 47290, 47298, 47294, 47297, 47292],
+    "temizlik": [34661, 45040, 46626, 10340, 47834, 47830, 47586, 47587, 49064, 36522, 12726, 47585, 47588, 47832],
+    "yemek":    [45920, 46009, 46008, 46007, 42465, 42466],
+    "bakim":    [52153, 52168, 52167, 52151, 51185, 50412, 394, 393, 390],
+}
+SAHNE_SN = (30, 60)
+SAHNE = [i for v in KATEGORI.values() for i in v]
 MIXKIT_SATISFYING = SAHNE
 
 
-def satisfying_arka_plan(cikti, klip_sn=3.5, varyant=0):
-    """Çeşitli satisfying klipleri 1080x1920, sessiz, ~5,5 sn'lik parçalar halinde birleştirir.
-    varyant>0: aynı hikayenin yeniden paylaşımı için farklı klip sırası ve farklı kesitler (rakip böyle yapıyor)."""
+def _klip_indir(i, kdir):
+    yol = os.path.join(kdir, f"{i}.mp4")
+    if os.path.exists(yol):
+        return yol
+    try:
+        try:
+            urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-1080.mp4", yol)
+        except Exception:
+            urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-720.mp4", yol)
+        return yol
+    except Exception as e:
+        print(f"  atlandı {i} ({e})")
+        if os.path.exists(yol):
+            os.remove(yol)
+        return None
+
+
+def satisfying_arka_plan(cikti, varyant=0, kategoriler="karisik", toplam_sn=420):
+    """Kategori bazlı sahneler: her sahne tek kategoriden 30-60 sn, klipler bütün halinde; 1080x1920, sessiz.
+    kategoriler: "karisik" (hepsi dönüşümlü) ya da ["sac", "pasta", ...]. varyant: farklı sıra."""
     if os.path.exists(cikti):
         return cikti
+    import random
     kdir = os.path.join(ORTAK, "sahne_klipler")
     os.makedirs(kdir, exist_ok=True)
-    yatay = []
-    for i in MIXKIT_SATISFYING:
-        yol = os.path.join(kdir, f"{i}.mp4")
-        if not os.path.exists(yol):
-            try:
-                try:
-                    urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-1080.mp4", yol)
-                except Exception:
-                    urllib.request.urlretrieve(f"https://assets.mixkit.co/videos/{i}/{i}-720.mp4", yol)
-            except Exception as e:
-                print(f"  atlandı {i} ({e})")
-                if os.path.exists(yol):
-                    os.remove(yol)
-                continue
-        yatay.append(yol)
-    sira = list(yatay)   # rakipte slime yok; sadece makine/süreç yakın çekimleri
-    import random
-    random.Random(varyant + 7).shuffle(sira)   # türler karışık sırada gelsin
-    print(f"  {len(sira)} satisfying klip birleştiriliyor (varyant {varyant})")
-    gecici = []
-    for n, k in enumerate(sira):
-        w, h = map(int, subprocess.check_output(
-            ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
-             "-of", "csv=p=0", k]).decode().strip().split(",")[:2])
-        vf = "scale=1080:1920" if h > w else "scale=-2:1920,crop=1080:1920"
-        g = os.path.join(kdir, f"_parca{n:03d}.mp4")
-        ks = sure_olc(k)
-        uz = max(3.0, min(UZUN_KLIP_SN, ks - 0.5))
-        calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "0.2", "-t", f"{uz:.2f}", "-i", k, "-an",
-                  "-vf", f"{vf},fps={FPS},setsar=1,format=yuv420p",
-                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", g])
-        gecici.append(g)
+    adlar = list(KATEGORI) if kategoriler == "karisik" else list(kategoriler)
+    rnd = random.Random(varyant + 7)
+    rnd.shuffle(adlar)
+    havuz = {}
+    for a in adlar:
+        yollar = [y for y in (_klip_indir(i, kdir) for i in KATEGORI[a]) if y]
+        rnd.shuffle(yollar)
+        havuz[a] = yollar
+    gecici, toplam, n, ki = [], 0.0, 0, 0
+    while toplam < toplam_sn and n < 400:
+        a = adlar[ki % len(adlar)]
+        ki += 1
+        if not havuz[a]:
+            continue
+        sahne = 0.0
+        while sahne < SAHNE_SN[0] and havuz[a]:
+            k = havuz[a].pop(0)
+            havuz[a].append(k)          # kategori biterse başa döner
+            w, h = map(int, subprocess.check_output(
+                ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+                 "-of", "csv=p=0", k]).decode().strip().split(",")[:2])
+            vf = "scale=1080:1920" if h > w else "scale=-2:1920,crop=1080:1920"
+            uz = max(3.0, min(UZUN_KLIP_SN, sure_olc(k) - 0.5, SAHNE_SN[1] - sahne))
+            g = os.path.join(kdir, f"_parca{n:03d}.mp4")
+            calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "0.2", "-t", f"{uz:.2f}", "-i", k, "-an",
+                      "-vf", f"{vf},fps={FPS},setsar=1,format=yuv420p",
+                      "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", g])
+            gecici.append(g)
+            sahne += uz
+            n += 1
+        toplam += sahne
+        print(f"  sahne {a}: {sahne:.0f} sn (toplam {toplam:.0f})", flush=True)
     lst = os.path.join(kdir, "_liste.txt")
     with open(lst, "w") as f:
         f.writelines(f"file '{os.path.abspath(x)}'\n" for x in gecici)
@@ -580,8 +623,15 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         if not os.path.exists(yol):
             sys.exit(f"{ad}.txt yok: önce TikTok metnini hazırlayın.")
         metin = open(yol, encoding="utf-8").read().strip()
+        ayar = dict(VARSAYILAN_AYAR)
+        if os.path.exists(os.path.join(klasor, f"{ad}.json")):
+            ayar.update(json.load(open(os.path.join(klasor, f"{ad}.json"), encoding="utf-8")))
+        # *kelime* = altyazıda vurgulanacak önemli kelime (seslendirmeye yıldız gitmez)
+        vurgu = {re.sub(r"\W", "", v).lower() for v in re.findall(r"\*([^*\s]+)\*", metin)}
+        metin = metin.replace("*", "")
         if KAPANIS not in metin:
             metin += "\n" + KAPANIS
+        print(f"  ayar: {ayar}, vurgu: {sorted(vurgu)}")
         boyut, metin_y = 104, 960
     if sure:   # test: yaklaşık süreye yetecek kadar metin (≈2.6 kelime/sn)
         kel = metin.split()
@@ -590,13 +640,19 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
     if tur == "youtube":
         mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"))
     else:
-        mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"), hiz=HIZ_TIKTOK)
-        mp3, kelimeler = sessizlik_kisalt(mp3, kelimeler, os.path.join(klasor, f"_{onek}{ad}_ses_sik"))
+        hiz, bosluk = TEMPO[ayar["tempo"]]
+        mp3, kelimeler = seslendir(metin, os.path.join(klasor, f"_{onek}{ad}_ses"), hiz=hiz)
+        mp3, kelimeler = sessizlik_kisalt(mp3, kelimeler, os.path.join(klasor, f"_{onek}{ad}_ses_sik"), en_fazla=bosluk)
     # logo: altyazı bloğunun hemen üstünde, ortalı
     logo_h = round(W * 0.18)
     logo_y = metin_y - boyut * 1.15 - logo_h / 2 - 12
     ass = os.path.join(klasor, f"_{onek}{ad}.ass")
-    ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure, tek_kelime=(tur != "youtube"), kart=(tur == "youtube"))
+    if tur == "youtube":
+        ass_yaz(kelimeler, ass, W, H, boyut, metin_y, sinir=sure, kart=True)
+    else:
+        grup = ayar["altyazi"] == "grup"
+        ass_yaz(kelimeler, ass, W, H, 86 if grup else boyut, metin_y, sinir=sure, tek_kelime=not grup,
+                vurgu=vurgu, grup=grup)
     if tur == "youtube":
         import kart
         arka = youtube_arka_plan(varlik(klasor, "minecraft.png"), os.path.join(ORTAK, "_youtube_bg.mp4"))
@@ -619,8 +675,10 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
                        os.path.join(klasor, f"{onek}{ad}.mp4"), W, H, t_giris, t_kapanis, rozet, t_bolum2)
         return
     else:
-        v = int(ad[6:] or 1) - 1     # tiktok -> 0, tiktok2 -> 1, tiktok3 -> 2
-        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_sahne_bg{'' if v == 0 else v}.mp4"), varyant=v)
+        v = ayar.get("varyant", int(ad[6:] or 1) - 1)     # tiktok -> 0, tiktok2 -> 1; json ile sabitlenebilir
+        kat = ayar["arka"]
+        etiket = "karisik" if kat == "karisik" else "-".join(kat)
+        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_kat_{etiket}_{v}.mp4"), varyant=v, kategoriler=kat)
     cikti = os.path.join(klasor, f"{onek}{ad}.mp4")
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"), cikti, W, H, round(logo_y), sure, kose_logo=True)
     if not sure:
