@@ -5,10 +5,10 @@
 Evleneceğimi Söylediğimde Ailem Güldü…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 08:44'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+08:44 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Kekeme olduğum için ailem otuz iki yıl boyunca her konuştuğumda güldü. Evleneceğimi söylediğimde ağabeyim "Seni kim alır, adını bile söyleyemiyorsun" dedi. Düğünde annem gelinime "Asıl gelinimiz Seda" diye fısıldadı. O gece mikrofonu ben aldım.
 
@@ -30,7 +30,7 @@ EVLENECEĞİMİ SÖYLEDİĞİMDE AİLEM GÜLDÜ. AĞABEYİM "SENİ KİM ALIR... 
 OTUZ İKİ YIL BOYUNCA KEKEME OLDUĞUM İÇİN AİLEM HER KONUŞTUĞUMDA GÜLDÜ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Evleneceğimi Söylediğimde Ailem Güldü…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Evleneceğimi Söylediğimde Ailem Güldü…" videosu, 08:44'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
