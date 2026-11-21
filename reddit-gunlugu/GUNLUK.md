@@ -114,7 +114,7 @@ gibi değil, test edilecek hipotez olarak sun.
    0-15 sn hook · 15-45 sn temel çatışma · 45-90 sn yeni gelişme/merak · 90-180 sn ilerleme, gerilim ·
    180-270 sn dönüm noktası · son 10-15 sn doğal merak noktası + YouTube yönlendirmesi (katı değil, akışa göre).
    "Bu hesabı sadece bunu anlatmak için açtım…" gibi dolgu cümleleri TikTok'ta YOK; geçmiş bilgisi kısa ve çatışmanın
-   içine serpiştirilir. ~650-720 kelime (+ kapanış) ≈ 4:20-4:50.
+   içine serpiştirilir. ~680-760 kelime (+ kapanış) ≈ 4:00-4:30 (hızlı tempoda ~2,8 kelime/sn; 22.11'de 590 kelime 3:40 tuttu).
    **Son cümle(ler) `hikaye.txt`'deki bir cümleyle kelimesi kelimesine aynı olmalı** (en az son 8 kelime): YouTube'daki
    "2. bölüm buradan başlıyor" zamanı bu eşleşmeyle bulunur.
 4. Zaman kodlarına göre arka plan önerisi (hangi kategori hangi bölümde).

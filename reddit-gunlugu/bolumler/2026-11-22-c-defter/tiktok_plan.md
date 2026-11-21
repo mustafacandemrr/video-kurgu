@@ -45,6 +45,8 @@ Sekiz yıl önce kızım Zehra kalbinde bir delikle doğdu. Ameliyat gerekiyordu
 
 Son üç yıl babam hastaydı. Kalp yetmezliği. Ben her sabah dörtte fırını yaktım, hamuru yoğurdum, ekmeği çıkardım. Sonra yukarı çıkıp babamın ilaçlarını verdim. Gece nefes alamadığında ben kalktım. Kırk iki kere hastaneye ben götürdüm. Karım Hatice yemeğini yaptı, çamaşırını yıkadı. Ahmet ile Filiz ayda bir aradılar. "Babam nasıl? Bir şeye ihtiyacı olursa söyle." Hiçbir şey söylemedim. Çünkü söylesem, defterde bir satır daha olacaktı.
 
+Annem öldüğünde ben yirmi beş yaşındaydım. Ahmet ile Filiz İstanbul'dan yetişemedi. Gasilhanede imam "Bir yakını yıkamak ister mi?" diye sordu. Babam başını salladı ama ayağa kalkamadı. Ben kalktım. Annemin yüzünü ben yıkadım. Saçını ben taradım, onun her sabah yaptığı gibi, sola doğru. O gece eve döndüğümüzde babam defteri açtı. Ben bir şey yazacak sandım. Yazmadı. Sadece uzun uzun sayfalara baktı ve kapattı. O defterde benim adımın yanında yazan hiçbir rakam, o geceyi anlatmıyordu.
+
 Geçen ay babam uykusunda öldü. Ben yanındaydım. Son nefesinde elimi tuttu ve bir şey söylemeye çalıştı. Anlayamadım. Sadece dudakları kıpırdadı.
 
 Şimdi aynı evde, mutfak masasında, ağabeyim o defteri açmış okuyordu. Kendi satırlarının yanında "ödendi" yazıyordu. Babamın el yazısıyla. Benimkinin yanında yazmıyordu.
