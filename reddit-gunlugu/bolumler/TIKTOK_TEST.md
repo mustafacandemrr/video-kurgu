@@ -13,3 +13,9 @@ Hipotez olarak oku: tek videonun sonucu karar için yetmez; aynı değişkeni en
 | 2026-11-22 | B2 Düğün | arka plan | saç + pasta + slime | | | | | | | | |
 | 2026-11-22 | C1 Defter | altyazı | tek kelime kırmızı | | | | | | | | |
 | 2026-11-22 | C2 Defter | altyazı | 2-3 kelime beyaz + sarı vurgu | | | | | | | | |
+| 2026-11-23 | A1 Nişanlı | tempo | hızlı | | | | | | | | |
+| 2026-11-23 | A2 Nişanlı | tempo | doğal | | | | | | | | |
+| 2026-11-23 | B1 İsim | hook | H1 deprem | | | | | | | | |
+| 2026-11-23 | B2 İsim | hook | H2 abla ismi aldı | | | | | | | | |
+| 2026-11-23 | C1 Piyango | altyazı | tek kelime kırmızı | | | | | | | | |
+| 2026-11-23 | C2 Piyango | altyazı | 2-3 kelime + sarı vurgu | | | | | | | | |

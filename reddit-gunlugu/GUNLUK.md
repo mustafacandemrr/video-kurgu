@@ -297,11 +297,11 @@ YouTube: @sultanreddit, @zenginreddit, @emirreddit (Emir YouTube'a İngilizce ba
 - **En çok izlenen hikaye kurulumları (YouTube başlıklarından; gerçekçi olanlar, sırayla kullan):**
   1. ✅ (22.11) Sultan 150 B — "Ağabeyim bana ailenin en sıkıcı insanı derdi, çünkü şakalarına hep ağlardım. Saçıma sakız…"
   2. ✅ (22.11) Sultan 81 B — "Evleneceğimi söylediğimde ailem güldü. Düğün günümde annem…"
-  3. Sultan 68 B — "Düğünden dakikalar önce nişanlımdan bir mesaj geldi: 'Bunu yapamam'…"
+  3. ✅ (23.11) Sultan 68 B — "Düğünden dakikalar önce nişanlımdan bir mesaj geldi: 'Bunu yapamam'…"
   4. Sultan 68 B — "Üç yıldır birlikteydim ve ondan aldığım en pahalı hediye üç bin liralık…"
-  5. Sultan 67 B — "Kız kardeşim oğluma koymayı seçtiğim ismi yeni doğan bebeğine verdi…"
+  5. ✅ (23.11) Sultan 67 B — "Kız kardeşim oğluma koymayı seçtiğim ismi yeni doğan bebeğine verdi…"
   6. ✅ (22.11) Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
-  7. Sultan 56 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
+  7. ✅ (23.11) Sultan 56 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
   8. Sultan 50 B — "Şoförüm beni her işe götürdüğünde yanında sevgilisini de getiriyordu…"
   9. Zengin 39 B — "Kocamın 'sevgim onu boğuyor' dediğini duydum ve ona bir daha dokunmamaya karar verdim…" → erkek: karım
   10. Zengin 17 B — "İnternetten tanıştığım sevgilim birden bana öğle yemeğinin fotoğrafını attı…"
