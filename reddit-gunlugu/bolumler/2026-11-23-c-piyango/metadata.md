@@ -5,10 +5,10 @@
 Şirketin Yıl Sonu Yemeğinde Patronun Oğlu Herkese Bir Piyango Bileti Dağıttı…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 10:21'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+10:21 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Yirmi iki yıllık depo şefiyim. Şirket yemeğinde patronun oğlu herkese piyango bileti dağıttı ve sahneden kazanan numarayı okudu: benimdi. Sahnede karımı arayıp kızımın tıp okulunun parasının çıktığını söyleyerek ağladım. Sonra mikrofona eğilip "Şaka!" dedi. Ertesi sabah masama üç şey bırakıp çıktım.
 
@@ -30,7 +30,7 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, iş yeri, patron, şaka,
 ŞİRKETİN YIL SONU YEMEĞİNDE PATRONUN OĞLU HERKESE BİR PİYANGO BİLETİ DAĞITTI... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Şirketin Yıl Sonu Yemeğinde…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Şirketin Yıl Sonu Yemeğinde…" videosu, 10:21'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
