@@ -5,10 +5,10 @@
 Ablam, Oğluma Koyacağım İsmi Benden İki Hafta Önce Kendi Bebeğine Verdi…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 16:29'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+16:29 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Depremde elli iki saat enkazın altında kaldım. Beni çıkaran gönüllünün annesine, oğluma onun oğlunun adını koyacağıma söz verdim. Bunu ailemden kimseye anlatmadım. Ablam o ismi benden iki hafta önce kendi bebeğine verdi, annem "isimler kimsenin malı değil" dedi. Mevlüt günü kapıdan elinde bir sepet portakalla o gönüllünün annesi girdi.
 
@@ -30,7 +30,7 @@ DEPREMDE ELLİ İKİ SAAT ENKAZIN ALTINDA KALDIM. BENİ ÇIKARAN GÖNÜLLÜNÜN 
 ABLAM, OĞLUMA KOYACAĞIM İSMİ BENDEN İKİ HAFTA ÖNCE KENDİ BEBEĞİNE VERDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ablam Oğluma Koyacağım İsmi…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ablam Oğluma Koyacağım İsmi…" videosu, 16:29'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
