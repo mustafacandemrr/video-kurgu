@@ -5,10 +5,10 @@
 Nikâhımdan On Dakika Önce Nişanlımdan Bir Mesaj Geldi: "Bunu Yapamam. Beni Arama."…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 09:17'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+09:17 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Nikâhımızdan on dakika önce nişanlımdan "Bunu yapamam, beni arama" mesajı geldi. Üç yüz davetlinin önünde nikâh memuruna "Planlarda küçük bir değişiklik var" dedim ve öğrencilerime şarkılarını çaldırdım. Ama o mesajın sonunda üç yıldır hiç eksik olmayan bir şey yoktu. İki saat sonra bir hastane koridorunda, o mesajı kimin yazdığını öğrendim.
 
@@ -30,7 +30,7 @@ NİKÂHIMDAN ON DAKİKA ÖNCE NİŞANLIMDAN BİR MESAJ GELDİ: "BUNU YAPAMAM. BE
 NİKÂHIMDAN ON DAKİKA ÖNCE NİŞANLIMDAN BİR MESAJ GELDİ: "BUNU YAPAMAM. BENİ ARAMA."... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Nikâhımdan On Dakika Önce…" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Nikâhımdan On Dakika Önce…" videosu, 09:17'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
