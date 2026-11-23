@@ -5,10 +5,10 @@
 Kayınbiraderim Istakozu Söyledi, Hesabı Bana İtti. "Hesabı Ayıralım" Dedim…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 11:12'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+11:12 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Kayınbiraderim bir yıl boyunca her ay İzmir'e gelip en pahalı restoranları seçti ve hesabı bana ödetti. Dükkanım batarken bile sustum. Karımın doğum gününde iki ıstakoz ve üç şişe şaraplık on sekiz bin liralık hesabı yine önüme itince "Hesabı ayıralım" dedim. Gülümsedi, telefonunu çıkardı: "O zaman bir hesabı daha ayıralım."
 
@@ -30,7 +30,7 @@ KAYINBİRADERİM 18 BİN LİRALIK HESABI YİNE ÖNÜME İTTİ. BU SEFER "HESABI 
 KAYINBİRADERİM 18 BİN LİRALIK HESABI YİNE ÖNÜME İTTİ. BU SEFER "HESABI AYIRALIM" DEDİM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Hesabı Ayıralım" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Hesabı Ayıralım" videosu, 11:12'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
