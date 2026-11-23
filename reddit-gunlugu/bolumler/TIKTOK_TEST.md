@@ -19,3 +19,9 @@ Hipotez olarak oku: tek videonun sonucu karar için yetmez; aynı değişkeni en
 | 2026-11-23 | B2 İsim | hook | H2 abla ismi aldı | | | | | | | | |
 | 2026-11-23 | C1 Piyango | altyazı | tek kelime kırmızı | | | | | | | | |
 | 2026-11-23 | C2 Piyango | altyazı | 2-3 kelime + sarı vurgu | | | | | | | | |
+| 2026-11-24 | A1 Boğmak | hook | H1 duyduğu cümle | | | | | | | | |
+| 2026-11-24 | A2 Boğmak | hook | H2 üç ay dokunmadım | | | | | | | | |
+| 2026-11-24 | B1 Harçlık | arka plan | karışık | | | | | | | | |
+| 2026-11-24 | B2 Harçlık | arka plan | pasta + yemek + sabun | | | | | | | | |
+| 2026-11-24 | C1 Hesap | tempo | hızlı | | | | | | | | |
+| 2026-11-24 | C2 Hesap | tempo | doğal | | | | | | | | |

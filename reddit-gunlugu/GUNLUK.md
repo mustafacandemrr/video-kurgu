@@ -303,11 +303,11 @@ YouTube: @sultanreddit, @zenginreddit, @emirreddit (Emir YouTube'a İngilizce ba
   6. ✅ (22.11) Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
   7. ✅ (23.11) Sultan 56 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
   8. Sultan 50 B — "Şoförüm beni her işe götürdüğünde yanında sevgilisini de getiriyordu…"
-  9. Zengin 39 B — "Kocamın 'sevgim onu boğuyor' dediğini duydum ve ona bir daha dokunmamaya karar verdim…" → erkek: karım
+  9. ✅ (24.11) Zengin 39 B — "Kocamın 'sevgim onu boğuyor' dediğini duydum ve ona bir daha dokunmamaya karar verdim…" → erkek: karım
   10. Zengin 17 B — "İnternetten tanıştığım sevgilim birden bana öğle yemeğinin fotoğrafını attı…"
   11. Zengin 14 B — "Erkek arkadaşım beni çocukluk arkadaşıyla değiştirdi. Şikâyet etmedim…"
-  12. Sultan 14 B — "Aile yemeğinde babam harçlığımın yetip yetmediğini sordu. 'Ne harçlığı?'…"
-  13. Emir YouTube 42 B — "Görümcem ıstakoz ve pahalı şarap ısmarladı. 'Hesabı ayıralım' dedim…"
+  12. ✅ (24.11) Sultan 14 B — "Aile yemeğinde babam harçlığımın yetip yetmediğini sordu. 'Ne harçlığı?'…"
+  13. ✅ (24.11) Emir YouTube 42 B — "Görümcem ıstakoz ve pahalı şarap ısmarladı. 'Hesabı ayıralım' dedim…"
   14. Emir YouTube 63 B — "Benzin alırken yerel bir paylaşım viral oldu: 'Birini eve getirmek istiyorum…'"
 
 ### TikTok kapanışı (14 Kasım 2026)
