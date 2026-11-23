@@ -5,10 +5,10 @@
 Babam "Harçlığın Yetiyor mu?" Diye Sordu. İki Yıldır Gece Çalışıyordum: "Ne Harçlığı?"…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 10:29'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+10:29 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Babam iki yıldır bana her ay harçlık gönderdiğini sanıyordu. Ben iki yıldır gece vardiyasında pastanede çalışıyordum, ondan bir kuruş almadım. Bayram sofrasında "Harçlık yetiyor mu, artırayım mı?" diye sorunca "Ne harçlığı?" dedim. Ağabeyim parayı her ay "Elif Yıldız" adına gönderiyordu. Ama evde iki Elif vardı.
 
@@ -30,7 +30,7 @@ BABAM BAYRAM SOFRASINDA "HARÇLIĞIN YETİYOR MU?" DİYE SORDU. İKİ YILDIR GEC
 BABAM BAYRAM SOFRASINDA "HARÇLIĞIN YETİYOR MU?" DİYE SORDU. İKİ YILDIR GECE ÇALIŞIYORDUM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ne Harçlığı?" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ne Harçlığı?" videosu, 10:29'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
