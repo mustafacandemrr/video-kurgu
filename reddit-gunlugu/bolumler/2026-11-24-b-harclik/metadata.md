@@ -5,7 +5,7 @@
 Babam "Harçlığın Yetiyor mu?" Diye Sordu. İki Yıldır Gece Çalışıyordum: "Ne Harçlığı?"…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm 10:29'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 10:29'da başlıyor 👇
 
 00:00 Hikaye başlıyor
 10:29 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
@@ -30,7 +30,7 @@ BABAM BAYRAM SOFRASINDA "HARÇLIĞIN YETİYOR MU?" DİYE SORDU. İKİ YILDIR GEC
 BABAM BAYRAM SOFRASINDA "HARÇLIĞIN YETİYOR MU?" DİYE SORDU. İKİ YILDIR GECE ÇALIŞIYORDUM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ne Harçlığı?" videosu, 10:29'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ne Harçlığı?" videosu, 10:29'dan itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
