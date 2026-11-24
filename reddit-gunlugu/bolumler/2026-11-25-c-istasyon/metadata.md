@@ -5,10 +5,10 @@
 Benzin Doldururken Bir Müşteri Telefonunu Uzattı: "Abi, Bu Sizin İstasyon Değil mi?"…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm burada başlıyor: ??:?? 👇
+TikTok'tan geldiysen 2. bölüm burada başlıyor: 09:26 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+09:26 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Yirmi dokuz yıllık pompacıyım. Bir gün bir müşteri bana şehrin sayfasında viral olan bir paylaşımı gösterdi: 1998'de istasyonumuzda babası tarafından bırakılan beş yaşındaki kız, düğününde onu gelin olarak çıkarması için o gece kendisine bakan pompacıyı arıyordu. Fotoğraftaki adam bendim. Ama o kızın babasının o gece neden gelmediğini bir tek ben biliyordum.
 
@@ -33,7 +33,7 @@ BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASY
 BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASYON DEĞİL Mİ?"... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (üçüne de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Abi, Bu Sizin İstasyon Değil mi?" videosu, dakika ??:?? 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Abi, Bu Sizin İstasyon Değil mi?" videosu, dakika 09:26 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
