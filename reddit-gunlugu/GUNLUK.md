@@ -145,7 +145,21 @@ Sırayla döndür. Not: iki TikTok farklı saatlerde paylaşıldığı için saa
 farklı günlerde karşılaştır. Sonuçları `bolumler/TIKTOK_TEST.md` tablosuna kullanıcı doldurur (ilk 3 sn tutma, ort.
 izleme, %izlenme, tamamlama, profil ziyareti, yeni takipçi, YouTube'a giden). Kazanan ayar bir sonraki haftanın kontrolü olur.
 
-### GÜNLÜK PLAN: günde 3 hikaye, her hikayeye 1 YouTube + 2 kancalı TikTok (16 Kasım 2026, kullanıcı kararı)
+### ⚠️ GÜNCEL GÜNLÜK PLAN (24 Kasım 2026, kullanıcı kararı — aşağıdaki "günde 3 hikaye" planının ve günlük test rotasyonunun yerine geçer)
+Kullanıcı: "Günlük video sayımızı 1'e indiriyoruz. YouTube'da izlenmesi için 3 çok video. TikTok için 3 tane aynı video
+farklı arka plan olsun."
+- Her çalıştırmada **tek hikaye**: `bolumler/<YARININ TARİHİ>-konu/` (harf eki yok). **1 YouTube** (yayın 08:00) + **3 TikTok**.
+- Üç TikTok **aynı metin, aynı hook, aynı tempo ve altyazı**; yalnızca **arka plan** farklı:
+  `tiktok.txt`, `tiktok2.txt`, `tiktok3.txt` birebir aynı (H1 + gövde). JSON'lar:
+  tiktok.json `{"arka": "karisik", "varyant": N}`, tiktok2.json `{"arka": [hikayeye uygun 1-2 kategori], "varyant": N}`,
+  tiktok3.json `{"arka": [başka 1-2 kategori], "varyant": N}` (altyazı "tek", tempo "hizli"). `uret.py tiktok` tüm
+  `tiktok*.txt`'leri üretir; kuyrukta sıkıştırma döngüsü `tiktok tiktok2 tiktok3`.
+- Önerilen TikTok saatleri: 09:00, 14:00, 20:00. metadata.md'de üç TikTok açıklaması (aynı başlık) + sabitlenmiş yorum.
+- `tiktok_plan.md` yine 7 maddeyi içerir (3 hook, seçim, metin, arka plan, vurgu, başlık, kapanış); test = arka plan
+  (üç ayar). TIKTOK_TEST.md'ye 3 satır.
+- Hikaye ≥3.000 kelime (YouTube 30+ dk), TikTok ~700-760 kelime. Rakip listesinden her gün bir konu.
+
+### (ESKİ) GÜNLÜK PLAN: günde 3 hikaye, her hikayeye 1 YouTube + 2 kancalı TikTok (16 Kasım 2026, kullanıcı kararı)
 Kullanıcı: "YouTube'u günde 3'e çıkaracağız. Yarının videolarını bugün akşamdan YouTube'a saat kurarak yükleyeceğim
 (08:00, 12:00, 19:00). TikTok'ları gün içinde yüklerim. Her videoya birden fazla kanca istiyorum: video aynı, ilk
 5-15 saniye farklı." Bu görev gece çalışır ve **ertesi günün** içeriğini üretir; kullanıcı akşam üzeri yükleyip zamanlar.
