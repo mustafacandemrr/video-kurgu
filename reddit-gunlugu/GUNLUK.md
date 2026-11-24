@@ -154,7 +154,7 @@ farklı arka plan olsun."
   tiktok.json `{"arka": "karisik", "varyant": N}`, tiktok2.json `{"arka": [hikayeye uygun 1-2 kategori], "varyant": N}`,
   tiktok3.json `{"arka": [başka 1-2 kategori], "varyant": N}` (altyazı "tek", tempo "hizli"). `uret.py tiktok` tüm
   `tiktok*.txt`'leri üretir; kuyrukta sıkıştırma döngüsü `tiktok tiktok2 tiktok3`.
-- Önerilen TikTok saatleri: 09:00, 14:00, 20:00. metadata.md'de üç TikTok açıklaması (aynı başlık) + sabitlenmiş yorum.
+- TikTok saatleri (24.11 rakip analizi): üç TikTok aynı oturumda, YouTube yayına girdikten sonra 08:15-08:17, 1-2 dk arayla (bkz. ANALIZ-TIKTOK.md). metadata.md'de üç TikTok açıklaması (aynı başlık) + sabitlenmiş yorum.
 - `tiktok_plan.md` yine 7 maddeyi içerir (3 hook, seçim, metin, arka plan, vurgu, başlık, kapanış); test = arka plan
   (üç ayar). TIKTOK_TEST.md'ye 3 satır.
 - Hikaye ≥3.000 kelime (YouTube 30+ dk), TikTok ~700-760 kelime. Rakip listesinden her gün bir konu.

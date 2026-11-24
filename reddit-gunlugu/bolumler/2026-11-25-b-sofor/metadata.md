@@ -23,13 +23,13 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, şoför, fabrika, koca, 
 
 **Kapak:** kapak.jpg (özel küçük resim)
 
-## TikTok 1 (tiktok-gonder.mp4) — 09:00 — arka plan: karışık
+## TikTok 1 (tiktok-gonder.mp4) — 08:15 (ilk) — arka plan: karışık
 ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — 14:00 — arka plan: metal + temizlik
+## TikTok 2 (tiktok2-gonder.mp4) — 08:16 (hemen ardından) — arka plan: metal + temizlik
 ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 3 (tiktok3-gonder.mp4) — 20:00 — arka plan: sabun + el sanatı
+## TikTok 3 (tiktok3-gonder.mp4) — 08:17 (hemen ardından) — arka plan: sabun + el sanatı
 ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (üçüne de)

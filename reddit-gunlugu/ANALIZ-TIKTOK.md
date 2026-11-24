@@ -55,3 +55,24 @@ En çok izlenen Emir açıklamaları (ilk cümle = hook):
 902 B KİRACILARIM KİRAYI DÜŞÜRMEMİ İSTEDİ. BEN DE KİRADAN 400 DOLAR… · 798 B "AİLENİN İŞE YARAMAZ İNSANLARINI ATALIM. SEN ÖNCE GİDERSİN" ·
 777 B BABAM BUNU BİLMİYOR AMA BİR ADAMA, ÇOCUĞUNUN KENDİ OĞLU OLMASINI… · 724 B YEĞENİM 7 YAŞINDAKİ OĞLUMA BAKIP "SADECE BÜYÜKANNENİN GERÇEK TORUNLARI ÖNCE YER" ·
 722 B KOCAM, ANNESİNE KORECE OLARAK EN İYİ ARKADAŞIMI HAMİLE BIRAKTIĞINI SÖYLEMİŞTİ · 493 B ANNEMİN DÜĞÜNÜNDEYDİM. ORADA OLDUĞUMDAN HABERİ BİLE YOKTU
+
+## 24 Kasım 2026: Paylaşım saati ve yükleme mekanizması
+
+Kaynak: yt-dlp ile hesap listeleri (video indirilmedi). Yükleme zamanı TikTok video kimliğinden (ilk 32 bit = Unix
+saniyesi) hesaplandı, Türkiye saati. 30 dakikadan yakın yüklemeler tek "oturum" sayıldı.
+
+| | @sultan.reddit | @emirreddit |
+|---|---|---|
+| Örneklem | 144 video, 47 oturum (26 Eyl–23 Kas) | 29 video, 18 oturum (31 Tem–16 Kas) |
+| Oturum başına video | çoğunlukla 2-5 farklı video, 1-3 dk içinde | son 2 ayda hep **aynı video 3 kez**, 1-3 dk içinde |
+| Oturum saatleri | Kasım'da 22 oturumun 17'si 02:00-09:00, en sık 08:00 | dağınık: 10-13, 15-16, 20-23 |
+| Aynı oturumda en iyi/en kötü video | medyan 7,4 kat fark | medyan 5,4 kat fark |
+| Oturum bloğu → medyan izlenme | 00-05: 224 B · 06-09: 267 B · 10-14: 211 B · 15-19: 354 B (2 oturum) · 20-23: 258 B | 06-09: 729 B (2) · 10-14: 427 B · 15-19: 165 B · 20-23: 503 B |
+
+Çıkarımlar (hipotez, garanti değil):
+1. İkisi de kopyaları gün içine yaymıyor; hepsini aynı anda yüklüyor. Aynı videonun üç kopyası bile 5-7 kat farklı
+   izleniyor. Her yükleme ayrı bir "deneme" gibi davranıyor, saatten çok bu şans belirleyici görünüyor.
+2. Saat etkisi kopyalar arasındaki farktan çok küçük; örneklem az. En tutarlı sinyal: Sultan sabah 06-09'da
+   yoğunlaşmış ve en iyi sonuçlarının çoğu bu blokta. 15-19 iki hesapta da zayıf (az örnek).
+3. Karar: YouTube 08:00 yayında → üç TikTok 08:15-08:17'de arka arkaya. İki hafta sonra bir hafta akşam
+   (20:30) oturumu ile karşılaştır.

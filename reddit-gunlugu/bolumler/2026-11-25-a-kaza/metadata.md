@@ -23,13 +23,13 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, trafik kazası, hastane,
 
 **Kapak:** kapak.jpg (özel küçük resim)
 
-## TikTok 1 (tiktok-gonder.mp4) — 09:00 — arka plan: karışık
+## TikTok 1 (tiktok-gonder.mp4) — 08:15 (ilk) — arka plan: karışık
 TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — 14:00 — arka plan: bakım + el sanatı
+## TikTok 2 (tiktok2-gonder.mp4) — 08:16 (hemen ardından) — arka plan: bakım + el sanatı
 TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 3 (tiktok3-gonder.mp4) — 20:00 — arka plan: pasta + yemek
+## TikTok 3 (tiktok3-gonder.mp4) — 08:17 (hemen ardından) — arka plan: pasta + yemek
 TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (üçüne de)
