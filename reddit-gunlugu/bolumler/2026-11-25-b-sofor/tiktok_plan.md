@@ -1,6 +1,6 @@
-# TikTok planı — B: Şoför (2026-11-25)
+# TikTok planı — Şoför (2026-11-26)
 
-**Bu hikayenin testi:** ALTYAZI testi, 3. tekrar (iki TikTok'ta da H1, aynı gövde/arka plan/tempo; TikTok 1 = tek kelime kırmızı, TikTok 2 = 2-3 kelime beyaz + sarı vurgu)
+**Bu hikayenin testi:** ARKA PLAN testi (üç TikTok'ta da H1, aynı metin/tempo/altyazı; TikTok 1 = karışık, TikTok 2 = metal + temizlik, TikTok 3 = sabun + el sanatı)
 
 ## 1. Üç hook
 
@@ -12,7 +12,7 @@
 
 ## 2. En güçlü hook ve gerekçe
 
-H1. Tanıdık ama sinir bozucu bir durum (şoförün sevgilisi) ile ilk saniyede başlıyor, ardından gerçek bir ihanet anı (fotoğraf) geliyor; izleyici 'kime gönderiyor?' sorusuyla kalıyor. H2 duygusal ama olay geç; H3 kocayı erken işaret ediyor.
+H1. Tanıdık ama sinir bozucu bir durum (şoförün sevgilisi) ile ilk saniyede başlıyor, ardından gerçek bir ihanet anı (fotoğraf) geliyor; izleyici 'kime gönderiyor?' sorusuyla kalıyor. H2 duygusal ama olay geç; H3 kocayı erken işaret ediyor. Üç TikTok'ta da H1 kullanıldı (yeni plan: aynı video, farklı arka plan).
 
 *(Hipotez; TikTok verisiyle doğrulanacak.)*
 
@@ -27,7 +27,7 @@ H1. Tanıdık ama sinir bozucu bir durum (şoförün sevgilisi) ile ilk saniyede
 - 2:50-3:30 — Dönüm: kurul önerisi, Ece'nin telefonu, bankada unutulan mavi dosya.
 - 3:30-sonu — Doğal merak: arka koltuktaki Merve, ekrandaki Uludağ fotoğrafı + kapanış.
 
-**Metin (TikTok 1):**
+**Metin (üç TikTok'ta aynı):**
 
 Şoförüm beni her işe götürdüğünde ön koltukta sevgilisini de getiriyordu. Altı ay ses çıkarmadım. Bir sabah arabada unuttuğum dosya için geri döndüm ve sevgilisinin arka koltukta benim sözleşmelerimin fotoğrafını çekip birine gönderdiğini gördüm.
 
@@ -59,19 +59,17 @@ Ses çıkarmadan yaklaştım. Merve beni görmedi. Fotoğrafları bir mesajlaşm
 
 Profil fotoğrafını tanıdım. Onu ben çekmiştim. Geçen yaz, Uludağ'da, kocamın gülümsediği bir fotoğraf.
 
-## 4. Arka plan önerisi
+## 4. Arka plan
 
-Hipotez: İş ve aile ihaneti hikayesi; metal/ahşap (fabrika, emek) ve temizlik sahneleri tona uyabilir. Bu videoda test altyazı olduğu için iki TikTok'ta aynı karışık sıra (varyant 4) kullanıldı.
+TikTok 1: karışık · TikTok 2: metal + temizlik · TikTok 3: sabun + el sanatı. Her sahne tek kategoriden 30-60 sn.
 
 ## 5. Altyazı vurguları
 
 Videoda sarı: SÖZLEŞMELERİMİN, YAVUZ, MERVE, UNUTTUM, HATIRLAMIYORDUM, DOSYA.
 
-## 6. TikTok başlığı ve açıklaması
+## 6. TikTok başlığı ve açıklaması (üçünde aynı)
 
-**TikTok 1 (13:00):** ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
-
-**TikTok 2 (18:00):** ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## 7. YouTube'a yönlendiren kapanış
 

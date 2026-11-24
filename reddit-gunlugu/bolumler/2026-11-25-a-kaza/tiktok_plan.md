@@ -1,6 +1,6 @@
-# TikTok planı — A: Kaza (2026-11-25)
+# TikTok planı — Kaza (2026-11-25)
 
-**Bu hikayenin testi:** ARKA PLAN testi (iki TikTok'ta da H1, aynı metin/tempo/altyazı; TikTok 1 = karışık kategoriler, TikTok 2 = yalnızca bakım (spa, cilt) + el sanatı)
+**Bu hikayenin testi:** ARKA PLAN testi (üç TikTok'ta da H1, aynı metin/tempo/altyazı; TikTok 1 = karışık, TikTok 2 = bakım + el sanatı, TikTok 3 = pasta + yemek)
 
 ## 1. Üç hook
 
@@ -12,7 +12,7 @@
 
 ## 2. En güçlü hook ve gerekçe
 
-H1. İlk iki saniyede somut bir yer (hastane) ve sıra dışı bir hamle (hafıza kaybı numarası), sonra çarpıcı bir replik ('ofisten iş arkadaşınız'); izleyici 'neden böyle dedi?' sorusuyla kalıyor. H2 duyguya, H3 sonuca (karısı) yaslanıyor; H3 finali erken ele veriyor.
+H1. İlk iki saniyede somut bir yer (hastane) ve sıra dışı bir hamle (hafıza kaybı numarası), sonra çarpıcı bir replik ('ofisten iş arkadaşınız'); izleyici 'neden böyle dedi?' sorusuyla kalıyor. H2 duyguya, H3 sonuca (karısı) yaslanıyor; H3 finali erken ele veriyor. Üç TikTok'ta da H1 kullanıldı (yeni plan: aynı video, farklı arka plan).
 
 *(Hipotez; TikTok verisiyle doğrulanacak.)*
 
@@ -27,7 +27,7 @@ H1. İlk iki saniyede somut bir yer (hastane) ve sıra dışı bir hamle (hafız
 - 2:40-3:40 — Dönüm: hemşire, karar, Kaan giriyor, rahatlıyor, 'Ofisten…'
 - 3:40-sonu — Doğal merak: papatyalı kadın, alyans, 'Kaan'ın eşiyim' + kapanış.
 
-**Metin (TikTok 1):**
+**Metin (üç TikTok'ta aynı):**
 
 Trafik kazasından sonra hastanede uyandım. Hemşire iki yıllık sevgilime "Hafıza kaybı olabilir," demişti. Ben her şeyi hatırlıyordum ama sustum. Odaya girdi, elimi tutmadı ve "Merhaba Ceren Hanım, ben Kaan, ofisten iş arkadaşınız," dedi.
 
@@ -83,19 +83,17 @@ Kadın bana sıcak, içten bir gülümsemeyle baktı.
 
 "Ceren Hanım, değil mi? Kaan sizden çok bahsetti, en iyi tasarımcıları sizmişsiniz. Ben Selin. Kaan'ın eşiyim. Çok geçmiş olsun."
 
-## 4. Arka plan önerisi
+## 4. Arka plan
 
-Hipotez: Hastane ve bakım temalı bir hikaye; spa/cilt bakımı ve el sanatı sahneleri sakin, kadın izleyiciye yakın bir ton taşıyabilir. Test: TikTok 1 karışık (varyant 3), TikTok 2 yalnızca bakım + el sanatı (aynı varyant).
+TikTok 1: karışık · TikTok 2: bakım + el sanatı · TikTok 3: pasta + yemek. Her sahne tek kategoriden 30-60 sn.
 
 ## 5. Altyazı vurguları
 
 Videoda sarı: ARKADAŞINIZ, TERS, MEKTUP, KAMYON, DOKUZ, MANDALİNA, RAHATLADI.
 
-## 6. TikTok başlığı ve açıklaması
+## 6. TikTok başlığı ve açıklaması (üçünde aynı)
 
-**TikTok 1 (09:00):** TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
-
-**TikTok 2 (14:00):** TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## 7. YouTube'a yönlendiren kapanış
 

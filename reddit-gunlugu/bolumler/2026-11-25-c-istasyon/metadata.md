@@ -1,11 +1,11 @@
-# Hikaye C: İstasyon (2026-11-25) — AKŞAM
+# Hikaye: İstasyon — YAYIN 27 KASIM
 
-## YouTube (25 Kasım 19:00, bir önceki akşam zamanla)
+## YouTube (27 Kasım 08:00, bir önceki akşam zamanla)
 **Başlık:**
 Benzin Doldururken Bir Müşteri Telefonunu Uzattı: "Abi, Bu Sizin İstasyon Değil mi?"…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm burada başlıyor: ??:?? 👇
 
 00:00 Hikaye başlıyor
 ??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
@@ -23,16 +23,19 @@ reddit hikayeleri, reddit türkçe, reddit günlüğü, benzin istasyonu, pompac
 
 **Kapak:** kapak.jpg (özel küçük resim)
 
-## TikTok 1 (tiktok-gonder.mp4) — 20:00 — hook: H1 (viral paylaşım)
+## TikTok 1 (tiktok-gonder.mp4) — 09:00 — arka plan: karışık
 BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASYON DEĞİL Mİ?"... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok 2 (tiktok2-gonder.mp4) — 22:00 — hook: H2 (27 yıllık sır)
-YİRMİ YEDİ YILDIR BİR SIR SAKLIYORUM. BİR KIZIN BABASININ O KARLI GECE NEDEN GELMEDİĞİNİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+## TikTok 2 (tiktok2-gonder.mp4) — 14:00 — arka plan: ahşap + metal
+BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASYON DEĞİL Mİ?"... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Abi, Bu Sizin İstasyon Değil mi?" videosu, ??:??'ten itibaren 👆
+## TikTok 3 (tiktok3-gonder.mp4) — 20:00 — arka plan: yemek + pasta
+BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASYON DEĞİL Mİ?"... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+
+## TikTok sabitlenmiş yorum (üçüne de)
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Abi, Bu Sizin İstasyon Değil mi?" videosu, dakika ??:?? 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
 - "Yapay zekâ ile oluşturulan içerik" seçeneğini aç.
-- Test çiftini mümkünse benzer saatlerde paylaş; 48 saat sonra metrikleri TIKTOK_TEST.md'ye yaz.
+- 48 saat sonra üç TikTok'un metriklerini TIKTOK_TEST.md'ye yaz (fark sadece arka plan).

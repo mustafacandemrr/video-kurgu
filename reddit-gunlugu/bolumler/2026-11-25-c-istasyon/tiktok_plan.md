@@ -1,18 +1,18 @@
-# TikTok planı — C: İstasyon (2026-11-25)
+# TikTok planı — İstasyon (2026-11-27)
 
-**Bu hikayenin testi:** HOOK testi (TikTok 1 = H1 'viral paylaşımda kendimi gördüm', TikTok 2 = H2 '27 yıllık sır'; gövde, arka plan, tempo, altyazı aynı)
+**Bu hikayenin testi:** ARKA PLAN testi (üç TikTok'ta da H1, aynı metin/tempo/altyazı; TikTok 1 = karışık, TikTok 2 = ahşap + metal, TikTok 3 = yemek + pasta)
 
 ## 1. Üç hook
 
 **H1:** Benzin doldururken bir müşteri telefonunu uzattı: "Abi, bu sizin istasyon değil mi?" Şehrin sayfasında viral bir paylaşım: "Birini eve getirmek istiyorum." Altındaki eski fotoğrafta, kucağında küçük bir kızla, yirmi beş yaşındaki beni gördüm.
 
-**H2:** Yirmi yedi yıldır bir sır saklıyorum. Bir kızın babasının o karlı gece neden gelmediğini. Geçen hafta o kız, bütün şehrin önünde beni aradı. Beni düğününe babası olarak götürmek istiyordu.
+**H2:** 
 
 **H3:** Beş yaşındaki bir kıza bir gece boyunca "Baban gelecek" dedim. Babası gerçekten geldi. Ona kızını vermedim.
 
 ## 2. En güçlü hook ve gerekçe
 
-H1 ilk iki saniyede somut bir sahne (pompa, telefon, viral paylaşım) ve kişisel bir şok (fotoğraftaki benim) veriyor. H2 sırrı ve duygusal yükü öne alıyor; merak daha güçlü ama sahne daha soyut — test bunu ölçecek. H3 çok güçlü ama hikayenin dönüm noktasını ilk saniyede ele veriyor, bu yüzden seçilmedi.
+H1 ilk iki saniyede somut bir sahne (pompa, telefon, viral paylaşım) ve kişisel bir şok (fotoğraftaki benim) veriyor. H2 sırrı ve duygusal yükü öne alıyor; merak daha güçlü ama sahne daha soyut — test bunu ölçecek. H3 çok güçlü ama hikayenin dönüm noktasını ilk saniyede ele veriyor, bu yüzden seçilmedi. Üç TikTok'ta da H1 kullanıldı (yeni plan: aynı video, farklı arka plan).
 
 *(Hipotez; TikTok verisiyle doğrulanacak.)*
 
@@ -27,7 +27,7 @@ H1 ilk iki saniyede somut bir sahne (pompa, telefon, viral paylaşım) ve kişis
 - 2:30-3:40 — Dönüm: gece üçte gelen sarhoş baba, yumruk, kapıda durmak, telsizdeki kaza.
 - 3:40-sonu — Doğal merak: 'Neden gelmediğini bir tek ben biliyordum' + kapanış.
 
-**Metin (TikTok 1):**
+**Metin (üç TikTok'ta aynı):**
 
 Benzin doldururken bir müşteri telefonunu uzattı: "Abi, bu sizin istasyon değil mi?" Şehrin sayfasında viral bir paylaşım: "Birini eve getirmek istiyorum." Altındaki eski fotoğrafta, kucağında küçük bir kızla, yirmi beş yaşındaki beni gördüm.
 
@@ -81,19 +81,17 @@ Ve şimdi o küçük kız, yirmi yedi yıl sonra, bütün şehrin önünde beni 
 
 Ama o el, babasının kızını almasına izin vermeyen eldi. Ve o kızın babasının o gece neden gelmediğini bu dünyada bir tek ben biliyordum.
 
-## 4. Arka plan önerisi
+## 4. Arka plan
 
-Hipotez: Kış gecesi, emek ve sıcaklık hikayesi; ahşap, metal ve yemek (sıcak çay, ekmek) sahneleri tona uyabilir. Bu videoda test hook olduğu için iki TikTok'ta aynı karışık sıra (varyant 0) kullanıldı.
+TikTok 1: karışık · TikTok 2: ahşap + metal · TikTok 3: yemek + pasta. Her sahne tek kategoriden 30-60 sn.
 
 ## 5. Altyazı vurguları
 
 Videoda sarı: İSTİYORUM, ZEYNEP, BENDİM, ÇİZME, KARDAN ADAM, GELMİŞTİ, YUMRUK.
 
-## 6. TikTok başlığı ve açıklaması
+## 6. TikTok başlığı ve açıklaması (üçünde aynı)
 
-**TikTok 1 (20:00):** BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASYON DEĞİL Mİ?"... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
-
-**TikTok 2 (22:00):** YİRMİ YEDİ YILDIR BİR SIR SAKLIYORUM. BİR KIZIN BABASININ O KARLI GECE NEDEN GELMEDİĞİNİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+BENZİN DOLDURURKEN BİR MÜŞTERİ TELEFONUNU UZATTI: "ABİ, BU SİZİN İSTASYON DEĞİL Mİ?"... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## 7. YouTube'a yönlendiren kapanış
 

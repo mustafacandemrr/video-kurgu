@@ -1,11 +1,11 @@
-# Hikaye A: Kaza (2026-11-25) — SABAH
+# Hikaye: Kaza — YAYIN 25 KASIM
 
 ## YouTube (25 Kasım 08:00, bir önceki akşam zamanla)
 **Başlık:**
 Trafik Kazasından Sonra Hastanede Uyandım. Sevgilim "Ben Ofisten İş Arkadaşınız" Dedi…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm 09:09'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm burada başlıyor: 09:09 👇
 
 00:00 Hikaye başlıyor
 09:09 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
@@ -29,10 +29,13 @@ TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OF�
 ## TikTok 2 (tiktok2-gonder.mp4) — 14:00 — arka plan: bakım + el sanatı
 TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
-## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ben Ofisten İş Arkadaşınız" videosu, 09:09'ten itibaren 👆
+## TikTok 3 (tiktok3-gonder.mp4) — 20:00 — arka plan: pasta + yemek
+TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+
+## TikTok sabitlenmiş yorum (üçüne de)
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ben Ofisten İş Arkadaşınız" videosu, dakika 09:09 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
 - "Yapay zekâ ile oluşturulan içerik" seçeneğini aç.
-- Test çiftini mümkünse benzer saatlerde paylaş; 48 saat sonra metrikleri TIKTOK_TEST.md'ye yaz.
+- 48 saat sonra üç TikTok'un metriklerini TIKTOK_TEST.md'ye yaz (fark sadece arka plan).
