@@ -5,10 +5,10 @@
 Trafik Kazasından Sonra Hastanede Uyandım. Sevgilim "Ben Ofisten İş Arkadaşınız" Dedi…
 
 **Açıklama:**
-TikTok'tan geldiysen 2. bölüm ??:??'te başlıyor 👇
+TikTok'tan geldiysen 2. bölüm 09:09'te başlıyor 👇
 
 00:00 Hikaye başlıyor
-??:?? TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
+09:09 TikTok'ta kaldığın yer: 2. bölüm burada başlıyor
 
 Bir trafik kazasından sonra hastanede uyandım. Hemşire iki yıllık sevgilime hafıza kaybı olabileceğimi söylemişti. Her şeyi hatırlıyordum ama sustum, sadece kendini nasıl tanıtacağını görmek istedim. Odaya girdi, beni tanımadığımı sanınca rahatladı ve "Ben ofisten iş arkadaşınız" dedi. Sonra kapı tekrar açıldı.
 
@@ -30,7 +30,7 @@ TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OF�
 TRAFİK KAZASINDAN SONRA HASTANEDE UYANDIM. SEVGİLİM ODAYA GİRDİ VE "BEN OFİSTEN İŞ ARKADAŞINIZ" DEDİ... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
 
 ## TikTok sabitlenmiş yorum (ikisine de)
-2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ben Ofisten İş Arkadaşınız" videosu, ??:??'ten itibaren 👆
+2. bölüm YouTube'da: Reddit Günlüğü Plus kanalında "Ben Ofisten İş Arkadaşınız" videosu, 09:09'ten itibaren 👆
 
 ## Yüklerken
 - TikTok profil bağlantısını bu YouTube videosuna çevir.
