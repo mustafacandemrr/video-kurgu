@@ -1,0 +1,78 @@
+# TikTok planı — B: Şoför (2026-11-25)
+
+**Bu hikayenin testi:** ALTYAZI testi, 3. tekrar (iki TikTok'ta da H1, aynı gövde/arka plan/tempo; TikTok 1 = tek kelime kırmızı, TikTok 2 = 2-3 kelime beyaz + sarı vurgu)
+
+## 1. Üç hook
+
+**H1:** Şoförüm beni her işe götürdüğünde ön koltukta sevgilisini de getiriyordu. Altı ay ses çıkarmadım. Bir sabah arabada unuttuğum dosya için geri döndüm ve sevgilisinin arka koltukta benim sözleşmelerimin fotoğrafını çekip birine gönderdiğini gördüm.
+
+**H2:** Altı ay boyunca kendi aklımdan şüphe ettim. Toplantıları unutuyordum, dosyaları karıştırıyordum. Annem gibi demans oluyorum sandım. Sonra şoförümün sevgilisini arka koltukta, benim sözleşmelerimin fotoğrafını çekerken gördüm.
+
+**H3:** Kocam bana "Annen de bu yaşlarda unutmaya başlamıştı" dedi. İki hafta sonra kimin hatırladığımı, kimin unutturduğunu bir arabanın camından öğrendim.
+
+## 2. En güçlü hook ve gerekçe
+
+H1. Tanıdık ama sinir bozucu bir durum (şoförün sevgilisi) ile ilk saniyede başlıyor, ardından gerçek bir ihanet anı (fotoğraf) geliyor; izleyici 'kime gönderiyor?' sorusuyla kalıyor. H2 duygusal ama olay geç; H3 kocayı erken işaret ediyor.
+
+*(Hipotez; TikTok verisiyle doğrulanacak.)*
+
+## 3. TikTok anlatım metni (~4 dk)
+
+**Akış:**
+
+- 0:00-0:14 — Hook: ön koltuktaki sevgili, sözleşme fotoğrafları.
+- 0:14-0:50 — Nesrin, fabrika, hisseler, Orhan.
+- 0:50-1:40 — Yavuz ve Merve; meraklı sorular; annenin demansı.
+- 1:40-2:50 — Yükselme: unutulan toplantı, yanlış fiyat, 'Annen de…', gece üçte isim listesi.
+- 2:50-3:30 — Dönüm: kurul önerisi, Ece'nin telefonu, bankada unutulan mavi dosya.
+- 3:30-sonu — Doğal merak: arka koltuktaki Merve, ekrandaki Uludağ fotoğrafı + kapanış.
+
+**Metin (TikTok 1):**
+
+Şoförüm beni her işe götürdüğünde ön koltukta sevgilisini de getiriyordu. Altı ay ses çıkarmadım. Bir sabah arabada unuttuğum dosya için geri döndüm ve sevgilisinin arka koltukta benim sözleşmelerimin fotoğrafını çekip birine gönderdiğini gördüm.
+
+Ben Nesrin, elli dört yaşındayım. Bursa'da bir havlu fabrikam var. Babam kurdu, ben büyüttüm. Yüz kırk çalışanımız var. Kocam Orhan'la yirmi altı yıllık evliyiz. Eski bankacı, şimdi yönetim kurulunda. Yirmi altı yılda bana bir kere bile sesini yükseltmedi. Babam öldüğünde fabrikada otuz kişi ve sürekli bozulan bir dokuma tezgâhı vardı. Şimdi Almanya'ya, Hollanda'ya ihracat yapıyoruz. Hisselerin yüzde altmışı bende, yüzde yirmisi kocamda, yüzde yirmisi kızımda. Bu rakamları aklınızda tutun.
+
+Geçen yıl gece görüşüm zayıfladı, doktor araba kullanmamı yasakladı. Orhan hemen bir şoför buldu. "Arkadaşımın tanıdığı, çok güvenilir bir çocuk." Adı Yavuz. Otuz üç yaşında, eski kamyon şoförü, sessiz, saygılı. İlk gün kapımı açarken "Siz sadece işinizi düşünün, yolları ben bilirim," dedi. Bayram sabahı arabaya küçük bir lokum kutusu koymuştu. Bir gün yağmurda lastiğimiz patladı, takım elbiseyle, sırılsıklam, on dakikada değiştirdi.
+
+İkinci hafta Yavuz bir sabah ön koltukta bir kızla geldi. Gözlüklü, güler yüzlü. "Nesrin Hanım, kız arkadaşım Merve. Ev sahibi evden çıkardı, gündüz gidecek yeri yok. Rahatsız olursanız indiririm." "Kalsın," dedim. Benim babam da bir zamanlar annemi fabrikanın kapısında saatlerce bekletmişti.
+
+Ama Merve hep oradaydı. Banka toplantısı, gümrük, avukatım. Her sabah ön koltukta, elinde hukuk kitapları. Çok soru sorardı. "İhracatta en zor kısım ne?" "Bu kadar toplantıyı nasıl aklınızda tutuyorsunuz?" Kızım İstanbul'daydı, kocam akşamları televizyon izlerdi. Yıllardır beni kimse bu kadar dinlememişti. Ben de anlatıyordum.
+
+Bir gün annemi sordu. "Dört yıl önce kaybettim," dedim. "Demans. Son yıl bana 'Hanımefendi' diyordu. Kendi kızına." Merve dikiz aynasından bana baktı. Gözleri doluydu.
+
+Sonra bir şey oldu. Hayatımda ilk defa bir toplantıyı unuttum. Avukatımla on birde görüşmem vardı, gitmemişim. Ertesi sabah Merve hatırlattı. Nereden bildiğini düşünmedim. Dikkatli kız, dedim kendi kendime. Benim yerime hatırlıyor.
+
+Unutmalar arttı. İki kere çantamı evde unuttum. Bir kere yanlış dosyayla toplantıya gittim. Almanya'daki müşterime gönderdiğim e-postada yanlış fiyat vardı. Kendi elimle yazdığım fiyat. Ama yazdığımı hatırlamıyordum.
+
+Orhan bir akşam yemekte bana baktı. "Nesrin, yorgunsun. Bir doktora görün. Annen de bu yaşlarda unutmaya başlamıştı." Bu cümle bir bıçak gibi girdi. Annemin son yılında hastane odasında elini tutup "Anne, ben Nesrin," dediğim geceleri Orhan biliyordu. O odalarda benimle oturmuştu. Ve şimdi bana o kelimeyi söylüyordu. Unutmak.
+
+O gece gece üçte mutfakta kendimi sınadım. Yüz kırk çalışanımın adını tek tek yazdım. Hepsini hatırladım. Ama korku geçmedi. Çünkü annem de ilk yıllarda her şeyi hatırlıyordu. Sabah Orhan masadaki kâğıtları gördü. Bir şey sormadı. Bir bardak su verdi. "Bunu doktora da göster," dedi.
+
+Ertesi hafta yönetim kurulu toplandı. Orhan bir öneri getirdi. "Nesrin'in sağlığı için günlük operasyonları bir süre ben devralayım." İki üye başını salladı. Ben itiraz ettim, toplantı ertelendi. O akşam kızım İstanbul'dan aradı. "Anne, iyi misin? Babam senin için çok endişeleniyor." Ece'nin sesinde bir şey vardı. Bir şey saklıyormuş gibi. Sormadım. Sormaya korktum. Ya o da benim unuttuğumu düşünüyorsa? Ama Orhan'ın gözlerinde sabırlı bir şey gördüm.
+
+İki gün sonra Yavuz beni bankaya götürdü. Önemli bir kredi toplantısı. Merdivenleri çıktım ve kapıda fark ettim: imzalı sözleşmelerin olduğu mavi dosya arka koltukta kalmıştı. Yine unutmuştum. Merdivenlerde bir an durdum. Elim titriyordu. "Başlıyor," dedim içimden. "Annem gibi." Kendime kızarak geri döndüm.
+
+Araba ağaçların altında duruyordu. Yavuz yoktu, sigaraya gitmişti. Ön camdan içerisi görünüyordu. Merve arka koltuktaydı. Benim koltuğumda. Mavi dosya kucağında açıktı. Telefonunu sözleşmelerin üstüne tutmuş, sayfa sayfa fotoğraf çekiyordu. Hızlı, dikkatli, alışkın bir şekilde. Bunu ilk defa yapmadığı belliydi. Altı aydır her sabah ön koltukta oturan, bana annemi soran, gözleri dolan kız. Benim en mahrem belgelerimi birine gönderiyordu.
+
+Ses çıkarmadan yaklaştım. Merve beni görmedi. Fotoğrafları bir mesajlaşma uygulamasında birine gönderiyordu. Ekranın en üstünde, gönderdiği kişinin adı ve profil fotoğrafı vardı.
+
+Profil fotoğrafını tanıdım. Onu ben çekmiştim. Geçen yaz, Uludağ'da, kocamın gülümsediği bir fotoğraf.
+
+## 4. Arka plan önerisi
+
+Hipotez: İş ve aile ihaneti hikayesi; metal/ahşap (fabrika, emek) ve temizlik sahneleri tona uyabilir. Bu videoda test altyazı olduğu için iki TikTok'ta aynı karışık sıra (varyant 4) kullanıldı.
+
+## 5. Altyazı vurguları
+
+Videoda sarı: SÖZLEŞMELERİMİN, YAVUZ, MERVE, UNUTTUM, HATIRLAMIYORDUM, DOSYA.
+
+## 6. TikTok başlığı ve açıklaması
+
+**TikTok 1 (13:00):** ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+
+**TikTok 2 (18:00):** ŞOFÖRÜM HER İŞE SEVGİLİSİNİ GETİRİYORDU. BİR SABAH ONU SÖZLEŞMELERİMİN FOTOĞRAFINI ÇEKERKEN GÖRDÜM... 🛑 Hikâyenin 2. Bölümü profilimdeki bağlantıda veya YouTube'da “REDDIT GÜNLÜĞÜ PLUS” kanalını aratarak bulabilirsiniz. 🛑 #redditturkiye
+
+## 7. YouTube'a yönlendiren kapanış
+
+"Hikâyenin devamı ve tamamı YouTube'da, Reddit Günlüğü Plus kanalında. Devamı için profilime göz atabilirsin. Beğendiysen sağdaki paylaş butonuyla bu hikâyeyi bir arkadaşına gönder."

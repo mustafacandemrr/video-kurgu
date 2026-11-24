@@ -302,13 +302,17 @@ YouTube: @sultanreddit, @zenginreddit, @emirreddit (Emir YouTube'a İngilizce ba
   5. ✅ (23.11) Sultan 67 B — "Kız kardeşim oğluma koymayı seçtiğim ismi yeni doğan bebeğine verdi…"
   6. ✅ (22.11) Sultan 64 B — "Bizim ailede kimse teşekkür etmez. Her iyiliği 'Hesap Defteri'ne yazarız…"
   7. ✅ (23.11) Sultan 56 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
-  8. Sultan 50 B — "Şoförüm beni her işe götürdüğünde yanında sevgilisini de getiriyordu…"
+  8. ✅ (25.11) Sultan 50 B — "Şoförüm beni her işe götürdüğünde yanında sevgilisini de getiriyordu…"
   9. ✅ (24.11) Zengin 39 B — "Kocamın 'sevgim onu boğuyor' dediğini duydum ve ona bir daha dokunmamaya karar verdim…" → erkek: karım
   10. Zengin 17 B — "İnternetten tanıştığım sevgilim birden bana öğle yemeğinin fotoğrafını attı…"
   11. Zengin 14 B — "Erkek arkadaşım beni çocukluk arkadaşıyla değiştirdi. Şikâyet etmedim…"
   12. ✅ (24.11) Sultan 14 B — "Aile yemeğinde babam harçlığımın yetip yetmediğini sordu. 'Ne harçlığı?'…"
   13. ✅ (24.11) Emir YouTube 42 B — "Görümcem ıstakoz ve pahalı şarap ısmarladı. 'Hesabı ayıralım' dedim…"
-  14. Emir YouTube 63 B — "Benzin alırken yerel bir paylaşım viral oldu: 'Birini eve getirmek istiyorum…'"
+  14. ✅ (25.11) Emir YouTube 63 B — "Benzin alırken yerel bir paylaşım viral oldu: 'Birini eve getirmek istiyorum…'"
+  15. ✅ (25.11) Sultan YT 30 B (Kasım sonu en yükseği) — "Bir trafik kazasından sonra hastanede yatıyordum. Erkek arkadaşıma küçük…" (başlık kesik)
+  16. Sultan YT 18 B — "Kocam benden boşanmak istediğinde ben gizli gizli yılda yirmi milyon lira kazanıyordum…"
+  17. Sultan YT 17 B — "Üç yakın arkadaşım bana haber vermeden uçuşlarını değiştirdi. 'Sen grubu geciktiriyorsun'…"
+  18. Sultan YT 12 B — "Mezun olduktan sonra yengem hamile kaldı ve ağabeyim, annemle babamı beni evden atmaya…"
 
 ### TikTok kapanışı (14 Kasım 2026)
 Emir kapanışta izleyiciye "paylaş seçeneğine" bastırıyor (paylaşım TikTok'ta en güçlü sinyal). Bizim kapanış

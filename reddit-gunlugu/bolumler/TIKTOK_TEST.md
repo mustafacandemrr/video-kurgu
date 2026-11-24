@@ -25,3 +25,9 @@ Hipotez olarak oku: tek videonun sonucu karar için yetmez; aynı değişkeni en
 | 2026-11-24 | B2 Harçlık | arka plan | pasta + yemek + sabun | | | | | | | | |
 | 2026-11-24 | C1 Hesap | tempo | hızlı | | | | | | | | |
 | 2026-11-24 | C2 Hesap | tempo | doğal | | | | | | | | |
+| 2026-11-25 | A1 Kaza | arka plan | karışık | | | | | | | | |
+| 2026-11-25 | A2 Kaza | arka plan | bakım + el sanatı | | | | | | | | |
+| 2026-11-25 | B1 Şoför | altyazı | tek kelime kırmızı | | | | | | | | |
+| 2026-11-25 | B2 Şoför | altyazı | 2-3 kelime + sarı vurgu | | | | | | | | |
+| 2026-11-25 | C1 İstasyon | hook | H1 viral paylaşım | | | | | | | | |
+| 2026-11-25 | C2 İstasyon | hook | H2 27 yıllık sır | | | | | | | | |
