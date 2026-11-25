@@ -160,9 +160,11 @@ farklı arka plan olsun."
 - Hikaye ≥3.000 kelime (YouTube 30+ dk), TikTok ~700-760 kelime. Rakip listesinden her gün bir konu.
 - **Geçiş (24 Kasım):** 25 Kasım için üretilmiş üç hikaye yayına bölünüyor: `2026-11-25-a-kaza` → 25 Kasım,
   `2026-11-25-b-sofor` → 26 Kasım, `2026-11-25-c-istasyon` → 27 Kasım (her biri 08:00 YouTube + 3 TikTok). Bu yüzden
-  **25 Kasım gecesi ve 26 Kasım gecesi çalışmalarında yeni hikaye üretme**: git pull, disk temizliği (bu üç klasörün
-  mp4'lerine dokunma), kullanıcıya o günün hazır klasörünü hatırlat ("Günaydın…" mesajı). Yeni üretim 27 Kasım gecesi
-  (28 Kasım için) başlar.
+  ~~(eski geçiş notu, iptal)~~
+- **DÜZELTME (25 Kasım, kullanıcı):** Kullanıcı bir gün önden yüklüyor. Kaza ve Şoför 25 Kasım'dan önce zaten
+  yüklendi; İstasyon 26 Kasım'ın videosu (25 Kasım'da yüklenir). **26 Kasım sabahı çalışmasında yeni üretim başlar**
+  (klasör `bolumler/2026-11-27-konu/`, yayın 27 Kasım). Kural: her sabah teslim edilen dosya ertesi günün yayınıdır;
+  "Günaydın" mesajında bunu böyle söyle. Eski üç klasörün mp4'leri 26 Kasım çalışmasında silinebilir.
 
 ### (ESKİ) GÜNLÜK PLAN: günde 3 hikaye, her hikayeye 1 YouTube + 2 kancalı TikTok (16 Kasım 2026, kullanıcı kararı)
 Kullanıcı: "YouTube'u günde 3'e çıkaracağız. Yarının videolarını bugün akşamdan YouTube'a saat kurarak yükleyeceğim
