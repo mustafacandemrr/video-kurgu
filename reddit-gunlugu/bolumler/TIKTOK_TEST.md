@@ -31,3 +31,6 @@ Hipotez olarak oku: tek videonun sonucu karar için yetmez; aynı değişkeni en
 | 2026-11-25 | B2 Şoför | altyazı | 2-3 kelime + sarı vurgu | | | | | | | | |
 | 2026-11-25 | C1 İstasyon | hook | H1 viral paylaşım | | | | | | | | |
 | 2026-11-25 | C2 İstasyon | hook | H2 27 yıllık sır | | | | | | | | |
+| 2026-11-27 | 1 İpotek | arka plan | karışık | | | | | | | | |
+| 2026-11-27 | 2 İpotek | arka plan | temizlik + ahşap | | | | | | | | |
+| 2026-11-27 | 3 İpotek | arka plan | pasta + sabun | | | | | | | | |
