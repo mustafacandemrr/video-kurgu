@@ -151,6 +151,7 @@ yüklemeye bırakacağım. Eski videoları karşıma çıkarma."
 - Görev her gün **18:58 (Türkiye)** çalışır; teslim **20:00-21:00** arası. Klasör tarihi = yarının tarihi (yayın günü).
 - Her çalıştırmada **yeni** hikaye ve yeni videolar. Önceki günlerin videolarını tekrar gönderme, son mesajda anma.
 - Zaman kısıtlı: araştırma ≤10 dk, hikaye + TikTok metni ≤30 dk, render ~45 dk. Render'ı metinler biter bitmez başlat.
+- Uzunluk: hikaye.txt **≥3.150 kelime** yaz (2.948 kelime bir gün 30:27, bir gün 29:01 tuttu). Metni render'dan önce `wc -w` ile kontrol et.
 - Bildirim: "İyi akşamlar, yarının bölümü hazır". Son mesaj "İyi akşamlar" ile başlar.
 - (26 Kasım notu: İpotek 26 Kasım'da yüklendi; 27 Kasım için yeni hikaye 26 Kasım akşamı üretilir.)
 
