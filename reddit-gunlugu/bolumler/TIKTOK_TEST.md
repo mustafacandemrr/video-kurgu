@@ -37,3 +37,6 @@ Hipotez olarak oku: tek videonun sonucu karar için yetmez; aynı değişkeni en
 | 2026-11-27 | 1 Uçuş | arka plan | karışık | | | | | | | | |
 | 2026-11-27 | 2 Uçuş | arka plan | metal + yemek | | | | | | | | |
 | 2026-11-27 | 3 Uçuş | arka plan | slime + el sanatı | | | | | | | | |
+| 2026-11-28 | 1 Gelir | arka plan | karışık | | | | | | | | |
+| 2026-11-28 | 2 Gelir | arka plan | bakım + saç | | | | | | | | |
+| 2026-11-28 | 3 Gelir | arka plan | ahşap + temizlik | | | | | | | | |

@@ -340,7 +340,7 @@ YouTube: @sultanreddit, @zenginreddit, @emirreddit (Emir YouTube'a İngilizce ba
   13. ✅ (24.11) Emir YouTube 42 B — "Görümcem ıstakoz ve pahalı şarap ısmarladı. 'Hesabı ayıralım' dedim…"
   14. ✅ (25.11) Emir YouTube 63 B — "Benzin alırken yerel bir paylaşım viral oldu: 'Birini eve getirmek istiyorum…'"
   15. ✅ (25.11) Sultan YT 30 B (Kasım sonu en yükseği) — "Bir trafik kazasından sonra hastanede yatıyordum. Erkek arkadaşıma küçük…" (başlık kesik)
-  16. Sultan YT 18 B — "Kocam benden boşanmak istediğinde ben gizli gizli yılda yirmi milyon lira kazanıyordum…"
+  16. ✅ (28.11) Sultan YT 18 B — "Kocam benden boşanmak istediğinde ben gizli gizli yılda yirmi milyon lira kazanıyordum…"
   17. ✅ (27.11 akşam) Sultan YT 17 B — "Üç yakın arkadaşım bana haber vermeden uçuşlarını değiştirdi. 'Sen grubu geciktiriyorsun'…"
   18. ✅ (27.11) Sultan YT 12 B — "Mezun olduktan sonra yengem hamile kaldı ve ağabeyim, annemle babamı beni evden atmaya…"
 
