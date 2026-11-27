@@ -412,7 +412,7 @@ def _klip_indir(i, kdir):
         return None
 
 
-def satisfying_arka_plan(cikti, varyant=0, kategoriler="karisik", toplam_sn=420):
+def satisfying_arka_plan(cikti, varyant=0, kategoriler="karisik", toplam_sn=420, hizli=False):
     """Kategori bazlı sahneler: her sahne tek kategoriden 30-60 sn, klipler bütün halinde; 1080x1920, sessiz.
     kategoriler: "karisik" (hepsi dönüşümlü) ya da ["sac", "pasta", ...]. varyant: farklı sıra."""
     if os.path.exists(cikti):
@@ -435,7 +435,8 @@ def satisfying_arka_plan(cikti, varyant=0, kategoriler="karisik", toplam_sn=420)
         if not havuz[a]:
             continue
         sahne = 0.0
-        while sahne < SAHNE_SN[0] and havuz[a]:
+        # hizli (27.11, @helloefis gözlemi): her klip 3-5 sn, her klipte kategori değişir (hızlı, renkli kesim)
+        while (sahne < SAHNE_SN[0] or hizli) and havuz[a]:
             k = havuz[a].pop(0)
             havuz[a].append(k)          # kategori biterse başa döner
             w, h = map(int, subprocess.check_output(
@@ -443,6 +444,8 @@ def satisfying_arka_plan(cikti, varyant=0, kategoriler="karisik", toplam_sn=420)
                  "-of", "csv=p=0", k]).decode().strip().split(",")[:2])
             vf = "scale=1080:1920" if h > w else "scale=-2:1920,crop=1080:1920"
             uz = max(3.0, min(UZUN_KLIP_SN, sure_olc(k) - 0.5, SAHNE_SN[1] - sahne))
+            if hizli:
+                uz = min(uz, rnd.uniform(3.0, 5.0))
             g = os.path.join(kdir, f"_parca{n:03d}.mp4")
             calistir(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "0.2", "-t", f"{uz:.2f}", "-i", k, "-an",
                       "-vf", f"{vf},fps={FPS},setsar=1,format=yuv420p",
@@ -450,6 +453,8 @@ def satisfying_arka_plan(cikti, varyant=0, kategoriler="karisik", toplam_sn=420)
             gecici.append(g)
             sahne += uz
             n += 1
+            if hizli:
+                break
         toplam += sahne
         print(f"  sahne {a}: {sahne:.0f} sn (toplam {toplam:.0f})", flush=True)
     lst = os.path.join(kdir, "_liste.txt")
@@ -678,7 +683,10 @@ def uret(tur, klasor, sure=None, onek="", ad=None):
         v = ayar.get("varyant", int(ad[6:] or 1) - 1)     # tiktok -> 0, tiktok2 -> 1; json ile sabitlenebilir
         kat = ayar["arka"]
         etiket = "karisik" if kat == "karisik" else "-".join(kat)
-        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_kat_{etiket}_{v}.mp4"), varyant=v, kategoriler=kat)
+        hizli = ayar.get("kesim") == "hizli"
+        etiket += "_hizli" if hizli else ""
+        arka = satisfying_arka_plan(os.path.join(ORTAK, f"_tiktok_kat_{etiket}_{v}.mp4"), varyant=v, kategoriler=kat,
+                                    hizli=hizli)
     cikti = os.path.join(klasor, f"{onek}{ad}.mp4")
     video_yap(arka, mp3, ass, varlik(klasor, "logo.png"), cikti, W, H, round(logo_y), sure, kose_logo=True)
     if not sure:

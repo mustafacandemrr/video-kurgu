@@ -155,6 +155,18 @@ yüklemeye bırakacağım. Eski videoları karşıma çıkarma."
 - Bildirim: "İyi akşamlar, yarının bölümü hazır". Son mesaj "İyi akşamlar" ile başlar.
 - (26 Kasım notu: İpotek 26 Kasım'da yüklendi; 27 Kasım için yeni hikaye 26 Kasım akşamı üretilir.)
 
+### 🎨 TikTok 3 = renkli hızlı kesim (27 Kasım 2026, @helloefis incelemesi)
+Kullanıcı: "helloefis YouTube'da 7 videoyla 200 abone oldu, TikTok çok izleniyor." Ölçüm (yt-dlp listesi + bir videonun
+kareleri, video silindi): 910 takipçiyle 12 TikTok'ta 464 B / 282 B / 202 B / 91 B; TikTok süreleri 5-12 dk (hitler 5:05,
+8:33, 7:33); **altyazı yok**, duraklama yok; arka plan çok renkli ASMR (squishy, slime, kum, bento) ve **klipler birkaç
+saniyede bir değişiyor**; aynı videoyu 2 saat arayla iki kez yüklüyor (282 B ve 28 B); açıklama kısa + hashtag
+(#fyp #kesfetteyiz), "Tutarsa YT devamı gelecek". YouTube: 23-53 dk, sade başlık, 1,4-4,4 B izlenme.
+- Uygulama (hipotez, arka plan testi içinde): **tiktok3.json** artık
+  `{"arka": ["slime","pasta","sabun","el_sanati","yemek"], "kesim": "hizli", "varyant": N}`. `"kesim": "hizli"` = her klip
+  3-5 sn, her klipte kategori değişir (`uret.py`). TikTok 1 karışık (30-60 sn sahneler) kontrol olarak kalır, TikTok 2
+  hikayeye uygun 1-2 kategori.
+- Sonraki testler için aday (henüz uygulanmadı): altyazısız sürüm, 7-9 dk'lık uzun TikTok.
+
 ### ⚠️ GÜNCEL GÜNLÜK PLAN (24 Kasım 2026, kullanıcı kararı — aşağıdaki "günde 3 hikaye" planının ve günlük test rotasyonunun yerine geçer)
 Kullanıcı: "Günlük video sayımızı 1'e indiriyoruz. YouTube'da izlenmesi için 3 çok video. TikTok için 3 tane aynı video
 farklı arka plan olsun."
