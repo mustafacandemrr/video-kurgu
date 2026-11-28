@@ -347,7 +347,7 @@ YouTube: @sultanreddit, @zenginreddit, @emirreddit (Emir YouTube'a İngilizce ba
   7. ✅ (23.11) Sultan 56 B — "Şirketin yıllık yemeğinde şaka niyetine herkese sahte piyango bileti dağıttılar…"
   8. ✅ (25.11) Sultan 50 B — "Şoförüm beni her işe götürdüğünde yanında sevgilisini de getiriyordu…"
   9. ✅ (24.11) Zengin 39 B — "Kocamın 'sevgim onu boğuyor' dediğini duydum ve ona bir daha dokunmamaya karar verdim…" → erkek: karım
-  10. Zengin 17 B — "İnternetten tanıştığım sevgilim birden bana öğle yemeğinin fotoğrafını attı…"
+  10. ✅ (29.11) Zengin 17 B — "İnternetten tanıştığım sevgilim birden bana öğle yemeğinin fotoğrafını attı…"
   11. Zengin 14 B — "Erkek arkadaşım beni çocukluk arkadaşıyla değiştirdi. Şikâyet etmedim…"
   12. ✅ (24.11) Sultan 14 B — "Aile yemeğinde babam harçlığımın yetip yetmediğini sordu. 'Ne harçlığı?'…"
   13. ✅ (24.11) Emir YouTube 42 B — "Görümcem ıstakoz ve pahalı şarap ısmarladı. 'Hesabı ayıralım' dedim…"

@@ -40,3 +40,6 @@ Hipotez olarak oku: tek videonun sonucu karar için yetmez; aynı değişkeni en
 | 2026-11-28 | 1 Gelir | arka plan | karışık | | | | | | | | |
 | 2026-11-28 | 2 Gelir | arka plan | bakım + saç | | | | | | | | |
 | 2026-11-28 | 3 Gelir | arka plan | ahşap + temizlik | | | | | | | | |
+| 2026-11-29 | 1 Örtü | arka plan | karışık | | | | | | | | |
+| 2026-11-29 | 2 Örtü | arka plan | yemek + el sanatı | | | | | | | | |
+| 2026-11-29 | 3 Örtü | arka plan | renkli hızlı kesim | | | | | | | | |
